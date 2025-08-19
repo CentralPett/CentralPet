@@ -1,0 +1,193 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+main{
+
+    width: 80%;
+    margin: auto;
+    height: auto;
+    font-family: verdana;
+
+}
+
+#inicio{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: auto;
+    background-image: url(../IMG/cachorro.jpeg);
+    width: 90%;
+    height: 500px;
+    border: 2px solid black;
+
+
+}
+
+nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 95%;
+    height: 40px;
+    background-color: white;
+    gap: 30px;
+    
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:focus,
+nav button:active{
+
+    background: none;
+    outline: none;
+
+}
+
+
+nav #link{
+
+
+    justify-content: space-between;
+    padding: 5px;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 4px;
+    transition: all 0.3s;
+
+}
+
+nav #link:hover{
+
+    background-color: #AF73A9;
+    border-radius: 20px;
+    padding: 5px;
+
+
+}
+
+nav img{
+
+    margin-right: 0px;
+    justify-content: space-between;
+
+}
+
+
+
+nav #adotar{
+
+    background: none;
+    border-radius: 10px;
+    border: 2px solid #748DAE;
+    padding: 7px;
+    transition: all 0.3s;
+}
+
+nav #entrar{
+
+    background: none;
+    border-radius: 10px;
+    border: 2px solid #AF73A9;
+    padding: 7px;
+    transition: all 0.3s;
+}
+
+
+nav button {
+
+    
+      background: none;  
+
+  
+
+}
+
+nav #adotar{
+
+    font-size: 12px; 
+    color: #748DAE;
+  
+
+}
+
+
+nav #adotar:hover{
+
+    
+    background-color: #748DAE;
+    padding: 7px;
+    color: white;
+    cursor: pointer;    
+  
+
+}
+
+nav #entrar{
+
+    font-size: 12px; 
+    color: #AF73A9;
+  
+
+}
+
+
+nav #entrar:hover{
+
+    
+    background-color: #AF73A9;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+  
+
+}
+
+section p{
+
+    text-align: center;
+    width: 60%;
+    color: white;
+    margin: auto;
+    margin-top: 80px;
+
+}
+
+section #encontre{
+
+    background: orange;
+    border-radius: 10px;
+    border: 2px solid orange;
+    padding: 7px;
+    transition: all 0.3s;
+    color: white;
+    margin-left: 400px;
+    margin-top: 240px;
+
+}
+
+
+section #encontre:hover{
+
+    
+    background: none;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+  
+
+}
