@@ -3,8 +3,11 @@
     padding: 0;
     margin: 0;
     border: 0;
+   
 
 }
+
+
 
 main{
 
@@ -176,12 +179,38 @@ section #encontre{
     transition: all 0.3s;
     color: white;
     margin-left: 400px;
-    margin-top: 240px;
+    margin-top: 180px;
 
 }
 
 
 section #encontre:hover{
+
+    
+    background: none;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+  
+
+}
+
+section #achar{
+
+    background: #c79960;
+    border-radius: 10px;
+    border: 2px solid orange;
+    padding: 7px;
+    transition: all 0.3s;
+    color: white;
+    margin-left: 430px;
+    margin-top: 30px;
+  
+   
+
+}
+
+section #achar:hover{
 
     
     background: none;
