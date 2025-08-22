@@ -1,0 +1,89 @@
+@media(max-width: 1366px){
+
+*{
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+main{
+
+    width: 100%;
+    margin: auto;
+    height: auto;
+    font-family: verdana;
+
+}
+
+#inicio{
+        height: 800px;
+}
+
+
+nav{
+
+    width: 95%;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    gap: 35px;
+    box-shadow: 0 4px 8px 2px rgb(92, 92, 92);
+    
+}
+
+nav #link{
+
+  font-size: 14px;
+    padding: 5px;
+
+
+}
+
+nav #adotar{
+
+    height: 36px;
+    width: 148px;
+    font-size: 14px;
+
+}
+
+nav #entrar{
+
+    height: 37px;
+    width: 148px;
+    font-size: 14px;
+
+}
+
+
+nav img{
+
+    width: 142px;
+    height: 42px;
+    justify-content: space-between;
+
+}
+
+section p{
+
+    width: 70%;
+    font-size: 30px;
+
+}
+
+section #encontre{
+    margin-top: 60px;
+}
+
+section #achar{
+
+    margin-top: 105px;
+   
+
+}
+
+}

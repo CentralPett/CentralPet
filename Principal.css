@@ -1,0 +1,419 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+      box-sizing: border-box;
+
+   
+
+}
+
+
+
+main{
+
+    width: 100%;
+    margin: auto;
+    height: auto;
+    font-family: verdana;
+
+}
+
+
+
+#inicio{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: auto;
+    background-image: url(../IMG/joao-reguengos-WqasS6cw3wo-unsplash\ 1.png);
+    width: 90%;
+    height: 1200px;
+    
+
+}
+
+nav{
+
+   position: relative;
+   top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    gap: 90px;
+    box-shadow: 0 4px 8px 2px rgb(92, 92, 92);
+
+    
+}
+
+
+nav a{
+    text-decoration: none;
+    
+}
+
+nav a:focus,
+nav button:active{
+
+    background: none;
+    outline: none;
+
+}
+
+
+nav #link{
+
+  position: relative;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+  transition: color 0.3s;
+  cursor: pointer;
+
+}
+
+
+nav #link:hover{
+
+    color: orange;
+    border-radius: 20px;
+    padding: 5px;
+
+
+}
+
+nav #link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: orange;
+  border-radius: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+nav #link:hover::after {
+  width: 100%;
+}
+
+nav img{
+
+    width: 192px;
+    height: 49px;
+    justify-content: space-between;
+
+}
+
+
+nav #adotar{
+
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #3746A4;
+    height: 56px;
+    width: 218px;
+    font-weight: bold;
+    transition: all 0.3s;
+    color: #3746A4;
+}
+
+nav #entrar{
+
+    background: none;
+    border-radius: 5px;
+    border: 2px solid orange;
+    height: 57px;
+    font-weight: bold;
+    width: 218px;
+    transition: all 0.3s;
+    color: orange;
+}
+
+
+nav button {
+
+    
+      background: none;  
+
+  
+
+}
+
+
+nav #adotar:hover{
+
+    
+    background-color: #3746A4;
+    color: white;
+    cursor: pointer;    
+  
+
+}
+
+nav #entrar:hover{
+
+    
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+  
+
+}
+
+section p{
+
+    text-align: center;
+    width: 60%;
+    color: white;
+    margin: auto;
+    font-size: 40px;
+    margin-top: 50px;
+
+}
+
+section #encontre{
+
+    background: orange;
+    border-radius: 5px;
+    border: 2px solid orange;
+    height: 86px;
+    width: 484px;
+    font-size: 24px;
+    transition: all 0.3s;
+    font-weight: bold;
+    color: white;
+  
+
+}
+
+
+section #encontre:hover{
+
+    
+    background: none;
+    height: 86px;
+    width: 484px;
+    color: white;
+    cursor: pointer;
+
+}
+
+section #achar{
+
+    width: 880px;
+    height: 67px;
+    margin-top: 300px;
+    background: Orange;
+    border-radius: 10px;
+    border: 2px solid orange;
+    padding: 7px;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#botao{
+
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#adocao_pets{
+
+    width: 90%;
+    margin: auto;
+    height: auto;
+    border: 2px solid black;
+    overflow-x: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+    scroll-behavior: smooth;
+
+
+}
+
+.card{
+
+    margin-top: 100px;
+    width: 430px;
+    height: 691px;
+   
+
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 2px rgb(92, 92, 92); 
+    border-radius: 5px;
+
+    position: relative;
+    flex: 0 0 auto;
+
+}
+
+#adocao_pets .card header {
+    display: flex;
+    gap: 200px; 
+    align-items: center; 
+}
+
+#adocao_pets .card header .icon-paw i{
+
+    width: 33.58px;
+    height: 28.52px;
+    color: #FE49C1;
+
+}
+
+#adocao_pets .card header span{
+
+    font-size: 28.67px;
+
+}
+
+#adocao_pets .card img{
+
+    width: 430px;
+    height: 273px;
+
+}
+
+.card-body h3{
+
+    width: 427px;
+    height: 33px;
+    color: #277DA1;
+    text-align: center;
+    font-size: 24;
+    font-weight: lighter;
+
+}
+
+.info-row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 20.07px;
+
+}
+
+.card-body p{
+
+    margin-top: 0px;
+    font-size: 20px;
+    color: black;
+    width: 396px;
+    height: 162px;
+
+}
+
+.card button{
+
+    margin-bottom: 20px;
+    width: 390px;
+    height: 55px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F77F00;
+    border-radius: 5px;
+    transition: all 0.3s;
+
+}
+
+.card button:hover{
+
+    color: white;
+    background-color: #a55500;
+    cursor: pointer;
+
+}
+
+#manual {
+    margin-top: 20px;
+    width: 85%; 
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: absolute;
+
+}
+
+#manual button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #F77F00;
+    background-color: #F77F00;
+    color: black;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#manual button:hover {
+    background-color: #F77F00;
+    color: white;
+    width: 90%;
+    height: 120px;
+}
+
+#voce_sabia{
+
+ 
+    margin: auto;
+    width: 90%;
+    height: 1000px;
+    border: 2px solid black;
+}
+
+
+#voce_sabia h1{
+
+
+    border-radius: 5px;
+    border: 5px solid #F77F00;
+    background-color: #FE9516;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 341px;
+    height: 79px;
+    color: white;
+    margin-top: 80px;
+
+}
+
