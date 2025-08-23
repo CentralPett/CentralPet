@@ -1,0 +1,220 @@
+/* =================================
+   CONFIGURAÇÕES GLOBAIS E SEU NAVBAR
+   ================================= */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #ffffff; /* Corrigido: Adicionei um fundo branco */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #ff7a00;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: #ff7a00;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* =================================
+   SEU HERO SECTION
+   ================================= */
+
+.hero {
+  background: #2196f3;
+  padding: 30px 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero h1 {
+  /* Simplificado para usar o H1 direto */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* =================================
+   ADIÇÃO: LAYOUT DA PÁGINA
+   (Esta é a parte nova e mais importante)
+   ================================= */
+.content-container {
+  display: flex; /* CRIA O LAYOUT DE DUAS COLUNAS */
+  gap: 30px;
+  padding: 30px 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fe49;
+}
+
+/* =================================
+   ADIÇÃO: BARRA DE FILTROS (SIDEBAR)
+   ================================= */
+.sidebar {
+  width: 280px;
+  flex-shrink: 0; /* Impede que a barra encolha */
+  background-color: #3a4f6a; /* Cor escura do exemplo original */
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.sidebar .filter-group {
+  margin-bottom: 15px;
+}
+
+.sidebar input,
+.sidebar select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-filtro {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #3a4f6a;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* =================================
+   SEU CÓDIGO DE CARDS, AGORA NUMA GRID
+   ================================= */
+
+.pets-grid {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  ); /* Aumentei um pouco a largura mínima */
+  gap: 25px; /* Aumentei o espaçamento */
+  align-items: start; /* Alinha os cards no topo da célula da grade */
+}
+
+/* --- O Card (Container Principal) --- */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Faz o card ocupar a altura da célula da grade */
+}
+
+/* --- Cabeçalho do Card (Nome + Pata) --- */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* --- Imagem do Pet --- */
+.card #image-pet {
+  width: 100%;
+  height: 250px; /* Altura fixa para a imagem */
+  object-fit: cover;
+}
+
+/* --- Corpo do Card (Informações) --- */
+.card-body {
+  padding: 15px 20px;
+  text-align: center;
+  flex-grow: 1; /* Faz o corpo crescer e empurrar o botão para baixo */
+}
+
+.shelter-link {
+  display: block;
+  color: #00aeef;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.pet-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  font-size: 14px;
+}
+
+.heart-icon {
+  font-size: 24px;
+  color: #ff8c00; /* Laranja do coração */
+}
+
+/* --- Botão "EU QUERO" --- */
+.btn-quero {
+  background: #ff8c00; /* Laranja vibrante */
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* Margem para dar o espaçamento nas laterais e embaixo */
+  margin: 0 20px 20px 20px;
+}
+
+.btn-quero:hover {
+  background: #e67e00; /* Laranja um pouco mais escuro */
+}
