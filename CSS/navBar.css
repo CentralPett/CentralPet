@@ -1,0 +1,122 @@
+#barra-navegacao{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0px;
+    margin: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, .25);
+}
+
+#barra-navegacao img{
+    width: 120px;
+}
+#barra-navegacao #logo{
+    display: flex;
+}
+
+#barra-navegacao .botao{
+    text-decoration: none;
+}
+
+#barra-navegacao .botao #entrar{
+    background-color: white;
+    color: #F77F00;
+    transition: color .3s ease-in-out;
+    transition: background-color.3s ease-in-out;
+}
+#barra-navegacao .botao #adotar-agora{
+    color: #3746A4;
+    background-color: white;
+    transition: color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+
+#barra-navegacao .botao:hover #entrar{
+    background-color: #F77F00;
+    color: white;
+    transition: .25s ease-in;
+}
+
+#barra-navegacao .botao:hover #adotar-agora{
+    background-color: #3746A4;
+    color: white;
+    transition: .25s ease-in;
+}
+
+#barra-navegacao #option{
+    text-decoration: none;
+    font-size: 12px;
+    text-align: start;
+    position: relative;
+    color: black;
+    transition: color .3s ease-in-out;
+}
+
+#barra-navegacao #option:hover{
+    transition: .25s ease-in;
+    color: #F77F00;
+}
+
+#barra-navegacao #option::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0px;
+    background-color: #F77F00;
+    transition: width 0.3s ease-in-out;
+}
+#barra-navegacao #option:hover::after{
+    width: 100%;
+    transition: .25s ease-in;
+
+}
+
+
+#adotar-agora, #entrar{
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    width: 150px;
+    height: auto;
+    padding: 8px 0px;
+    text-align: center;
+   
+ 
+}
+
+#adotar-agora p, #entrar p{
+    font-weight: 600;
+
+ 
+}
+
+#adotar-agora{
+    border-color: #3746A4;
+    font-size: 16px;
+
+
+
+
+}
+#adotar-agora p{
+    color: #3746A4;
+}
+
+#entrar{
+
+    border-color: #F77F00;
+    font-size: 16px;
+
+
+}
+
+#entrar p{
+    color: #F77F00;
+    
+}
