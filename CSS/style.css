@@ -5,36 +5,33 @@
   box-sizing: border-box;
   
 }
-
-
 main {
   width: 100%;
   margin: auto;
   height: auto;
- 
-
+  display: flex;
+  flex-direction: column;
 }
 
 #inicio {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   margin: auto;
   background-image: url(../IMG/joao-reguengos-WqasS6cw3wo-unsplash\ 1.png);
-  width: 90%;
+  width: 100%;
   height: 1000px;
-  border: 2px solid black;
+
 }
 
 
-section p {
+#inicio p {
   text-align: center;
   width: 60%;
   color: white;
   margin: auto;
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 section #encontre {
@@ -57,13 +54,34 @@ section #encontre:hover {
   cursor: pointer;
 }
 
-section #achar {
-  width: 880px;
+#subtitulo{
+  position: absolute;
+  top: 930px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 800px;
   height: 67px;
-  margin-top: 300px;
-  background: Orange;
-  border-radius: 10px;
-  border: 2px solid orange;
+  background: #FE9516;
+  border-radius: 5px;
+  border: 5px solid #DB780F;
+  padding: 7px;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#subtitulo2{
+  position: absolute;
+  top: 1800px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 800px;
+  height: 67px;
+  background: #FE9516;
+  border-radius: 5px;
+  border: 5px solid #DB780F;
   padding: 7px;
   font-weight: bold;
   color: white;
@@ -81,11 +99,10 @@ section #achar {
 }
 
 #adocao_pets {
-  width: 80%;
+  width: 100%;
   margin: auto;
   height: auto;
-  border: 2px solid black;
-  overflow-x: auto;
+  /*border: 1px solid black;*/
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -95,15 +112,14 @@ section #achar {
 }
 
 .card {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 430px;
   height: 691px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px 2px rgb(92, 92, 92);
+  box-shadow: 0 0px 25px 0px rgba(92, 92, 92, .25);
   border-radius: 5px;
 
   position: relative;
@@ -177,13 +193,15 @@ section #achar {
 }
 
 #manual {
-  width: 90%;
-  margin: auto;
+  position: absolute;
+  top: 1200px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
+
   position: absolute;
 }
 
@@ -203,4 +221,11 @@ section #achar {
 #manual button:hover {
   background-color: #f77f00;
   color: white;
+}
+
+#voceSabia{
+  margin: 150px auto;
+  border: 1px solid red;
+  width: 90%;
+  height: 1500px;
 }
