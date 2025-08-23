@@ -3,12 +3,15 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  
 }
+
 
 main {
   width: 100%;
   margin: auto;
   height: auto;
+ 
 
 }
 
@@ -24,106 +27,6 @@ main {
   border: 2px solid black;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 10px;
-  width: 95%;
-  height: 80px;
-  background-color: white;
-  border-radius: 5px;
-  gap: 90px;
-  box-shadow: 0 4px 8px 2px rgb(92, 92, 92);
-}
-
-nav a {
-  text-decoration: none;
-}
-
-nav a:focus,
-nav button:active {
-  background: none;
-  outline: none;
-}
-
-nav #link {
-  position: relative;
-  color: black;
-  font-size: 16px;
-  text-align: center;
-  padding: 5px;
-  transition: color 0.3s;
-  cursor: pointer;
-}
-
-nav #link:hover {
-  color: orange;
-  border-radius: 20px;
-  padding: 5px;
-}
-
-nav #link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: orange;
-  border-radius: 20px;
-  transition: width 0.3s ease-in-out;
-}
-
-nav #link:hover::after {
-  width: 100%;
-}
-
-nav img {
-  width: 192px;
-  height: 49px;
-  justify-content: space-between;
-}
-
-nav #adotar {
-  background: none;
-  border-radius: 5px;
-  border: 2px solid #3746a4;
-  height: 56px;
-  width: 218px;
-  font-weight: bold;
-  transition: all 0.3s;
-  color: #3746a4;
-}
-
-nav #entrar {
-  background: none;
-  border-radius: 5px;
-  border: 2px solid orange;
-  height: 57px;
-  font-weight: bold;
-  width: 218px;
-  transition: all 0.3s;
-  color: orange;
-}
-
-nav button {
-  background: none;
-}
-
-nav #adotar:hover {
-  background-color: #3746a4;
-  color: white;
-  cursor: pointer;
-}
-
-nav #entrar:hover {
-  background-color: orange;
-  color: white;
-  cursor: pointer;
-}
 
 section p {
   text-align: center;
