@@ -6,8 +6,8 @@
   
 }
 html {
-    font-size: 100%; /* Garante tamanho base de 16px */
-    -webkit-text-size-adjust: 100%; /* Prevende zoom automático iOS */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%; 
     -ms-text-size-adjust: 100%;
 }
 
