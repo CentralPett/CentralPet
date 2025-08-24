@@ -303,7 +303,7 @@ section #encontre:hover {
   background-repeat: no-repeat;
   padding-top: 150px;
   width: 100%;
-  height: 1000px;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
