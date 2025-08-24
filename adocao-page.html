@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Adoção</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/adocao-page.css" />
+    <link rel="stylesheet" href="CSS/navBar.css" />
   </head>
 
   <body>
     <header class="navbar">
-      <img src="IMG/Logoo.jpg" alt="Logo" class="logo-img" />
-      <nav class="menu">
-        <a href="#">CUIDADOS</a>
-        <a href="#">SITES PARCEIROS</a>
-        <a href="#">BLOG</a>
-        <a href="#">CONTATO</a>
+      <nav id="barra-navegacao">
+        <a href="./index.html" id="logo">
+          <img src="./IMG/logoCentralPet.svg" alt="" />
+        </a>
+        <a id="option" href="">ANTES DE ADOTAR</a>
+        <a id="option" href="">SITES PARCEIROS</a>
+        <a id="option" href="">BLOG</a>
+        <a id="option" href="./equipe.html">EQUIPE</a>
+        <a href="" class="botao">
+          <div id="entrar">ENTRAR</div>
+        </a>
       </nav>
-      <button class="btn-login">ENTRAR</button>
     </header>
 
     <main>
@@ -87,32 +88,520 @@
           <button class="btn-filtro">APLICAR FILTRO</button>
         </aside>
 
+        <!-- GRID DOS PETS -->
         <section class="pets-grid">
           <div class="card">
             <div class="card-header">
-              <h3>Gin</h3>
+              <h3>Bolinha</h3>
               <div>
-                <img src="IMG/Vector (3).png" alt="" class="paw-icon" />
+                <img
+                  src="IMG/macho.png"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
               </div>
             </div>
+            <img
+              src="IMG/pets-grid/6f26ad22-d0a0-4231-a543-6ffe0decac7a.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">AdotePetz</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Médio</span>
+                <strong>3 anos</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
 
-            <img src="IMG/image 22.png"alt="Cachorro para adoção"id="image-pet"/>
+          <div class="card">
+            <div class="card-header">
+              <h3>Akim</h3>
+              <div>
+                <img
+                  src="IMG/macho.png"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/39d38de7-7b5b-4025-9847-44736fb60c15.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">AdotePetz</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Médio</span>
+                <strong>2 meses</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
 
+          <div class="card">
+            <div class="card-header">
+              <h3>Amora</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/b5986f2c-a448-4015-bc29-955932bd4a1a.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">AdotePetz</a>
+              <div class="pet-details">
+                <strong>Uberlândia, MG</strong>
+                <span>Médio</span>
+                <strong>10 meses</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Anila</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/anila.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link"> AdotePetz</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Médio</span>
+                <strong>4 meses</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Lina</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/lina.webp"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">Adotar</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Médio</span>
+                <strong>3 anos</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Mel</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/mel.webp"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">Adotar</a>
+              <div class="pet-details">
+                <strong>Brasília, DF</strong>
+                <span>Médio</span>
+                <strong>1 ano</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Pituca</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/pituca.webp"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">Adotar</a>
+              <div class="pet-details">
+                <strong>Brasília, DF</strong>
+                <span>Pequeno</span>
+                <strong>< 2 meses</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Zézinho</h3>
+              <div>
+                <img
+                  src="IMG/macho.png"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/zezinho.webp"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">Adotar</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Pequeno</span>
+                <strong>6 meses</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Dengosa</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/a9cb0013-e6bf-4fb0-ba33-5010070d917b.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">Adotar</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Grande</span>
+                <strong>2 anos</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Aurora</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/aurora.jpeg"
+              alt="Gato para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">AdotePetz</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Pequeno</span>
+                <strong>7 meses</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Batatinha</h3>
+              <div>
+                <img
+                  src="IMG/macho.png"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/batatinha.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">AdotePetz</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Médio</span>
+                <strong>10 meses</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Billy</h3>
+              <div>
+                <img
+                  src="IMG/macho.png"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/bdb05005-f607-4f2b-9ec7-f021fb58c987.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">AdotePetz</a>
+              <div class="pet-details">
+                <strong>Rio Claro, SP</strong>
+                <span>Médio</span>
+                <strong>2 anos</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Emilia</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/emilia.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">AdotePetz</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Médio</span>
+                <strong> 1 ano</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Conan</h3>
+              <div>
+                <img
+                  src="IMG/macho.png"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/conana.jpeg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">AdotePetz</a>
+              <div class="pet-details">
+                <strong>São Paulo, SP</strong>
+                <span>Pequeno</span>
+                <strong>6 meses</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Stella</h3>
+              <div>
+                <img
+                  src="IMG/femea.svg"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/stella.png"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
             <div class="card-body">
               <a href="#" class="shelter-link">Cobasi</a>
               <div class="pet-details">
-                <span>São Paulo, SP</span>
-                <span>Médio</span>
-                <span>4 anos</span>
-                <img src="IMG/Vector.png" alt="">
-                </span>
+                <strong>São Paulo, SP</strong>
+                <span>Grande</span>
+                <strong>2 anos</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
               </div>
             </div>
+            <button class="btn-quero">EU QUERO</button>
+          </div>
 
+          <div class="card">
+            <div class="card-header">
+              <h3>Balu</h3>
+              <div>
+                <img
+                  src="IMG/macho.png"
+                  alt="Ícone de gênero"
+                  class="paw-icon"
+                />
+              </div>
+            </div>
+            <img
+              src="IMG/pets-grid/IMG_20250531_124232_9674c04d11.jpg"
+              alt="Cachorro para adoção"
+              class="image-pet"
+            />
+            <div class="card-body">
+              <a href="#" class="shelter-link">Cobasi</a>
+              <div class="pet-details">
+                <strong>Sorocaba, SP</strong>
+                <span>Médio</span>
+                <strong>4 anos</strong>
+                <img
+                  src="IMG/coracao-vazio.png"
+                  alt="Adicionar aos favoritos"
+                />
+              </div>
+            </div>
             <button class="btn-quero">EU QUERO</button>
           </div>
         </section>
       </div>
     </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="IMG/Frame 194.png" alt="" />
+          </a>
+        </div>
+        <nav class="footer-links">
+          <a href="#">ONGs/Protetores</a>
+          <a href="#">Histórias de Adoção</a>
+          <a href="#">Redes Sociais</a>
+          <a href="#">Quero Doar</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
