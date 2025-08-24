@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main{
+  width: 100%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+#barra-navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 16px;
+    margin: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, .25);
+    position: fixed;
+    width: auto;
+    left: 2.5%;
+    right: 2.5%;
+    transform: none;
+    z-index: 1000;
+    background-color: white;
+}
+
+#barra-navegacao img{
+    width: 120px;
+}
+#barra-navegacao #logo{
+    display: flex;
+}
+
+#barra-navegacao .botao{
+    text-decoration: none;
+}
+
+#barra-navegacao .botao #entrar{
+    background-color: white;
+    color: #F77F00;
+    transition: color .3s ease-in-out;
+    transition: all 3s ease-in-out;
+}
+#barra-navegacao .botao #adotar-agora{
+    color: #3746A4;
+    background-color: white;
+    transition: color .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#barra-navegacao .botao:hover #entrar{
+    background-color: #F77F00;
+    color: white;
+    transition: .3s ease-in;
+}
+
+#barra-navegacao .botao:hover #adotar-agora{
+    background-color: #3746A4;
+    color: white;
+    transition: .3s ease-in;
+}
+
+#barra-navegacao .option{
+    text-decoration: none;
+    font-size: .9em;
+    text-align: start;
+    position: relative;
+    color: black;
+    transition: color .3s ease-in-out;
+}
+
+#barra-navegacao .option:hover{
+    transition: .0.3s ease-in;
+    color: #F77F00;
+}
+
+#barra-navegacao .option::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0px;
+    background-color: #F77F00;
+    transition: width 0.3s ease-in-out;
+}
+#barra-navegacao .option:hover::after{
+    width: 100%;
+    transition: .25s ease-in;
+
+}
+
+
+#barra-navegacao #adotar-agora, #barra-navegacao #entrar{
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    width: 150px;
+    height: auto;
+    padding: 8px 0px;
+    text-align: center;
+   
+}
+
+#barra-navegacao #adotar-agora p, #entrar p{
+    font-weight: 600;
+
+}
+
+#barra-navegacao #adotar-agora{
+    border-color: #3746A4;
+    font-size: 1em;
+
+}
+#barra-navegacao #adotar-agora p{
+    color: #3746A4;
+}
+
+#barra-navegacao #entrar{
+
+    border-color: #F77F00;
+    font-size: 16px;
+
+
+}
+
+#barra-navegacao #entrar p{
+    color: #F77F00;
+    
+}
+
+    .hamburguer{
+        display: none;
+        border: none;
+        background-color: none;
+        border-top: 3px solid #000;
+        cursor: pointer;
+    }
+
+    .hamburguer::before,
+    .hamburguer::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin-top: 5px;
+    }
+
+#carrosel{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+#carrosel .card {
+
+    flex: 0 0 auto;
+    padding-top: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#carrosel .card .text {
+    padding-top: 95px;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+#carrosel .card img{
+    width: 50%;
+    height: 655px;
+}
+
+#carrosel .card h1{
+    font-size: 40px;
+    font-weight: bold;
+    height: 106px;
+    width: 725px;
+}
+
+#carrosel .card p{
+    font-size: 20px;
+    font-weight: medium;
+    height: 72px;
+    width: 596px;
+    margin-top: 30px;
+}
+
+#carrosel .card .pet{
+    
+    color: #3746A4;
+    font-size: 20px;
+    height: 23px;
+    width: 725px;
+    margin-top: 30px;
+
+}
+
+#carrosel .card .leia{
+    width: 202.5px;
+    height: 58.88px;
+    background-color: #f67f00;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 28.72px;
+    border-radius: 2.87px;
+
+}
+
+
+#left{
+    background-color: #3746A4;
+    color: white;
+    border-radius: 80.29px;
+    width: 78px;
+    height: 76.47px;
+    position: absolute;
+    left: 15px;
+     top: 320px;
+     cursor: pointer;
+}
+
+#right{
+    background-color: #3746A4;
+    color: white;
+    border-radius: 80.29px;
+    width: 78px;
+    height: 76.47px;
+    position: absolute;
+    left: 95%;
+    top: 320px;
+    cursor: pointer;
+}
+
+#noticia{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card_noticia{
+    margin-top: 30px;
+    width: 514px;
+    height: 420px;
+    flex: 0 0 calc(33.333% - 20px);
+    
+}
+
+.card_noticia img{
+    width: 514px;
+    height: 288px;
+    box-shadow: 2px 2px 2px 2px rgb(222, 220, 220);
+}
+
+.card_noticia .pet{
+    color: #3746A4;
+    font: 16px;
+    margin-left: 25%;
+
+}
+
+.card_noticia h3{
+    font-size: 20px;
+    font-weight: medium;
+    height: 48px;
+    width: 514px;
+}
+
+.card_noticia button{
+    width: 141px;
+    height: 41px;
+    background-color: #3746A4;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.site-footer {
+margin-top: 20px;
+  background-color: #0d6efd;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 40px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.footer-logo a img {
+  width: 10rem;
+}
+
+
+@media(max-width: 1366px){
+
+    #carrosel{
+        position: relative;
+    }
+
+#carrosel .card img{
+    width: 782px;
+    height: 455px;
+    margin-right: 18px;
+}
+
+#carrosel .card h1{
+    font-size: 30px;
+    width: 625px;
+}
+
+#carrosel .card p{
+    font-size: 16px;
+    width: 496px;
+}
+
+#carrosel .card .pet{
+    
+    font-size: 16px;
+
+}
+
+#carrosel .card .leia{
+    width: 182.5px;
+
+}
+
+
+#left{
+    width: 78px;
+    height: 76.47px;
+    left: 15px;
+     top: 320px;
+     position: fixed;
+     z-index: 10;
+}
+
+#right{
+
+    width: 78px;
+    height: 76.47px;
+    left: 93%;
+    top: 320px;
+    position: fixed;
+    z-index: 10;
+  
+}
+
+#carrosel .card {
+    margin-right: 1%;
+}
+
+#noticia{
+    width: 100%;  
+    gap: 10px;
+}
+
+.card_noticia{
+    width: 414px;
+    height: 320px;  
+}
+
+.card_noticia img{
+    width: 414px;
+    height: 188px;
+}
+
+.card_noticia .pet{
+    font: 12px;
+}
+
+.card_noticia h3{
+    font-size: 16px;
+}
+
+}
+
+@media(max-width: 750px) {
+
+.hamburguer {
+  display: block;
+  z-index: 1;
+  margin-left: 200px;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin-top: 5px;
+}
+
+#nav-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  clip-path: circle(0 at top right);
+  pointer-events: none;
+  transition: clip-path 0.5s ease-in-out;
+}
+
+#barra-navegacao.active #nav-list {
+  clip-path: circle(150% at top right);
+  pointer-events: all;
+}
+
+#carrosel{
+        position: relative;
+    }
+
+
+#carrosel .card .text {
+    padding-top: 10px;
+}
+
+#carrosel .card img{
+    width: 492px;
+    height: 344px;
+    margin-right: 32%;
+}
+
+#carrosel .card h1{
+    font-size: 20px;
+    width: 300px;
+    margin-left:  10%;
+}
+
+#carrosel .card p{
+    font-size: 14px;
+    width: 400px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#carrosel .card .pet{
+    
+    font-size: 14px;
+
+}
+
+#carrosel .card .leia{
+    width: 142.5px;
+    margin-left: 10%;
+
+}
+
+#carrosel .card{
+
+    flex-direction: column;
+
+}
+
+#right{
+    left: 80%;
+}
+
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px 40px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.footer-logo a img {
+  width: 6rem;
+}
+
+}
