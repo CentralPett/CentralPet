@@ -61,17 +61,12 @@
 }
 
 .hero h1 {
-  /* Simplificado para usar o H1 direto */
   font-size: 24px;
   font-weight: bold;
 }
 
-/* =================================
-   ADIÇÃO: LAYOUT DA PÁGINA
-   (Esta é a parte nova e mais importante)
-   ================================= */
 .content-container {
-  display: flex; /* CRIA O LAYOUT DE DUAS COLUNAS */
+  display: flex;
   gap: 30px;
   padding: 30px 40px;
   max-width: 1600px;
@@ -79,13 +74,10 @@
   background-color: #fe49;
 }
 
-/* =================================
-   ADIÇÃO: BARRA DE FILTROS (SIDEBAR)
-   ================================= */
 .sidebar {
   width: 280px;
-  flex-shrink: 0; /* Impede que a barra encolha */
-  background-color: #3a4f6a; /* Cor escura do exemplo original */
+  flex-shrink: 0;
+  background-color: #3a4f6a;
   padding: 20px;
   border-radius: 8px;
   height: fit-content;
@@ -117,22 +109,14 @@
   margin-top: 10px;
 }
 
-/* =================================
-   SEU CÓDIGO DE CARDS, AGORA NUMA GRID
-   ================================= */
-
 .pets-grid {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(280px, 1fr)
-  ); /* Aumentei um pouco a largura mínima */
-  gap: 25px; /* Aumentei o espaçamento */
-  align-items: start; /* Alinha os cards no topo da célula da grade */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  align-items: start;
 }
 
-/* --- O Card (Container Principal) --- */
 .card {
   background: #fff;
   border-radius: 12px;
@@ -140,10 +124,9 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Faz o card ocupar a altura da célula da grade */
+  height: 100%;
 }
 
-/* --- Cabeçalho do Card (Nome + Pata) --- */
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -157,18 +140,16 @@
   color: #333;
 }
 
-/* --- Imagem do Pet --- */
 .card #image-pet {
   width: 100%;
-  height: 250px; /* Altura fixa para a imagem */
+  height: 250px;
   object-fit: cover;
 }
 
-/* --- Corpo do Card (Informações) --- */
 .card-body {
   padding: 15px 20px;
   text-align: center;
-  flex-grow: 1; /* Faz o corpo crescer e empurrar o botão para baixo */
+  flex-grow: 1;
 }
 
 .shelter-link {
@@ -189,12 +170,11 @@
 
 .heart-icon {
   font-size: 24px;
-  color: #ff8c00; /* Laranja do coração */
+  color: #ff8c00;
 }
 
-/* --- Botão "EU QUERO" --- */
 .btn-quero {
-  background: #ff8c00; /* Laranja vibrante */
+  background: #ff8c00;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
@@ -203,10 +183,52 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
-  /* Margem para dar o espaçamento nas laterais e embaixo */
   margin: 0 20px 20px 20px;
 }
 
 .btn-quero:hover {
-  background: #e67e00; /* Laranja um pouco mais escuro */
+  background: #e67e00;
+}
+
+.site-footer {
+  background-color: #0d6efd;
+  color: white;
+  padding: 40px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 40px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
