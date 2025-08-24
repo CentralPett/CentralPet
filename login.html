@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/base.css" type="text/css" />
-    <link rel="stylesheet" href="css/Principal.css" type="text/css" />
-    <link rel="stylesheet" href="css/login.css" type="text/css" />
-
+    <link rel="stylesheet" href="CSS/login.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/fonts.css" type="text/css" />
+    
 </head>
 <body>
     <main class="login">
         <section class="login_esquerdo">
 
             <div class="card">
-                <img class="card_logo" src="../img/centralpet.svg" alt="CentralPet">
-                <h1>Seja Bem-Vindo(a)!</h1>
-
+                <div class="container">
+                    <div class="botao_voltar">
+                    <a href="">
+                        <img class="seta" src="../img/seta_botao_voltar.svg">
+                    </a>
+                    </div>
+                    <img class="card_logo" src="../img/centralpet.svg" alt="CentralPet">
+                </div>
+                    <h1>Bem-Vindo(a)!</h1>
+                
                 <form class="formulario_card" action="#" method="post" novalidate>
                     <div class="formulario_grupo">
                         <label for="email">E-mail</label>
@@ -35,7 +41,11 @@
                     </form>
             </div>
         </section>
-        <section class="login_direito"></section>
+        <section class="login_direito">
+            <div class="conjunto_frases">
+                <img src="../img/frase_login.svg">
+            </div>
+        </section>
     </main>
 </body>
 </html>
