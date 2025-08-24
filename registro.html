@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/login.css" type="text/css" />
+    <title>Registro CentralPet</title>
+    <link rel="stylesheet" href="CSS/registro.css" type="text/css" />
     <link rel="stylesheet" href="CSS/fonts.css" type="text/css" />
     
 </head>
 <body>
-    <main class="login">
-        <section class="login_esquerdo">
+    <main class="main">
+        <section class="background_esquerdo">
 
             <div class="card">
                 <div class="container">
@@ -23,6 +23,18 @@
                 </div>
                     <h1>Bem-Vindo(a)!</h1>
                 
+                <form class="formulario_card" action="#" method="post" novalidate>
+                    <div class="formulario_grupo">
+                        <label for="email">Nome completo</label>
+                        <input 
+                        id="nome"
+                        name="nome"
+                        type="text"
+                        autocomplete="nome" 
+                        required
+                    >
+                    </div>
+
                 <form class="formulario_card" action="#" method="post" novalidate>
                     <div class="formulario_grupo">
                         <label for="email">E-mail</label>
@@ -46,14 +58,25 @@
                     >
                     </div>
 
+                     <div class="formulario_grupo">
+                        <label for="senha">Confirme sua senha</label>
+                        <input 
+                        id="senha" 
+                        name="senha" 
+                        type="password" 
+                        autocomplete="current-password" 
+                        required
+                    >
+                    </div>
+
                     <div class="formulario_acoes">
-                        <a class="link" href="#">Não tenho conta</a>
-                        <button type="submit" class="botao_entrar">Entrar</button>
+                        <a class="link" href="#">Já tenho conta</a>
+                        <button type="submit" class="botao_entrar">Próximo</button>
                         </div>
                     </form>
             </div>
         </section>
-        <section class="login_direito">
+        <section class="background_direito">
             <div class="conjunto_frases">
                 <img src="../img/frase_login.svg">
             </div>
