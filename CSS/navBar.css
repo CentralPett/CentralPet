@@ -5,16 +5,28 @@
   justify-content: space-around;
   align-items: center;
   padding: 16px 16px;
-  margin: 16px;
+  margin: 16px auto;
   border-radius: 5px;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5);
   position: fixed;
-  width: auto;
-  left: 2.5%;
-  right: 2.5%;
+  width: 95%;
+  left: 0;
+  right: 0;
   transform: none;
   z-index: 1000;
   background-color: white;
+  transition: .25s ease-in-out;
+}
+
+#barra-navegacao.scrolled{
+  left: 0;
+  right: 0;
+  padding: 4px 16px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+  background-color: white;
+  transition: .25s ease-in;
 }
 
 #barra-navegacao img {
