@@ -227,7 +227,32 @@ section #encontre:hover {
 
 #voceSabia{
   margin: 150px auto;
-  border: 1px solid red;
   width: 90%;
-  height: 1500px;
+  height: auto;
+  background-image: url(../IMG/fundoVoceSabia.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#voceSabia .voceSabiaDiv{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+}
+
+.voceSabiaDiv img{
+  width: 35%;
+  height: 400x;
+  border-radius: 5px;
+}
+
+.voceSabiaDiv p{
+  font-size: 1.5em;
+  width: 60%;
+  height: 400x;
+  border-radius: 5px;
 }
