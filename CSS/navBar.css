@@ -1,3 +1,4 @@
+
 #barra-navegacao {
   display: flex;
   flex-direction: row;
@@ -221,6 +222,3 @@ button.navbar-toggler.custom-toggler:focus {
 
   color: white;
 }
-
-
-
