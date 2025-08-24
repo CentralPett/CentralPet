@@ -74,6 +74,23 @@ section #encontre:hover {
   text-align: center;
 }
 
+#subtitulo3{
+  margin: 125px  auto 80px auto;
+  width: 900px;
+  height: 67px;
+  background: #FE9516;
+  border-radius: 5px;
+  border: 5px solid #DB780F;
+  padding: 7px;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  
+
+}
+
 #subtitulo2{
   position: absolute;
   top: 1800px;
@@ -266,4 +283,64 @@ section #encontre:hover {
   width: 60%;
   height: 400x;
   border-radius: 5px;
+}
+
+#carrousel-card{
+  width: 100%;
+  height: 900px;
+  border: 1px solid red;
+}
+
+#confiar-section{
+  background-image: url(../IMG/fundoConfiarSection.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20%;
+}
+
+#confiar-section .card{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-direction: column;
+  margin-top: 150px;
+  box-shadow: 0px 0px 25px 0px rgba(92, 92, 92, .25);
+
+  width: 550px;
+  height: 400px;
+  margin: 20px;
+  padding: 32px 32px;
+  transition: .3s ease-in-out;
+}
+
+#confiar-section .card img{
+  width: 150px;
+  height: 150px;
+}
+
+#confiar-section .card:hover{
+  transition: .25s ease-in;
+  border-color: #f77f00;
+  border-width: 2px;
+  padding-top: 0px;
+ 
+}
+
+#card-tittle{
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+#card-desc{
+  text-align: center;
+  font-size: 1.5em;
 }
