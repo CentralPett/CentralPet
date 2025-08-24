@@ -11,11 +11,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background-color: #ffffff; /* Corrigido: Adicionei um fundo branco */
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .menu {
@@ -48,10 +48,6 @@
 .menu a:hover::after {
   width: 100%;
 }
-
-/* =================================
-   SEU HERO SECTION
-   ================================= */
 
 .hero {
   background: #2196f3;

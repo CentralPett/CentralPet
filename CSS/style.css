@@ -2,137 +2,38 @@
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
+  
 }
+
 
 main {
   width: 100%;
   margin: auto;
   height: auto;
-  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 #inicio {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   margin: auto;
   background-image: url(../IMG/joao-reguengos-WqasS6cw3wo-unsplash\ 1.png);
-  width: 90%;
-  height: 1000px;
-  border: 2px solid black;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 10px;
-  width: 95%;
-  height: 80px;
-  background-color: white;
-  border-radius: 5px;
-  gap: 90px;
-  box-shadow: 0 4px 8px 2px rgb(92, 92, 92);
-}
-
-nav a {
-  text-decoration: none;
-}
-
-nav a:focus,
-nav button:active {
-  background: none;
-  outline: none;
-}
-
-nav #link {
-  position: relative;
-  color: black;
-  font-size: 16px;
-  text-align: center;
-  padding: 5px;
-  transition: color 0.3s;
-  cursor: pointer;
-}
-
-nav #link:hover {
-  color: orange;
-  border-radius: 20px;
-  padding: 5px;
-}
-
-nav #link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: orange;
-  border-radius: 20px;
-  transition: width 0.3s ease-in-out;
-}
-
-nav #link:hover::after {
   width: 100%;
+  height: 1000px;
+
 }
 
-nav img {
-  width: 192px;
-  height: 49px;
-  justify-content: space-between;
-}
 
-nav #adotar {
-  background: none;
-  border-radius: 5px;
-  border: 2px solid #3746a4;
-  height: 56px;
-  width: 218px;
-  font-weight: bold;
-  transition: all 0.3s;
-  color: #3746a4;
-}
-
-nav #entrar {
-  background: none;
-  border-radius: 5px;
-  border: 2px solid orange;
-  height: 57px;
-  font-weight: bold;
-  width: 218px;
-  transition: all 0.3s;
-  color: orange;
-}
-
-nav button {
-  background: none;
-}
-
-nav #adotar:hover {
-  background-color: #3746a4;
-  color: white;
-  cursor: pointer;
-}
-
-nav #entrar:hover {
-  background-color: orange;
-  color: white;
-  cursor: pointer;
-}
-
-section p {
+#inicio p {
   text-align: center;
   width: 60%;
   color: white;
   margin: auto;
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 section #encontre {
@@ -155,13 +56,34 @@ section #encontre:hover {
   cursor: pointer;
 }
 
-section #achar {
-  width: 880px;
+#subtitulo{
+  position: absolute;
+  top: 930px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 800px;
   height: 67px;
-  margin-top: 300px;
-  background: Orange;
-  border-radius: 10px;
-  border: 2px solid orange;
+  background: #FE9516;
+  border-radius: 5px;
+  border: 5px solid #DB780F;
+  padding: 7px;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#subtitulo2{
+  position: absolute;
+  top: 1800px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 800px;
+  height: 67px;
+  background: #FE9516;
+  border-radius: 5px;
+  border: 5px solid #DB780F;
   padding: 7px;
   font-weight: bold;
   color: white;
@@ -179,11 +101,10 @@ section #achar {
 }
 
 #adocao_pets {
-  width: 80%;
+  width: 100%;
   margin: auto;
   height: auto;
-  border: 2px solid black;
-  overflow-x: auto;
+  /*border: 1px solid black;*/
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -193,20 +114,25 @@ section #achar {
 }
 
 .card {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 430px;
   height: 691px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px 2px rgb(92, 92, 92);
+  box-shadow: 0 0px 25px 0px rgba(92, 92, 92, .25);
   border-radius: 5px;
-
+  padding-top: 16px;
   position: relative;
   flex: 0 0 auto;
 }
+
+.card header{
+
+  padding-bottom: 16px;
+}
+
 
 #adocao_pets .card header {
   display: flex;
@@ -236,6 +162,7 @@ section #achar {
   text-align: center;
   font-size: 24;
   font-weight: lighter;
+  margin-bottom: 8px;
 }
 
 .info-row {
@@ -249,7 +176,9 @@ section #achar {
 }
 
 .card-body p {
-  margin-top: 0px;
+
+  text-align: center;
+  margin: auto;
   font-size: 20px;
   color: black;
   width: 396px;
@@ -257,7 +186,8 @@ section #achar {
 }
 
 .card button {
-  margin-bottom: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   width: 390px;
   height: 55px;
   color: white;
@@ -266,6 +196,7 @@ section #achar {
   background-color: #f77f00;
   border-radius: 5px;
   transition: all 0.3s;
+
 }
 
 .card button:hover {
@@ -275,13 +206,15 @@ section #achar {
 }
 
 #manual {
-  width: 90%;
-  margin: auto;
+  position: absolute;
+  top: 1200px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
+
   position: absolute;
 }
 
@@ -301,4 +234,36 @@ section #achar {
 #manual button:hover {
   background-color: #f77f00;
   color: white;
+}
+
+#voceSabia{
+  margin: 150px auto;
+  width: 90%;
+  height: auto;
+  background-image: url(../IMG/fundoVoceSabia.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#voceSabia .voceSabiaDiv{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+}
+
+.voceSabiaDiv img{
+  width: 35%;
+  height: 400x;
+  border-radius: 5px;
+}
+
+.voceSabiaDiv p{
+  font-size: 1.5em;
+  width: 60%;
+  height: 400x;
+  border-radius: 5px;
 }

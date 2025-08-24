@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/Principal.css" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,19 +18,29 @@
   </head>
   <body>
     <main>
+      <nav id="barra-navegacao">
+          <a href="./index.html" id="logo">
+              <img src="./IMG/logoCentralPet.svg" alt="">
+          </a>
+          <a id="option" href="">ANTES DE ADOTAR</a>
+          <a id="option" href="">SITES PARCEIROS</a>
+          <a id="option" href="">BLOG</a>
+          <a id="option" href="./equipe.html">EQUIPE</a>
+          
+          <a href="" class="botao">
+              <div id="adotar-agora">
+                  ADOTAR AGORA
+              </div>
+          </a>
+          <a href="" class="botao">
+              <div id="entrar">
+                  ENTRAR
+              </div>
+          </a>
+      </nav>
       <section id="inicio">
-        <nav>
-          <img src="IMG/Logoo.jpg" alt="Logo" />
-          <a href="#" id="link">ANTES DE ADOTAR</a>
-          <a href="#" id="link">SITES PARCEIROS</a>
-          <a href="#" id="link">BLOG</a>
-          <a href="#" id="link">CONTATO</a>
-          <button id="adotar">ADOTAR AGORA</button>
-          <button id="entrar">ENTRAR</button>
-        </nav>
-
         <p>
-          <strong>Unimos</strong> adoradores de animais e ONGs confiáveis para
+          Unimos amigos dos animais e ONGs confiáveis para
           <br />
           garantir pets em <strong>lares seguros e amorosos</strong>, com <br />
           <strong>transparência e cuidado</strong>.
@@ -38,9 +48,10 @@
 
         <div id="botao">
           <button id="encontre">ENCONTRE SEU NOVO AMIGO</button>
-          <h1 id="achar">PETS PARA ADOÇÃO</h1>
         </div>
+
       </section>
+      <h1 id="subtitulo">PETS PARA ADOÇÃO</h1>
       <section id="adocao_pets">
         <div class="card">
           <header>
@@ -91,7 +102,78 @@
           </section>
           <button>Eu Quero</button>
         </div>
-
+        <div class="card">
+          <header>
+            <span>Cotoca</span>
+            <span class="icon-paw"
+              ><i class="fa-solid fa-paw fa-1.5x"></i
+            ></span>
+          </header>
+          <img src="IMG/Satanas.png" alt="animal" />
+          <section class="card-body">
+            <h3>Cobasi</h3>
+            <div class="info-row">
+              <div>São Paulo, Sp</div>
+              <div>Pequeno</div>
+              <div>1 Ano</div>
+            </div>
+            <p>
+              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
+              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
+              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
+              tem o temperamento dócil e é carinhosa.
+            </p>
+          </section>
+          <button>Eu Quero</button>
+        </div>
+        <div class="card">
+          <header>
+            <span>Cotoca</span>
+            <span class="icon-paw"
+              ><i class="fa-solid fa-paw fa-1.5x"></i
+            ></span>
+          </header>
+          <img src="IMG/Satanas.png" alt="animal" />
+          <section class="card-body">
+            <h3>Cobasi</h3>
+            <div class="info-row">
+              <div>São Paulo, Sp</div>
+              <div>Pequeno</div>
+              <div>1 Ano</div>
+            </div>
+            <p>
+              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
+              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
+              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
+              tem o temperamento dócil e é carinhosa.
+            </p>
+          </section>
+          <button>Eu Quero</button>
+        </div>
+        <div class="card">
+          <header>
+            <span>Cotoca</span>
+            <span class="icon-paw"
+              ><i class="fa-solid fa-paw fa-1.5x"></i
+            ></span>
+          </header>
+          <img src="IMG/Satanas.png" alt="animal" />
+          <section class="card-body">
+            <h3>Cobasi</h3>
+            <div class="info-row">
+              <div>São Paulo, Sp</div>
+              <div>Pequeno</div>
+              <div>1 Ano</div>
+            </div>
+            <p>
+              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
+              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
+              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
+              tem o temperamento dócil e é carinhosa.
+            </p>
+          </section>
+          <button>Eu Quero</button>
+        </div>
         <div class="card">
           <header>
             <span>Cotoca</span>
@@ -192,11 +274,30 @@
           <button>Eu Quero</button>
         </div>
       </section>
+      <h1 id="subtitulo2">VOCÊ SABIA?</h1>
+      <!--<div id="manual">
+         <button id="btnLeft"><</button>
+        <button id="btnRight">></button>*/
+      </div>-->
 
-      <div id="manual">
-        <button id="btnLeft">←</button>
-        <button id="btnRight">→</button>
-      </div>
+      <section id="voceSabia">
+        <div class="voceSabiaDiv" id="vsc1" ">
+            <img style="  border: 5px solid rgb(0, 102, 255); " src="./IMG/gatoAcariciado.png" alt="">
+            <p>Quando você <strong>adota</strong> um pet, o ambiente da casa <strong>deve ser preparado antes</strong> mesmo da chegada dele. Animais, especialmente cães e gatos,<strong> percebem cheiros e sons</strong>, e um espaço já familiarizado com objetos seguros </strong>ajuda a reduzir o estresse.<strong></p>
+        </div>
+
+        <div class="voceSabiaDiv" id="vsc2">
+            <p><strong>Pets adotados</strong> costumam criar<strong> laços profundos</strong> com seus tutores, muitas vezes demonstrando<strong> gratidão</strong> com gestos e <strong>comportamentos únicos</strong>.
+            </p>
+            <img style="  border: 5px solid rgb(255, 0, 106); "  src="./IMG/pessoa&Gato.png" alt="">
+        </div>
+        <div class="voceSabiaDiv" id="vsc3">
+          <img style="  border: 5px solid rgb(238, 255, 0); "  src="./IMG/pessoa&Cachorro.png" alt="">
+          <p>Ao adotar de <strong>ONGs e protetores</strong>, você <strong>apoia</strong> o trabalho dessas pessoas que <strong>dedicam tempo</strong> e recursos para <strong>resgatar e cuidar</strong> de animais abandonados.</p>
+        </div>
+        
+                
+      </section>
     </main>
 
     <script src="JS/Principal.js"></script>
