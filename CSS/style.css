@@ -2,9 +2,21 @@
   padding: 0;
   margin: 0;
   border: 0;
-  box-sizing: border-box;
+  
   
 }
+html {
+    font-size: 100%; /* Garante tamanho base de 16px */
+    -webkit-text-size-adjust: 100%; /* Prevende zoom automático iOS */
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 main {
   width: 100%;
   margin: auto;
