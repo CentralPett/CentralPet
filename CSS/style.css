@@ -123,10 +123,16 @@ section #encontre:hover {
   align-items: center;
   box-shadow: 0 0px 25px 0px rgba(92, 92, 92, .25);
   border-radius: 5px;
-
+  padding-top: 16px;
   position: relative;
   flex: 0 0 auto;
 }
+
+.card header{
+
+  padding-bottom: 16px;
+}
+
 
 #adocao_pets .card header {
   display: flex;
@@ -156,6 +162,7 @@ section #encontre:hover {
   text-align: center;
   font-size: 24;
   font-weight: lighter;
+  margin-bottom: 8px;
 }
 
 .info-row {
@@ -169,7 +176,9 @@ section #encontre:hover {
 }
 
 .card-body p {
-  margin-top: 0px;
+
+  text-align: center;
+  margin: auto;
   font-size: 20px;
   color: black;
   width: 396px;
@@ -177,7 +186,8 @@ section #encontre:hover {
 }
 
 .card button {
-  margin-bottom: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   width: 390px;
   height: 55px;
   color: white;
@@ -186,6 +196,7 @@ section #encontre:hover {
   background-color: #f77f00;
   border-radius: 5px;
   transition: all 0.3s;
+
 }
 
 .card button:hover {
