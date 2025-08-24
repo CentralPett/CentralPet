@@ -1,0 +1,85 @@
+#parceiros-sec-exclusiva {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.parceiros-container-exclusiva {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 90%;
+}
+
+.parceiros-titulo-exclusiva {
+  background-color: #a3362c;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 17px 0;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.parceiros-titulo-exclusiva::before,
+.parceiros-titulo-exclusiva::after {
+  content: url("../IMG/patinhas.png");
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffc8c8;
+}
+
+.parceiros-titulo-exclusiva::before {
+  left: 15px;
+}
+
+.parceiros-titulo-exclusiva::after {
+  right: 15px;
+}
+
+.parceiros-grid-exclusiva {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.parceiro-card-exclusiva {
+  background-color: white;
+  min-width: 186px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.parceiro-card-exclusiva:hover {
+  transform: scale(1.03);
+}
+
+.parceiro-logo-exclusiva {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.parceiro-nome-exclusiva {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.parceiro-nota-exclusiva {
+  color: #ff8c00;
+  font-size: 14px;
+}
+@media (max-width:735px){
+  .parceiros-titulo-exclusiva::before,
+  .parceiros-titulo-exclusiva::after {
+  content: none;
+}
+
+}

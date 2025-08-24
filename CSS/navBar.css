@@ -113,3 +113,114 @@
 #barra-navegacao #entrar p {
   color: #f77f00;
 }
+.custom-toggler {
+    display: none;
+  }
+
+@media (max-width: 1300px) {
+  #menu-desktop {
+    display: none !important;
+  }
+  .custom-toggler {
+    display: block;
+  }
+  
+}
+@media (max-width: 486px){
+    .fundo-menu-lateral #option{
+        font-size: 15px;
+    }
+}
+
+
+.navbar-toggler {
+  margin-left: 10px;
+  border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%233746A4' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+button.navbar-toggler.custom-toggler:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px #F77F00 !important;
+}
+
+
+#menuMobile {
+  width: 50%;
+}
+
+.fundo-menu-lateral {
+  background-image: url('../IMG/fundoMenu.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 100%;
+  opacity: 95%;
+  width: 50%;
+}
+
+
+.fundo-menu-lateral .offcanvas-header {
+  border-bottom: 2px solid #F77F00;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.859); 
+}
+
+
+.fundo-menu-lateral .offcanvas-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F77F00;
+}
+
+
+.fundo-menu-lateral #option {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #ed7c03e8;
+  transition: background-color 0.3s ease;
+}
+
+.fundo-menu-lateral #option:hover {
+  background-color: rgba(247, 128, 0, 0.641);
+  color: white;
+}
+
+
+.fundo-menu-lateral .botao #adotar-agora,
+.fundo-menu-lateral .botao #entrar {
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  font-weight: 520;
+  list-style: none;
+ 
+}
+.botao{
+     text-decoration: none !important;
+}
+.fundo-menu-lateral .botao:hover #adotar-agora {
+  background-color: #3746A4;
+
+  color: white;
+}
+
+.fundo-menu-lateral .botao:hover #entrar {
+  background-color: #F77F00;
+
+  color: white;
+}
+
+
+
