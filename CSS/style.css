@@ -3,7 +3,6 @@
   margin: 0;
   border: 0;
   
-  
 }
 
 
@@ -13,6 +12,7 @@ main {
   height: auto;
   display: flex;
   flex-direction: column;
+  
 }
 
 #inicio {
