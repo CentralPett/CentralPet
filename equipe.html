@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./CSS/equipe.css">
     <link rel="stylesheet" href="./CSS/navBar.css">
     <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+
     <title>Equipe</title>
 </head>
 <body>
@@ -28,6 +30,102 @@
             </div>
         </a>
     </nav>
+    <main>
+        <section id="quemSomosTittleBox">
+            <img src="./IMG/patasEquipeEsquerda.png" alt="">
+            <h1>EQUIPE</h1>
+            <img src="./IMG/patasEquipeDireita.png" alt="">
+        </section>
+        <section id="quemSomosBox">
+            <h1>QUEM SOMOS</h1>
+            <h3>Nossa equipe reúne profissionais dedicados em promover a adoção consciente e dar visibilidade a ONGs, protetores e histórias inspiradoras. Entre em contato conosco pelos cartões abaixo e faça parte dessa rede de apoio aos animais.</h3>
+        </section>
+        <section id="quemSomosCardBox">
+            <div class="card">
+                <img id="fotoPerfil" src="./IMG/Cachorro01.jpeg" alt="">
+                <p>Dudu Moreira de Oliveira Santos<br>dudureidelas@gmail.com</p>
+
+                <div id="icones">
+                    <a href=""><img src="./IMG/iconeGithub.svg" alt=""></a>
+                    <a href=""><img src="./IMG/iconeLinkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="fotoPerfil" src="./IMG/Cachorro01.jpeg" alt="">
+                <p>Dudu Moreira de Oliveira Santos<br>dudureidelas@gmail.com</p>
+
+                <div id="icones">
+                    <a href=""><img src="./IMG/iconeGithub.svg" alt=""></a>
+                    <a href=""><img src="./IMG/iconeLinkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="fotoPerfil" src="./IMG/Cachorro01.jpeg" alt="">
+                <p>Dudu Moreira de Oliveira Santos<br>dudureidelas@gmail.com</p>
+
+                <div id="icones">
+                    <a href=""><img src="./IMG/iconeGithub.svg" alt=""></a>
+                    <a href=""><img src="./IMG/iconeLinkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="fotoPerfil" src="./IMG/Cachorro01.jpeg" alt="">
+                <p>Dudu Moreira de Oliveira Santos<br>dudureidelas@gmail.com</p>
+
+                <div id="icones">
+                    <a href=""><img src="./IMG/iconeGithub.svg" alt=""></a>
+                    <a href=""><img src="./IMG/iconeLinkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="fotoPerfil" src="./IMG/Cachorro01.jpeg" alt="">
+                <p>Dudu Moreira de Oliveira Santos<br>dudureidelas@gmail.com</p>
+
+                <div id="icones">
+                    <a href=""><img src="./IMG/iconeGithub.svg" alt=""></a>
+                    <a href=""><img src="./IMG/iconeLinkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="card">
+                <img id="fotoPerfil" src="./IMG/Cachorro01.jpeg" alt="">
+                <p>Dudu Moreira de Oliveira Santos<br>dudureidelas@gmail.com</p>
+
+                <div id="icones">
+                    <a href=""><img src="./IMG/iconeGithub.svg" alt=""></a>
+                    <a href=""><img src="./IMG/iconeLinkedin.svg" alt=""></a>
+                </div>
+            </div>
+
+
+        </section>        
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="IMG/Frame 194.png" alt="" />
+          </a>
+        </div>
+        <nav class="footer-links">
+          <a href="#">ONGs/Protetores</a>
+          <a href="#">Histórias de Adoção</a>
+          <a href="#">Redes Sociais</a>
+          <a href="#">Quero Doar</a>
+        </nav>
+      </div>
+    </footer>
+<!-- Script para modificar a barra de navegação quando rolar para baixo-->
+    <script>
+        const navbar = document.getElementById("barra-navegacao");
+        window.addEventListener("scroll", () =>{
+            if (window.scrollY > 50){
+                navbar.classList.add("scrolled")
+            }else{
+                navbar.classList.remove("scrolled")
+            }
+        })
+    </script>
     
 </body>
 </html>
