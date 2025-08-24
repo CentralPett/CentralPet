@@ -19,27 +19,45 @@ function autoScroll(){
 
 }
 
-const autoScrollInterval = setInterval(autoScroll, intervalTime);
+setInterval(autoScroll, intervalTime);
 
-const btnLeft = document.getElementById('btnLeft');
-const btnRight = document.getElementById('btnRight')
 
-const scrollAmount_2 = 460;
+
+const container_card = document.querySelector('.carrosel_geral_container'); // CORRIGIDO
+const scrollAmount_card = 1960;
+const intervalTime_card = 3000;
+
+let scrollPosition_card = 0;
+let maxScrollLeft_card = container_card.scrollWidth - container_card.clientWidth;
+
+function autoScroll_card(){
+    scrollPosition_card += scrollAmount_card;
+
+    if(scrollPosition_card > maxScrollLeft_card){
+        scrollPosition_card = 0;
+    }
+
+    container_card.scrollTo({
+        left: scrollPosition_card,
+        behavior: 'smooth'
+    });
+}
+
+const autoScrollInterval = setInterval(autoScroll_card, intervalTime_card);
+
+const btnLeft = document.getElementById('left');
+const btnRight = document.getElementById('right');
 
 btnLeft.addEventListener('click', () => {
-
-    container.scrollBy({
-        left: -scrollAmount_2,
+    container_card.scrollBy({
+        left: -scrollAmount_card,
         behavior: 'smooth'
-    })
-
-})
+    });
+});
 
 btnRight.addEventListener('click', () => {
-
-    container.scrollBy({
-        left: scrollAmount_2,
+    container_card.scrollBy({
+        left: scrollAmount_card,
         behavior: 'smooth'
-    })
-
-})
+    });
+});
