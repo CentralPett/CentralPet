@@ -22,7 +22,7 @@ main{
     align-items: center;
     justify-content:space-around;
     background: linear-gradient(to top, #cacc3a .1px,#fff15b 95%);
-    padding: 16px 0px;
+    padding: 4px 0px;
 }
 
 #quemSomosTittleBox h1{

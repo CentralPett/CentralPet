@@ -5,32 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/fonts.css" type="text/css">
     <link rel="stylesheet" href="CSS/Blog.css" type="text/css">
+    <link rel="stylesheet" href="CSS/navBar.css" type="text/css">
      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <title>Blog</title>
+    <link rel="icon" href="./IMG/favicon.ico" type="image/x-icon">
+    <title>CentralPet - Blog</title>
 </head>
 <body>
 
     <main>
-    <nav id="barra-navegacao">
-        <a href="./index.html" id="logo">
-            <img src="./IMG/logoCentralPet.svg" alt="">
-        </a>
-        <button class="hamburguer"></button>
-        <div id="nav-list">
-        <a class="option" href="">ANTES DE ADOTAR</a>
-        <a class="option" href="">SITES PARCEIROS</a>
-        <a class="option" href="">BLOG</a>
-        <a class="option" href="./equipe.html">EQUIPE</a>
-        <a href="" class="botao">
-            <div id="entrar">
-                ENTRAR
-            </div>
-        </a>
-        </div>
-    </nav>
+      <nav id="barra-navegacao">
+          <a href="./index.html" id="logo">
+              <img src="./IMG/logoCentralPet.svg" alt="">
+          </a>
+          <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+          <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+          <a id="option" href="./Blog.html">BLOG</a>
+          <a id="option" href="./equipe.html">EQUIPE</a>
+          
+          <a href="./adocao-page.html" class="botao">
+              <div id="adotar-agora">
+                  ADOTAR AGORA
+              </div>
+          </a>
+          <a href="" class="botao">
+              <div id="entrar">
+                  ENTRAR
+              </div>
+          </a>
+      </nav>
+    </header>
 
     <section id="carrosel">
 
@@ -197,6 +203,16 @@
     </footer>
     
      <script src="JS/Blog.js"></script>
-
+    <!-- Script para modificar a barra de navegação quando rolar para baixo-->
+    <script>
+        const navbar = document.getElementById("barra-navegacao");
+        window.addEventListener("scroll", () =>{
+            if (window.scrollY > 50){
+                navbar.classList.add("scrolled")
+            }else{
+                navbar.classList.remove("scrolled")
+            }
+        })
+    </script>
 </body>
 </html>

@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="CSS/navBar.css">
   <link rel="stylesheet" href="CSS/fonts.css">
   <link rel="stylesheet" href="CSS/footer.css">
-  <title>Antes de Adotar</title>
+  <link rel="icon" href="./IMG/favicon.ico" type="image/x-icon">
+  <title>CentralPet - Antes de Adotar</title>
 </head>
 <body>
 
@@ -17,47 +18,18 @@
   <a href="./index.html" id="logo">
       <img src="./IMG/logoCentralPet.svg" alt="">
   </a>
-  <a id="option" href="">ANTES DE ADOTAR</a>
-  <a id="option" href="">SITES PARCEIROS</a>
-  <a id="option" href="">BLOG</a>
+  <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+  <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+  <a id="option" href="./Blog.html">BLOG</a>
   <a id="option" href="./equipe.html">EQUIPE</a>
   
-  <a href="" class="botao">
+  <a href="./adocao-page.html" class="botao">
       <div id="adotar-agora">ADOTAR AGORA</div>
   </a>
   <a href="" class="botao">
       <div id="entrar">ENTRAR</div>
   </a>
 </nav>
-
-<!-- Botão Hamburguer (visível só em telas pequenas) -->
-<button class="navbar-toggler custom-toggler d-lg-none" type="button" 
-        data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
-<!-- Menu Mobile -->
-<div class="offcanvas offcanvas-start fundo-menu-lateral" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="menuMobileLabel">Menu</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-  </div>
-  <div class="offcanvas-body d-flex flex-column gap-3">
-    <a id="option" href="">ANTES DE ADOTAR</a>
-    <a id="option" href="">SITES PARCEIROS</a>
-    <a id="option" href="">BLOG</a>
-    <a id="option" href="./equipe.html">EQUIPE</a>
-    <a href="" class="botao">
-      <div id="adotar-agora">ADOTAR AGORA</div>
-    </a>
-    <a href="" class="botao">
-      <div id="entrar">ENTRAR</div>
-    </a>
-  </div>
-</div>
-
-
-
   <!-- Main -->
   <main>
     <!-- Hero -->
@@ -144,7 +116,17 @@
     </footer>
 
 </body>
-
+<!-- Script para modificar a barra de navegação quando rolar para baixo-->
+<script>
+    const navbar = document.getElementById("barra-navegacao");
+    window.addEventListener("scroll", () =>{
+        if (window.scrollY > 50){
+            navbar.classList.add("scrolled")
+        }else{
+            navbar.classList.remove("scrolled")
+        }
+    })
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
