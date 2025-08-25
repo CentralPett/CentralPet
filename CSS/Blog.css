@@ -47,6 +47,7 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-right: 5%;
+    z-index: 9;
 }
 
 #carrosel .card .text {
@@ -246,7 +247,7 @@ margin-top: 20px;
 
 #carrosel .card .leia{
     width: 182.5px;
-
+    
 }
 
 
@@ -255,7 +256,7 @@ margin-top: 20px;
     height: 76.47px;
     left: 15px;
      top: 320px;
-     position: fixed;
+     position: absolute;
      z-index: 10;
 }
 
@@ -265,7 +266,7 @@ margin-top: 20px;
     height: 76.47px;
     left: 93%;
     top: 320px;
-    position: fixed;
+    position: absolute;
     z-index: 10;
   
 }
@@ -301,46 +302,6 @@ margin-top: 20px;
 
 @media(max-width: 750px) {
 
-.hamburguer {
-  display: block;
-  z-index: 1;
-  margin-left: 200px;
-}
-
-.hamburguer::before,
-.hamburguer::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #000;
-  margin-top: 5px;
-}
-
-#nav-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-
-  clip-path: circle(0 at top right);
-  pointer-events: none;
-  transition: clip-path 0.5s ease-in-out;
-}
-
-#barra-navegacao.active #nav-list {
-  clip-path: circle(150% at top right);
-  pointer-events: all;
-}
-
 #carrosel{
         position: relative;
     }
@@ -348,6 +309,10 @@ margin-top: 20px;
 
 #carrosel .card .text {
     padding-top: 10px;
+    }
+
+.card_noticia h3{
+    width: 360px;
 }
 
 #carrosel .card img{
@@ -377,8 +342,8 @@ margin-top: 20px;
 
 #carrosel .card .leia{
     width: 142.5px;
-    margin-left: 10%;
-
+    margin-top: 30px;
+    margin-left: 60px;
 }
 
 #carrosel .card{
@@ -395,24 +360,35 @@ margin-top: 20px;
 .footer-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px 40px;
+  gap: 5px 20px;
 }
 
 .footer-links a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 500;
   transition: opacity 0.3s ease;
 }
 
-.footer-links a:hover {
-  opacity: 0.8;
-  text-decoration: underline;
+.footer-logo a img {
+  width: 5rem;
 }
 
-.footer-logo a img {
-  width: 6rem;
+.social-icons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.social-icons a i {
+  font-size: 1.0rem;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover i {
+  opacity: 0.8;
 }
 
 }
