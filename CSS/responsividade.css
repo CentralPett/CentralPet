@@ -93,9 +93,19 @@ label{
 }
 
 #fale-conosco h1{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px; /* espaçamento entre o título e os logos */
+  font-size: 28px; /* ou o tamanho que preferir */
+  color: #000; /* ajuste a cor conforme o design */
+}
 
-  font-size: 30;
-  padding-top: 10px;
+#parceiros #colaboradoes {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px; /* sugiro adicionar gap para espaçamento entre logos */
 }
 
 #fale-conosco img{
