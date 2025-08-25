@@ -9,49 +9,54 @@ body{
     height: 100vh;
 }
 
-.login{
+.main{
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.login_esquerdo{
+
+
+.background_esquerdo{
     height: 100%;
-    background-image: url("../IMG/login_paws.png");
+    background-image: url("../IMG/fundo_laranja.png");
     background-size: cover;
     display: grid;
     place-items: center;
     padding: 24px;
 } 
 
-.login_direito{
+.background_direito{
     position: relative;
-    height: 100%;
     background-image: url("../IMG/login_hero.png");
     background-size: cover;
+    overflow: hidden;
 }
 
 .conjunto_frases img{
     position: absolute;
     left: 350px;
     width: 40%;
-    float: right;
+    float: right;    
     margin: 30px;
 }
 
 .card{
     position: relative;
     width: 80%;
+    max-width: 520px;
     height: auto;
     background: #fff;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
     padding: 32px 20px;
     box-shadow: 0px 0px 25px rgba(0,0,0,.5 );
 }
+
 
 .card h1{
     position: relative;
@@ -59,6 +64,11 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+
+.card h4{
+    text-align: center;
 }
 
 .container{
@@ -90,6 +100,7 @@ body{
 .card_logo{
     width: 70%;
     height: 80px;
+    
 }
 
 .formulario_card{
@@ -105,7 +116,7 @@ body{
 .formulario_acoes{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 12px;
     margin-top: 4px;
@@ -148,15 +159,19 @@ body{
   box-shadow: 0 6px 30px rgba(255, 209, 43, 0.3);
 }
 
-.formulario_grupo input{
-    width: 100%;
+.codigo_container{
+    margin: auto;
+}
+
+.codigo_container input{
+    width: 50px;
     padding: 12px;
     border: 2px solid #d0d5dd;
     border-radius: 8px;
     outline: none;
 }
 
-.formulario_grupo input:focus{
-    border-color: #FF9900;
+.codigo_container input:focus{
+    border-color: #3746A4;
     box-shadow: 0px 0px 0px 3px rgba(255, 153, 0,.15 );
 }
