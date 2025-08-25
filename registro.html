@@ -6,94 +6,133 @@
     <title>Registro CentralPet</title>
     <link rel="stylesheet" href="CSS/registro.css" type="text/css" />
     <link rel="stylesheet" href="CSS/fonts.css" type="text/css" />
-    
 </head>
 <body>
     <main class="main">
         <section class="background_esquerdo">
-
             <div class="card">
                 <div class="container">
                     <div class="botao_voltar">
-                    <a href="./login.html">
-                        <img class="seta" src="./IMG/seta_botao_voltar.svg">
-                    </a>
+                      <a href="./login.html">
+                        <img class="seta" src="./IMG/seta_botao_voltar.svg" alt="Voltar">
+                      </a>
                     </div>
                     <img class="card_logo" src="./IMG/centralpet.svg" alt="CentralPet">
                 </div>
-                    <h1>Bem-Vindo(a)!</h1>
-                
+
+                <h1>Bem-Vindo(a)!</h1>
+
+                <!-- FORM 1 (fechado corretamente) -->
                 <form class="formulario_card" action="./codigo_verificacao.html" method="get" novalidate>
-                    <div class="formulario_grupo">
-                        <label for="email">Nome completo</label>
-                        <input 
-                        id="nome"
-                        name="nome"
-                        type="text"
-                        autocomplete="nome" 
-                        required
+                  <div class="formulario_grupo">
+                    <label for="nome">Nome completo</label>
+                    <input 
+                      id="nome"
+                      name="nome"
+                      type="text"
+                      autocomplete="name"
+                      required
                     >
-                    </div>
+                  </div>
+                </form>
 
+                <!-- FORM 2 -->
                 <form class="formulario_card" action="#" method="post" novalidate>
-                    <div class="formulario_grupo">
-                        <label for="email">E-mail</label>
-                        <input 
-                        id="email" 
-                        name="email" 
-                        type="email" 
-                        autocomplete="email" 
-                        required
+                  <div class="formulario_grupo">
+                    <label for="email">E-mail</label>
+                    <input 
+                      id="email" 
+                      name="email" 
+                      type="email" 
+                      autocomplete="email" 
+                      required
                     >
-                    </div>
+                  </div>
 
-                     <div class="formulario_grupo">
-                        <label for="senha">Senha</label>
-                        <input 
-                        id="senha" 
-                        name="senha" 
-                        type="password" 
-                        autocomplete="current-password" 
-                        required
+                  <div class="formulario_grupo">
+                    <label for="senha">Senha</label>
+                    <input 
+                      id="senha" 
+                      name="senha" 
+                      type="password" 
+                      autocomplete="new-password" 
+                      required
                     >
-                    </div>
+                  </div>
 
-                     <div class="formulario_grupo">
-                        <label for="senha">Confirme sua senha</label>
-                        <input 
-                        id="senha" 
-                        name="senha" 
-                        type="password" 
-                        autocomplete="current-password" 
-                        required
+                  <div class="formulario_grupo">
+                    <label for="confirmar_senha">Confirme sua senha</label>
+                    <input 
+                      id="confirmar_senha" 
+                      name="confirmar_senha" 
+                      type="password" 
+                      autocomplete="new-password" 
+                      required
                     >
-                    </div>
+                  </div>
 
-                    <div class="formulario_acoes">
-                        <a class="link" href="./login.html">Já tenho conta</a>
-                        <button type="submit" class="botao_entrar">Próximo</button>
-                        </div>
-                    </form>
+                  <div class="formulario_acoes">
+                    <a class="link" href="./login.html">Já tenho conta</a>
+                    <button type="submit" class="botao_entrar">Próximo</button>
+                  </div>
+                </form>
             </div>
         </section>
+
         <section class="background_direito">
             <div class="conjunto_frases">
-                <img src="./IMG/frase_login.svg">
+                <img src="./IMG/frase_login.svg" alt="Frase de boas-vindas">
             </div>
         </section>
     </main>
-  <!--Funcionalidade de acessibilidade Vlibras-->
+
+    <!-- VLibras -->
     <div vw class="enabled">
-          <div vw-access-button class="active"></div>
-          <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-          </div>
-        </div>
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
       new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
+
+    <!-- Seu JS -->
     <script src="./js/main.js" defer></script>
+    <!-- TTS -->
+    <script id="voz" src="./js/voz.js" defer></script>
+
+    <!-- Ajustes de posicionamento TTS x VLibras -->
+    <style>
+      /* TTS acima (botão e painel) */
+      .tts-fab{
+        right: 1rem !important;
+        bottom: 9rem !important;     /* sobe o botão do TTS */
+        z-index: 99999 !important;   /* garante que fique por cima */
+      }
+      .tts-panel{
+        right: 1rem !important;
+        bottom: 13.5rem !important;  /* painel abre acima do botão */
+        z-index: 99998 !important;
+      }
+
+      /* VLibras bem embaixo, à direita */
+      div[vw] { 
+        z-index: 99990 !important;   /* abaixo do TTS */
+      }
+      div[vw] [vw-access-button]{
+        right: 1rem !important;
+        bottom: 1rem !important;
+      }
+
+      /* (opcional) Se houver rodapé/elementos fixos, aumente os bottoms acima */
+      @media (max-width: 640px){
+        .tts-fab{ right: .75rem !important; bottom: 9rem !important; }
+        .tts-panel{ right: .5rem !important; left: .5rem !important; bottom: 13.5rem !important; }
+        div[vw] [vw-access-button]{ right: .75rem !important; bottom: 1rem !important; }
+      }
+    </style>
 </body>
 </html>
