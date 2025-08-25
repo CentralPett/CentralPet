@@ -397,13 +397,13 @@ margin-top: 20px;
 /* Mover botão Vlibras para a esquerda */
 [vw-access-button] {
   right: auto !important;
-  left: 10px !important;
+  left: 40px !important;
 }
 
 /* Ajusta o wrapper do plugin */
 [vw-plugin-wrapper] {
   right: auto !important;
-  left: 10px !important;
+  left: 40px !important;
 }
 
 }
