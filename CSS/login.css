@@ -33,9 +33,10 @@ body{
 }
 
 .conjunto_frases img{
-    width: 40%;
     position: relative;
-    float: right;
+
+    width: 400px;
+    float: right;    
     margin: 30px;
 }
 
