@@ -22,26 +22,53 @@
   </head>
   <body>
     <main>
-      <nav id="barra-navegacao">
-          <a href="./index.html" id="logo">
-              <img src="./IMG/logoCentralPet.svg" alt="">
-          </a>
-          <a id="option" href="./about.html">ANTES DE ADOTAR</a>
-          <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
-          <a id="option" href="./Blog.html">BLOG</a>
-          <a id="option" href="./equipe.html">EQUIPE</a>
-          
-          <a href="./adocao-page.html" class="botao">
-              <div id="adotar-agora">
-                  ADOTAR AGORA
-              </div>
-          </a>
-          <a href="" class="botao">
-              <div id="entrar">
-                  ENTRAR
-              </div>
-          </a>
-      </nav>
+        <nav id="barra-navegacao" class="d-flex align-items-center">
+
+        <!-- Botão hamburguer (só aparece no mobile) -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="./index.html" id="logo">
+            <img src="./IMG/logoCentralPet.svg" alt="">
+        </a>
+
+        <!-- Menu desktop -->
+        <div class="d-none d-lg-flex align-items-center gap-5" id="menu-desktop">
+            <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+            <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+            <a id="option" href="./Blog.html">BLOG</a>
+            <a id="option" href="./equipe.html">EQUIPE</a>
+
+            <a href="./adocao-page.html" class="botao">
+            <div id="adotar-agora">ADOTAR AGORA</div>
+            </a>
+            <a href="./login.html" class="botao">
+            <div id="entrar">ENTRAR</div>
+            </a>
+        </div>
+        </nav>
+
+        <!-- Menu lateral (mobile) -->
+        <div class="offcanvas offcanvas-start fundo-menu-lateral" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuMobileLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column gap-3">
+            <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+            <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+            <a id="option" href="./Blog.html">BLOG</a>
+            <a id="option" href="./equipe.html">EQUIPE</a>
+            <a href="./adocao-page.html" class="botao">
+            <div id="adotar-agora">ADOTAR AGORA</div>
+            </a>
+            <a href="" class="botao">
+            <div id="entrar">ENTRAR</div>
+            </a>
+        </div>
+        </div>
       <section id="inicio">
         <p>
           Unimos amigos dos animais e ONGs confiáveis para
@@ -469,5 +496,6 @@
             }
         })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
   border: 0;
   box-sizing: border-box;
 }
-
+/*
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,9 +15,13 @@
   top: 0;
   z-index: 1000;
 }
-
+*/
 .logo-img {
   height: 40px;
+}
+
+main{
+  padding-top: 100px;
 }
 
 .menu {
