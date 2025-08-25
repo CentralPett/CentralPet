@@ -17,13 +17,14 @@ body {
 /* Hero */
 #isso {
   position: absolute;
-  left: 3.5%;
-  width: 360px;
+  left: 0%;
+  width: 100%;
 
 }
 
 #isso h1{
 
+  
   z-index: 1;
 }
 
