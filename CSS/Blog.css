@@ -121,7 +121,7 @@ main{
     width: 78px;
     height: 76.47px;
     position: absolute;
-    left: 95%;
+    left: 90%;
     top: 320px;
     cursor: pointer;
 }
@@ -216,6 +216,17 @@ margin-top: 20px;
   width: 10rem;
 }
 
+[vw-access-button] {
+  left: auto !important;   /* Remove o posicionamento padrão à direita */
+  right: 30px !important;    /* Posiciona a 10px da esquerda (ajuste como quiser) */
+}
+
+/* Se quiser mover o plugin wrapper também */
+[vw-plugin-wrapper] {
+  left: auto !important;
+  right: 30px !important;
+}
+
 
 @media(max-width: 1366px){
 
@@ -264,7 +275,7 @@ margin-top: 20px;
 
     width: 78px;
     height: 76.47px;
-    left: 93%;
+    left: 90%;
     top: 320px;
     position: absolute;
     z-index: 10;
