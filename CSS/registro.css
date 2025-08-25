@@ -20,7 +20,7 @@ body{
 
 .background_esquerdo{
     height: 100%;
-    background-image: url("/IMG/fundo_vermelho.png");
+    background-image: url("../IMG/fundo_vermelho.png");
     background-size: cover;
     display: grid;
     place-items: center;
@@ -29,7 +29,7 @@ body{
 
 .background_direito{
     position: relative;
-    background-image: url("/IMG/login_hero.png");
+    background-image: url("../IMG/login_hero.png");
     background-size: cover;
     overflow: hidden;
 }
