@@ -18,7 +18,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(to top, #cacc3a 0.1px, #fff15b 95%);
+  background: linear-gradient(to top, #da8525ff 0.1px, #eb9a3eff 95%);
   padding: 4px 0px;
 }
 
@@ -93,7 +93,7 @@ main {
 
 #quemSomosCardBox .card:hover {
   transition: 0.25s ease-in;
-  box-shadow: 0px 0px 50px rgb(255, 240, 31);
+  box-shadow: 0px 0px 50px #da8525ff;
 }
 #quemSomosCardBox .card #fotoPerfil {
   width: 100%;
