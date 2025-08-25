@@ -1,0 +1,501 @@
+@media(max-width: 1366px){
+
+    #barra-navegacao{
+        width: 95%;
+    }
+
+    #inicio p{
+        font-size: 30px;
+    }
+
+    section #encontre {
+  margin-top: 120px;
+  height: 66px;
+  width: 384px;
+  font-size: 20px;
+}
+
+ #subtitulo{
+        top: 970px;
+ }
+
+ #carrousel-card{
+
+    width: 98%;
+    height: 700px;
+
+ }
+
+ .carrosel_geral_item img{
+
+    width: 1200px;
+    height: 700px;
+    
+ }
+
+ #carrousel-card h2{
+
+    font-size: 35px;
+    width: 550px;
+ }
+
+ #carrousel-card h1{
+
+    font-size: 60px;
+    width: 550px;
+
+ }
+
+ #parceiros{
+
+    margin-top: 150px;
+
+ }
+
+ #parceiros #colaboradoes{
+
+    font-size: 20px;
+
+ }
+
+ #parceiros #colaboradoes img{
+
+    height: 150px;
+    height: 150px;
+
+ }
+
+ 
+
+ 
+#duvidas img{
+
+  width: 323px;
+  height: 584px;
+
+}
+
+label{
+
+
+ font-size: 20px;
+  width: 800px;
+  height: 40px;
+
+}
+
+#fale-conosco #fundo{
+   width: 1100px;
+}
+
+#fale-conosco #frase{
+   width: 1050px;
+}
+
+#fale-conosco h1{
+
+  font-size: 30;
+  padding-top: 10px;
+}
+
+#fale-conosco img{
+
+    left: 4%;
+    top: 50%;
+  width: 653px;
+  height: 435px;
+
+}
+
+#caixa{
+
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+#nome{
+  width: 523px;
+  height: 44px;
+  font-size: 28px;
+}
+
+#email{
+    width: 523px;
+  height: 44px;
+  font-size: 28px;
+}
+
+#messagen{
+  width: 523px;
+  height: 392px;
+  font-size: 28px;  
+}
+
+#fale-conosco button{
+
+  left: 85.5%;
+
+}
+
+
+}
+
+@media (max-width: 460px) {
+    
+    #inicio p{
+        font-size: 18px;
+    }
+
+    section #encontre{
+
+        margin-top: 0px;
+        width: 250px;
+        font-size: 16px;
+        height: 60px;
+    }
+
+    section #encontre:hover {
+  height: 60px;
+  width: 250px;
+
+}
+
+#subtitulo {
+
+  width: 250px;
+  height: 60px;
+  padding: 12px;
+  font-size: 20px;
+}
+
+.card {
+  width: 420px;
+}
+
+#adocao_pets .card header .icon-paw i {
+  width: 33.58px;
+  height: 28.52px;
+  color: #fe49c1;
+}
+
+#adocao_pets .card header span {
+  font-size: 28.67px;
+}
+
+#adocao_pets .card img {
+  width: 420px;
+  height: 203px;
+}
+
+.info-row {
+    gap: 20px;
+  font-weight: bold;
+  font-size: 17.07px;
+}
+
+.card-body p {
+  font-size: 17px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.card button {
+  width: 260px;
+}
+
+.voceSabiaDiv img {
+  width: 300px;
+}
+
+#subtitulo2 {
+  width: 300px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#voceSabia .voceSabiaDiv {
+  flex-direction: column;
+}
+
+.voceSabiaDiv p {
+  font-size: 16px;
+  width: 60%;
+}
+
+#sos2{
+
+  margin-top: 180px;
+
+}
+
+#sos{
+  position: absolute;
+  top: 350%;
+}
+
+#carrousel-card {
+  width: 360px;
+  height: 450px;  
+  }
+
+#carrousel-card #right,
+#carrousel-card #left {
+  top: 90%;
+  width: 52px;
+  height: 50px;
+  }
+
+  #carrousel-card #right{
+      left: 80%;
+  }
+
+ .carrosel_geral_item img{
+
+    width: 350px;
+    height: 450px;
+    
+ }
+
+ #carrousel-card h2{
+  
+  font-size: 12px;
+  width: 130px;
+}
+
+#carrousel-card h1{
+  margin-top: 20px;
+  font-size: 20px;
+  width: 130px;
+}
+
+
+  #confiar-section .card{
+    flex: 0 0 calc(100%);
+    height: 500px;
+    
+  }
+
+  #circle-2{
+    display: none;
+  }
+
+  #circle-1{
+    display: none;
+  }
+
+  #parceiros {
+    width: 100%;  
+    height: 800px;  
+  }
+
+  #parceiros h1 {
+    font-size: 18px;
+    width: 320px;
+    height: 50px;
+  }
+
+  #parceiros #colaboradoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 910px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center; /* centraliza os parceiros */
+  }
+
+  .parceiro {
+    flex: 0 0 48%; /* dois por linha com espaço */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .parceiro img {
+    width: 100px;
+    height: auto;
+  }
+
+  #duvidas{
+
+  overflow-x: visible;
+  margin-top: 70px;
+  width: 100%;
+  height: auto;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+
+}
+
+#duvidas h1{
+ 
+  font-size: 18px;
+  width: 320px;
+  height: 50px;
+  
+}
+
+#duvidas img{
+
+  
+  display: none;
+
+}
+
+#frequente{
+
+  margin-top: 10px;
+  z-index: 3;
+}
+
+label{
+  font-size: 14px;
+  width: 320px;
+  height: 50px;
+
+}
+
+
+label i{
+
+ margin-top: 10px;
+ margin-left: 40px;
+
+}
+
+#fale-conosco{
+
+  
+  
+  margin-top: 70px;
+}
+
+#fale-conosco #fundo{
+   width: 320px;
+   height: 746px;
+   border-radius: 60px;
+}
+
+#fale-conosco #frase{
+   
+  top: 13%;
+  left: 3.5%;  
+   width: 350px;
+   height: 805px;
+}
+
+#fale-conosco h1{
+
+  font-size: 24px;
+  width: 300px;
+  height: 59px;
+  top: 9%;
+  left: 12%;
+}
+
+#fale-conosco img{
+
+display: none;
+
+}
+
+#caixa{
+
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+#nome{
+  width: 285px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#email{
+  width: 285px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#messagen{
+  width: 285px;
+  height: 350px;
+  font-size: 20px;  
+}
+
+#fale-conosco button{
+
+  width: 179px;
+  height: 55px;
+  position: absolute;
+  background-color: #F77F00;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 5px;
+  font-size: 20px;
+  left: 25%;
+  top: 90%;
+  z-index: 5;
+  margin-bottom: 30px;
+
+}
+
+.site-footer {
+  background-color: #0d6efd;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px 20px;
+}
+
+.footer-links a {
+  font-size: 0.7rem;
+}
+
+.footer-logo a img {
+  width: 7rem;
+}
+
+#subtitulo3{
+  width: 320px;
+  height: 65px;
+  padding: 7px;
+  font-size: 20px;
+}
+
+
+
+}

@@ -1,79 +1,36 @@
- /* Reset básico */
-body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: white;
-  color: #1f2937; 
-  height: 100vh;  
-  width: 100%;
-  flex-direction: column;
-  background-image: url(../IMG/Frame\ 349\ \(2\).svg);
-  background-size: 1350px;
+@media (max-width: 460px) {
   
-}
+  body {
+    height: 100vh;
+    width: 360px;
+    flex-direction: column;
+    background-image: url(../IMG/Frame\ 349\ \(2\).svg);
+    background-size: 1350px;
+  }
 
+  #isso {
+    width: 320px;
+    margin-top: 80px;
+    height: 100px;
+ }
 
-
-
-
-/* Hero */
-#isso {
-  background: linear-gradient(90deg, #3746A4, #151A3E);
-  color: white;
-  width: 100%;
-  margin-top: 80px;
-  text-align: center;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
-
-#isso h1{
-  text-shadow: 0px 0px 10px rgba(0,0,0,1);
-  
-  z-index: 1000;
-}
-
-
-#isso::before,
-
-#isso::after {
-  content: url("../IMG/Frame\ 190.svg");
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) scale(0.7);
-  opacity: .5;
-  
-}
-
-#isso::before {
-  left: -50px;
-}
-
-#isso::after {
-  right: -58px;
+ #isso::after {
+    display: none;
 }
 
 #isso h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 
-.paw-print {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  opacity: 0.8;
-}
 
 /* Main */
 main {
-  width: 1200px;
+  width: 100%;
+  max-width: 360px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px 16px;
+  box-sizing: border-box;
 
 }
 
@@ -126,17 +83,10 @@ main ul {
 }
 
 .question-badge {
-display: inline-block;
-background: linear-gradient(90deg, #3746A4, #151A3E);
-color: white;
-font-weight: 400;
-font-size: 20px;
-padding: 0.5rem 1.5rem;
-border-radius: 9999px;
-box-shadow: 0 4px 12px rgb(40 62 143 / 0.5);
-max-width: 100%;
-width: 520px;
-height: auto;
+width: 300px;
+font-size: 12px;
+z-index: 2;
+position: relative;
 }
 
 
@@ -148,14 +98,14 @@ section {
 }
 
 /* Seção da esquerda: badge + texto vão para a esquerda */
-#esquerda { 
-  justify-content: flex-start;
-  text-align: left;
+#z { 
+    margin-top: 55px;
 }
 
 #esquerda .text {
   text-align: left;
   align-items: flex-start;
+  
 }
 
 /* Seção da direita: badge + texto vão para a direita */
@@ -208,3 +158,21 @@ ul {
   
 }
 
+
+.footer-container {
+  max-width: 360px;
+}
+
+.footer-links {
+  gap: 5px 20px;
+}
+
+.footer-links a {
+  font-size: 0.7rem;
+}
+
+.footer-logo a img {
+  width: 5rem;
+}
+
+}
