@@ -358,6 +358,25 @@ section #encontre:hover {
  left: 50%;
 }
 
+#carrousel-card a{
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  top:60%;
+  left:76%;
+  transform: translateX(-75%);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#carrousel-card a:hover{
+  text-decoration:underline;
+}
+
 #carrousel-card h2{
   font-weight: bolder;
   color: white;
@@ -712,3 +731,4 @@ footer{
   margin-top: 150px;
 
 }
+
