@@ -88,9 +88,3 @@ Nossa equipe reúne profissionais dedicados a promover a adoção consciente e d
 | Jhuan Pablo dos Santos | jhuanpablo03@gmail.com | [GitHub](https://github.com/Jhuan03) | [LinkedIn](https://www.linkedin.com/in/jhuan03) |
 | Marcos Augusto da Silva Vieira Franco | marcosilv090@gmail.com | [GitHub](https://github.com/AkiraNohara696) | [LinkedIn](https://www.linkedin.com/in/marcos-augusto-591019342/) |
 | Victor Hugo dos Santos Almeida | victorhugosantos2610@gmail.com | [GitHub](https://github.com/Victor-programmer) | [LinkedIn](https://www.linkedin.com/in/desenvolvedor-victor-almeida/) |
-
----
-
-## Licença 📄
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
