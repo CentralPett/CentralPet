@@ -1,140 +1,126 @@
-*{
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-    
-
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 100px;
-    display: flex;
-    height: auto;
-    width: 100%;
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  display: flex;
+  height: auto;
+  width: 100%;
 }
 
-#quemSomosTittleBox{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    background: linear-gradient(to top, #cacc3a .1px,#fff15b 95%);
-    padding: 4px 0px;
-
+#quemSomosTittleBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to top, #da8525ff 0.1px, #eb9a3eff 95%);
+  padding: 4px 0px;
 }
 
-#quemSomosTittleBox h1{
-    font-weight: 700;
-    font-size: 2.5em;
-    color: white;
-    overflow-y: hidden;
-     
+#quemSomosTittleBox h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  color: white;
+  overflow-y: hidden;
 }
 
-#quemSomosTittleBox img{
-    width: 30%;
+#quemSomosTittleBox img {
+  width: 30%;
 }
 
-
-#quemSomosBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    left: -50%;
-    transform: translate(50%);
-
+#quemSomosBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  left: -50%;
+  transform: translate(50%);
 }
 
-#quemSomosBox h1, #quemSomosBox h3{
-    font-weight: bold;
-    overflow-y: hidden;
-  
+#quemSomosBox h1,
+#quemSomosBox h3 {
+  font-weight: bold;
+  overflow-y: hidden;
 }
 
-#quemSomosBox h1{
-    font-size: 2em;
-    margin: 64px 0px;
-
+#quemSomosBox h1 {
+  font-size: 2em;
+  margin: 64px 0px;
 }
 
-#quemSomosBox h3{
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 64px 0px;
+#quemSomosBox h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 64px 0px;
 }
 
-#quemSomosCardBox{
-    margin: auto;
-    max-width: 1200px;
-    min-width: 500px;
-    height: auto;
-    margin-top: 25px;
-    margin-bottom: 200px;
-    padding: 64px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    border-radius: 5px;
-
-   
+#quemSomosCardBox {
+  margin: auto;
+  max-width: 1200px;
+  min-width: 500px;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 200px;
+  padding: 64px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  border-radius: 5px;
 }
 
-#quemSomosCardBox .card{
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 300px;
-    height: 450px;
-    border-radius: 5px; 
-    background-color: #ffffff;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, .25);
-    
+#quemSomosCardBox .card {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
 
-    transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-#quemSomosCardBox .card:hover{
-    transition: .25s ease-in;
-        box-shadow: 0px 0px 50px rgb(255, 240, 31);
+#quemSomosCardBox .card:hover {
+  transition: 0.25s ease-in;
+  box-shadow: 0px 0px 50px #da8525ff;
 }
-#quemSomosCardBox .card #fotoPerfil{
-    width: 100%;
-    object-fit: cover;
-
-}
-
-#quemSomosCardBox .card p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    text-align: center;
-    font-size: 1em;
-    font-weight: 700;
-   
+#quemSomosCardBox .card #fotoPerfil {
+  width: 100%;
+  object-fit: cover;
 }
 
-#quemSomosCardBox #icones{
+#quemSomosCardBox .card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #ffffff;
-    width: 100%;
-
+  text-align: center;
+  font-size: 1em;
+  font-weight: 700;
 }
 
-#quemSomosCardBox #icones img{
-    width: 60px;
-    height: 60px;
-    padding-bottom: 32px;
+#quemSomosCardBox #icones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+#quemSomosCardBox #icones img {
+  width: 60px;
+  height: 60px;
+  padding-bottom: 32px;
 }

@@ -434,6 +434,7 @@ section #encontre:hover {
   font-size: 1.5em;
 }
 
+
 #parceiros{
 
   margin-top: 80px;
@@ -451,9 +452,8 @@ section #encontre:hover {
 #parceiros h1{
 
   color: white;
-  border: 5px solid #86ACDD;
-  background-color: #4A9AEF;
-  opacity: 60%;
+  border: 5px solid rgb(134, 172, 221, 0.5);
+  background-color: rgb(78, 162, 251, 0.5);
   font-size: 40px;
   font-weight: medium;
   width: 727px;
@@ -470,8 +470,7 @@ section #encontre:hover {
   font-size: 36px;
   font-weight: 700;
   color: white;
-  background-color: #488BE3;
-  opacity: 50%;
+  background-color: rgb(72, 139, 227, 0.5);
   width: 100%;
   height: 430px;
   display: flex;

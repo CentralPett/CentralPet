@@ -5,7 +5,7 @@ const intervalTime_blog = 3600;
 let scrollPosition_blog = 0;
 let maxScrollLeft_blog = container_blog.scrollWidth - container_blog.clientWidth;
 
-function getScrollAmount(){
+    function getScrollAmount(){
     const card = container_blog.querySelector('.card');
     if (!card) return container_blog.clientWidth;
 

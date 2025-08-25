@@ -24,14 +24,28 @@ setInterval(autoScroll, intervalTime);
 
 
 const container_card = document.querySelector('.carrosel_geral_container'); // CORRIGIDO
-const scrollAmount_card = 1960;
 const intervalTime_card = 3000;
 
 let scrollPosition_card = 0;
 let maxScrollLeft_card = container_card.scrollWidth - container_card.clientWidth;
 
+function getScrollAmount(){
+
+    const card = container_card.querySelector('.carrosel_geral_item');
+    if(!card) return container_card.clientWidth;
+
+    const style = getComputedStyle(card);
+    const marginRight = parseInt(style.marginRight) || 0;
+    const marginLeft = parseInt(style.marginLeft) || 0;
+
+    return card.offsetWidth + marginLeft + marginRight;
+
+}
+
 function autoScroll_card(){
-    scrollPosition_card += scrollAmount_card;
+    maxScrollLeft_card = container_card.scrollWidth - container_card.clientWidth;
+
+    scrollPosition_card += getScrollAmount();
 
     if(scrollPosition_card > maxScrollLeft_card){
         scrollPosition_card = 0;
@@ -40,7 +54,7 @@ function autoScroll_card(){
     container_card.scrollTo({
         left: scrollPosition_card,
         behavior: 'smooth'
-    });
+    })
 }
 
 const autoScrollInterval = setInterval(autoScroll_card, intervalTime_card);
@@ -50,14 +64,14 @@ const btnRight = document.getElementById('right');
 
 btnLeft.addEventListener('click', () => {
     container_card.scrollBy({
-        left: -scrollAmount_card,
+        left: -getScrollAmount(),
         behavior: 'smooth'
     });
 });
 
 btnRight.addEventListener('click', () => {
     container_card.scrollBy({
-        left: scrollAmount_card,
+        left: getScrollAmount(),
         behavior: 'smooth'
     });
 });
