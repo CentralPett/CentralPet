@@ -41,7 +41,7 @@ main{
 #carrosel .card {
 
     flex: 0 0 auto;
-    padding-top: 95px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -174,6 +174,7 @@ main{
     color: white;
     font-weight: bold;
     font-size: 20px;
+
 }
 
 
@@ -260,7 +261,7 @@ margin-top: 20px;
     left: 15px;
      top: 320px;
      position: absolute;
-     z-index: 10;
+     z-index: 0;
 }
 
 #right{
@@ -406,4 +407,21 @@ margin-top: 20px;
   left: 40px !important;
 }
 
+}
+
+
+#blogTittleBox{
+    margin-top: 120px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+    height: 150px;
+    background: linear-gradient(to top, rgb(100, 26, 185) 0.1px, rgb(137, 62, 235) 95%);
+}
+
+#blogTittleBox h1{
+    font-weight: 700;
 }
