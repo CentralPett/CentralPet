@@ -13,22 +13,20 @@ body {
   
 }
 
-
-
-
-
 /* Hero */
 #isso {
   background: linear-gradient(90deg, #3746A4, #151A3E);
   color: white;
-  width: 100%;
-  margin-top: 80px;
   text-align: center;
   height: 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 80px;
+  width: 100vw;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #isso h1{
