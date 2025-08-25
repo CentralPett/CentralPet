@@ -18,7 +18,7 @@ body{
 
 .login_esquerdo{
     height: 100%;
-    background-image: url("../IMG/login_paws.png");
+    background-image: url("/IMG/fundo_azul.png");
     background-size: cover;
     display: grid;
     place-items: center;
@@ -28,23 +28,22 @@ body{
 .login_direito{
     position: relative;
     height: 100%;
-    background-image: url("../IMG/login_hero.png");
+    background-image: url("/IMG/foto_login_adm.svg");
     background-size: cover;
 }
 
 .conjunto_frases img{
-    position: relative;
-
-    width: 400px;
-    float: right;    
+    position: absolute;
+    left: 10px;
+    width: 60%;
+    float: right;
     margin: 30px;
 }
-
 
 .card{
     position: relative;
     width: 80%;
-    height: auto;
+    height: 430px;
     background: #fff;
     font-size: 20px;
     display: flex;
@@ -52,9 +51,7 @@ body{
     justify-content: center;
     padding: 32px 20px;
     box-shadow: 0px 0px 25px rgba(0,0,0,.5 );
-    border-radius: 5px;
 }
-
 
 .card h1{
     position: relative;
@@ -62,6 +59,16 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+}
+
+.card h4{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .container{
@@ -74,17 +81,27 @@ body{
 
 }
 
-.card .botao_voltar{
-    width: 36px;
-    height: 36px;
-    border-radius: 100px;
-    background-color: #FF9900;
+.espaco .botao_voltar img{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card .botao_voltar img{
+.espaco{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 80px;
+
+}
+
+.espaco .botao_voltar{
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    background-color: #FF9900;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,25 +122,12 @@ body{
 .formulario_grupo{ display: grid; gap: 6px; }
 .formulario_grupo label{ font-weight: 600;}
 
-
-
 .formulario_acoes{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     align-items: center;
     gap: 12px;
     margin-top: 4px;
-}
-
-.formulario_acoes .link{
-    font-size: 14px;
-    color: #FF9900;
-    text-decoration: none;
-}
-
-.formulario_acoes .link{
-    text-decoration: underline;
 }
 
 .botao_entrar{
@@ -143,15 +147,14 @@ body{
     border-color: #FF9900;
     box-sizing: border-box;
     cursor: pointer;
-    transition: .3s ease-in-out;
-
 }
 
 .botao_entrar:hover{
-    filter: brightness(0.95);
-    background-color: #FF9900;
-    color: #fff;
-    transition: .25s ease-in;
+  background: #FF9900;
+  color: #fff;
+  border-color: #FF9900;
+  transform: scale(1.04);
+  box-shadow: 0 6px 30px rgba(255, 209, 43, 0.3);
 }
 
 .formulario_grupo input{

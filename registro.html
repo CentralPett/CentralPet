@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro CentralPet</title>
+    <link rel="stylesheet" href="CSS/registro.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/fonts.css" type="text/css" />
+    
+</head>
+<body>
+    <main class="main">
+        <section class="background_esquerdo">
+
+            <div class="card">
+                <div class="container">
+                    <div class="botao_voltar">
+                    <a href="./login.html">
+                        <img class="seta" src="./IMG/seta_botao_voltar.svg">
+                    </a>
+                    </div>
+                    <img class="card_logo" src="./IMG/centralpet.svg" alt="CentralPet">
+                </div>
+                    <h1>Bem-Vindo(a)!</h1>
+                
+                <form class="formulario_card" action="./codigo_verificacao.html" method="get" novalidate>
+                    <div class="formulario_grupo">
+                        <label for="email">Nome completo</label>
+                        <input 
+                        id="nome"
+                        name="nome"
+                        type="text"
+                        autocomplete="nome" 
+                        required
+                    >
+                    </div>
+
+                <form class="formulario_card" action="#" method="post" novalidate>
+                    <div class="formulario_grupo">
+                        <label for="email">E-mail</label>
+                        <input 
+                        id="email" 
+                        name="email" 
+                        type="email" 
+                        autocomplete="email" 
+                        required
+                    >
+                    </div>
+
+                     <div class="formulario_grupo">
+                        <label for="senha">Senha</label>
+                        <input 
+                        id="senha" 
+                        name="senha" 
+                        type="password" 
+                        autocomplete="current-password" 
+                        required
+                    >
+                    </div>
+
+                     <div class="formulario_grupo">
+                        <label for="senha">Confirme sua senha</label>
+                        <input 
+                        id="senha" 
+                        name="senha" 
+                        type="password" 
+                        autocomplete="current-password" 
+                        required
+                    >
+                    </div>
+
+                    <div class="formulario_acoes">
+                        <a class="link" href="./login.html">Já tenho conta</a>
+                        <button type="submit" class="botao_entrar">Próximo</button>
+                        </div>
+                    </form>
+            </div>
+        </section>
+        <section class="background_direito">
+            <div class="conjunto_frases">
+                <img src="./IMG/frase_login.svg">
+            </div>
+        </section>
+    </main>
+  <!--Funcionalidade de acessibilidade Vlibras-->
+    <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>

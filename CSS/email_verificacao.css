@@ -18,12 +18,12 @@ body{
 
 .login_esquerdo{
     height: 100%;
-    background-image: url("../IMG/login_paws.png");
+    background-image: url("../IMG/fundo_roxo.png");
     background-size: cover;
     display: grid;
     place-items: center;
     padding: 24px;
-} 
+}
 
 .login_direito{
     position: relative;
@@ -40,7 +40,6 @@ body{
     margin: 30px;
 }
 
-
 .card{
     position: relative;
     width: 80%;
@@ -55,13 +54,23 @@ body{
     border-radius: 5px;
 }
 
-
 .card h1{
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card h4{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .container{
@@ -71,65 +80,31 @@ body{
     justify-content: center;
     gap: 32px;
     width: auto;
-
 }
 
-.card .botao_voltar{
-    width: 36px;
-    height: 36px;
-    border-radius: 100px;
-    background-color: #FF9900;
+.card .correct img{
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.card .botao_voltar img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card_logo{
-    width: 70%;
-    height: 80px;
-}
-
-.formulario_card{
-    position: relative;
-    display: grid;
-    gap: 12px;
-    font-size: 20px;
-}
-
-.formulario_grupo{ display: grid; gap: 6px; }
-.formulario_grupo label{ font-weight: 600;}
-
-
 
 .formulario_acoes{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    justify-content: space-between;
     align-items: center;
     gap: 12px;
-    margin-top: 4px;
-}
-
-.formulario_acoes .link{
-    font-size: 14px;
-    color: #FF9900;
-    text-decoration: none;
-}
-
-.formulario_acoes .link{
-    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 .botao_entrar{
     width: auto; 
     min-width: 0;         
-    display: inline-flex; 
+    display: flex; 
+    flex-direction: row;
     align-items: center; 
     justify-content: center;
     padding: 10px 35px;
@@ -143,26 +118,12 @@ body{
     border-color: #FF9900;
     box-sizing: border-box;
     cursor: pointer;
-    transition: .3s ease-in-out;
-
 }
 
 .botao_entrar:hover{
-    filter: brightness(0.95);
-    background-color: #FF9900;
-    color: #fff;
-    transition: .25s ease-in;
-}
-
-.formulario_grupo input{
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #d0d5dd;
-    border-radius: 8px;
-    outline: none;
-}
-
-.formulario_grupo input:focus{
-    border-color: #FF9900;
-    box-shadow: 0px 0px 0px 3px rgba(255, 153, 0,.15 );
+  background: #FF9900;
+  color: #fff;
+  border-color: #FF9900;
+  transform: scale(1.04);
+  box-shadow: 0 6px 30px rgba(255, 209, 43, 0.3);
 }

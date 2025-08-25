@@ -18,6 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/responsividade.css" type="text/css">
     <title>CentralPet - Início</title>
   </head>
   <body>
@@ -312,15 +313,15 @@
       </div>-->
 
       <section id="voceSabia">
-        <div class="voceSabiaDiv" id="vsc1" ">
+        <div class="voceSabiaDiv" id="vsc1">
             <img style="  border: 5px solid rgb(0, 102, 255); " src="./IMG/gatoAcariciado.png" alt="">
             <p>Quando você <strong>adota</strong> um pet, o ambiente da casa <strong>deve ser preparado antes</strong> mesmo da chegada dele. Animais, especialmente cães e gatos,<strong> percebem cheiros e sons</strong>, e um espaço já familiarizado com objetos seguros </strong>ajuda a reduzir o estresse.<strong></p>
         </div>
 
         <div class="voceSabiaDiv" id="vsc2">
-            <p><strong>Pets adotados</strong> costumam criar<strong> laços profundos</strong> com seus tutores, muitas vezes demonstrando<strong> gratidão</strong> com gestos e <strong>comportamentos únicos</strong>.
+            <p id="sos2"><strong>Pets adotados</strong> costumam criar<strong> laços profundos</strong> com seus tutores, muitas vezes demonstrando<strong> gratidão</strong> com gestos e <strong>comportamentos únicos</strong>.
             </p>
-            <img style="  border: 5px solid rgb(255, 0, 106); "  src="./IMG/pessoa&Gato.png" alt="">
+            <img style="  border: 5px solid rgb(255, 0, 106); " id="sos"  src="./IMG/pessoa&Gato.png" alt="">
         </div>
         <div class="voceSabiaDiv" id="vsc3">
           <img style="  border: 5px solid rgb(238, 255, 0); "  src="./IMG/pessoa&Cachorro.png" alt="">
@@ -453,7 +454,7 @@
       </section>
     </main>
 
-         <footer class="site-footer">
+<footer class="site-footer">
       <div class="footer-container">
         <div class="footer-logo">
           <a href="#">
@@ -464,14 +465,33 @@
           <a href="#">ONGs/Protetores</a>
           <a href="#">Histórias de Adoção</a>
           <div class="social-icons">
-            <a href="https://www.instagram.com/sitecentralpet" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61579769613990" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sitecentralpet" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61579769613990"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
           </div>
           <a href="#">Quero Doar</a>
+          <a href="./login_adm.html">Área admnistrativa</a>
         </nav>
       </div>
     </footer>
+  <!--Funcionalidade de acessibilidade Vlibras-->
+    <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
 
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script src="./js/main.js" defer></script>
     <script src="JS/Principal.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
