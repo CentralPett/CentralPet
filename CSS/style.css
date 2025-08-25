@@ -506,6 +506,18 @@ section #encontre:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  transition: transform .3s ease-in-out;
+
+}
+
+.parceiro p{
+  color: black;
+}
+
+.parceiro:hover{
+  transform: translateY(-12px);
+  transition: .25s ease-in;
 
 }
 
