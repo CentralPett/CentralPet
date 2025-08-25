@@ -1,6 +1,6 @@
-<center>
+
 ![Logo](./IMG/logoCentralPet.svg)
-</center>
+
 # CentralPet
 
 A **CentralPet** é uma plataforma web que conecta pessoas interessadas em adoção de pets e cuidados com animais. Ela agrega informações sobre animais disponíveis para adoção e notícias do mundo pet, direcionando os usuários para os sites e ONGs parceiras de forma prática e segura. A ideia é que o usuário prefira usar nossa plataforma como ponto central de consulta, em vez de navegar em múltiplos sites.
