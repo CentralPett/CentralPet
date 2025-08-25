@@ -708,7 +708,7 @@
         </section>
       </div>
     </main>
-    <footer class="site-footer">
+<footer class="site-footer">
       <div class="footer-container">
         <div class="footer-logo">
           <a href="#">
@@ -719,15 +719,35 @@
           <a href="#">ONGs/Protetores</a>
           <a href="#">Histórias de Adoção</a>
           <div class="social-icons">
-            <a href="https://www.instagram.com/sitecentralpet" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61579769613990" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sitecentralpet" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61579769613990"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
           </div>
           <a href="#">Quero Doar</a>
+          <a href="./login_adm.html">Área admnistrativa</a>
         </nav>
       </div>
     </footer>
+      <!--Funcionalidade de acessibilidade Vlibras-->
+    <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script src="./js/main.js" defer></script>
   </body>
-    <!-- Script para modificar a barra de navegação quando rolar para baixo-->
+    <!-- script para modificar a barra de navegação quando rolar para baixo-->
     <script>
         const navbar = document.getElementById("barra-navegacao");
         window.addEventListener("scroll", () =>{
