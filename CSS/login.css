@@ -16,11 +16,9 @@ body{
     grid-template-columns: 50% 50%;
 }
 
-
-
 .login_esquerdo{
     height: 100%;
-    background-image: url("../img/login_paws.png");
+    background-image: url("../IMG/login_paws.png");
     background-size: cover;
     display: grid;
     place-items: center;
@@ -30,7 +28,7 @@ body{
 .login_direito{
     position: relative;
     height: 100%;
-    background-image: url("../img/login_hero.png");
+    background-image: url("../IMG/login_hero.png");
     background-size: cover;
 }
 
@@ -53,6 +51,7 @@ body{
     justify-content: center;
     padding: 32px 20px;
     box-shadow: 0px 0px 25px rgba(0,0,0,.5 );
+    border-radius: 5px;
 }
 
 
@@ -143,10 +142,15 @@ body{
     border-color: #FF9900;
     box-sizing: border-box;
     cursor: pointer;
+    transition: .3s ease-in-out;
+
 }
 
 .botao_entrar:hover{
     filter: brightness(0.95);
+    background-color: #FF9900;
+    color: #fff;
+    transition: .25s ease-in;
 }
 
 .formulario_grupo input{
