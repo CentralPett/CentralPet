@@ -18,7 +18,7 @@ body{
 
 .login_esquerdo{
     height: 100%;
-    background-image: url("../img/login_paws.png");
+    background-image: url("../IMG/login_paws.png");
     background-size: cover;
     display: grid;
     place-items: center;
@@ -28,7 +28,7 @@ body{
 .login_direito{
     position: relative;
     height: 100%;
-    background-image: url("../img/login_hero.png");
+    background-image: url("../IMG/login_hero.png");
     background-size: cover;
 }
 
