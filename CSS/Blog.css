@@ -216,19 +216,11 @@ margin-top: 20px;
   width: 10rem;
 }
 
-[vw-access-button] {
-  left: auto !important;   /* Remove o posicionamento padrão à direita */
-  right: 30px !important;    /* Posiciona a 10px da esquerda (ajuste como quiser) */
-}
 
-/* Se quiser mover o plugin wrapper também */
-[vw-plugin-wrapper] {
-  left: auto !important;
-  right: 30px !important;
-}
 
 
 @media(max-width: 1366px){
+
 
     #carrosel{
         position: relative;
@@ -311,7 +303,7 @@ margin-top: 20px;
 
 }
 
-@media(max-width: 750px) {
+@media(max-width: 720px) {
 
 #carrosel{
         position: relative;
@@ -400,6 +392,18 @@ margin-top: 20px;
 
 .social-icons a:hover i {
   opacity: 0.8;
+}
+
+/* Mover botão Vlibras para a esquerda */
+[vw-access-button] {
+  right: auto !important;
+  left: 10px !important;
+}
+
+/* Ajusta o wrapper do plugin */
+[vw-plugin-wrapper] {
+  right: auto !important;
+  left: 10px !important;
 }
 
 }
