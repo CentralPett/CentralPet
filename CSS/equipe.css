@@ -97,6 +97,7 @@ main {
 }
 #quemSomosCardBox .card #fotoPerfil {
   width: 100%;
+  height: 65%;
   object-fit: cover;
 }
 
