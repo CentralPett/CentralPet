@@ -18,7 +18,7 @@ body {
   background: linear-gradient(90deg, #3746A4, #151A3E);
   color: white;
   text-align: center;
-  height: 100px;
+  height: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -30,21 +30,20 @@ body {
 }
 
 #isso h1{
-  text-shadow: 0px 0px 10px rgba(0,0,0,1);
-  
+
+  font-size: 2em;
+  font-weight: 700;
   z-index: 1000;
 }
 
 
 #isso::before,
-
 #isso::after {
   content: url("../IMG/Frame\ 190.svg");
   position: absolute;
   top: 50%;
   transform: translateY(-50%) scale(0.7);
   opacity: .5;
-  
 }
 
 #isso::before {
