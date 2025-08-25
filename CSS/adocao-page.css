@@ -155,6 +155,10 @@
   padding: 15px 20px;
 }
 
+strong {
+  font-weight: 800;
+}
+
 .card-header h3 {
   margin: 0;
   font-size: 24px;
@@ -200,6 +204,8 @@
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 0 20px 20px 20px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn-quero:hover {
