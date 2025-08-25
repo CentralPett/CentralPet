@@ -44,7 +44,7 @@ left.addEventListener('click', () => {
     if(scrollPosition_blog < 0) scrollPosition_blog =0;
 
     container_blog.scrollTo({
-        left: -scrollPosition_blog,
+        left: scrollPosition_blog,
         behavior: 'smooth'
     })
 

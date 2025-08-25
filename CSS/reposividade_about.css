@@ -1,36 +1,52 @@
-@media (max-width: 460px) {
+@media (max-width: 720px) {
+
+   /* Reset básico */
+body {
+  background: white;
+  color: #1f2937; 
+  height: 100vh;  
+  width: 100%;
+  flex-direction: column;
+  background-size: 360px;
   
-  body {
-    height: 100vh;
-    width: 360px;
-    flex-direction: column;
-    background-image: url(../IMG/Frame\ 349\ \(2\).svg);
-    background-size: 1350px;
-  }
-
-  #isso {
-    width: 320px;
-    margin-top: 80px;
-    height: 100px;
- }
-
- #isso::after {
-    display: none;
+}
+.acaba{
+  margin-top: 220px;
 }
 
-#isso h1 {
-  font-size: 1.5em;
-  font-weight: 600;
+/* Hero */
+#isso {
+  position: absolute;
+  left: 3.5%;
+  width: 360px;
+
 }
 
+#isso h1{
+
+  z-index: 1;
+}
+
+
+#isso::before,
+#isso::after {
+
+  display: none;
+  
+}
+
+.paw-print {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  opacity: 0.8;
+}
 
 /* Main */
 main {
-  width: 100%;
-  max-width: 360px;
+  width: 360px;
   margin: 0 auto;
-  padding: 20px 16px;
-  box-sizing: border-box;
+  padding: 40px 20px;
 
 }
 
@@ -49,7 +65,7 @@ main section {
 main ul {
   list-style: disc inside;
   color: #1f2937;
-  max-width: 800px;
+  max-width: 360px;
   margin: 0 auto;
   padding: 0;
   font-size: 20px;
@@ -83,10 +99,8 @@ main ul {
 }
 
 .question-badge {
-width: 300px;
-font-size: 12px;
-z-index: 2;
-position: relative;
+width: 320px;
+font-size: 18px;
 }
 
 
@@ -98,37 +112,37 @@ section {
 }
 
 /* Seção da esquerda: badge + texto vão para a esquerda */
-#z { 
-    margin-top: 55px;
+#esquerda { 
+  justify-content: center;
+  text-align: center;
 }
 
 #esquerda .text {
-  text-align: left;
-  align-items: flex-start;
-  
+  text-align: center;
+  align-items: center;
 }
 
 /* Seção da direita: badge + texto vão para a direita */
 #direita {
-  justify-content: flex-end;
-  text-align: right;
+  justify-content: center;
+  text-align: center;
 }
 
 #direita .text {
-  text-align: right;
-  align-items: flex-end;
+  text-align: center;
+  align-items: center;
 }
 
 
 
 .text img {
-  position: relative; /* Posição absoluta */
-       bottom: -116px; 
-       left: 55%; 
-       transform: translateX(-50%); 
-       width: 190px; /
+ 
+      left: 50%; 
+      bottom: -76px; 
+       width: 110px; /
 
 }
+
 
 #so3 {
   display: flex;
@@ -159,20 +173,41 @@ ul {
 }
 
 
-.footer-container {
-  max-width: 360px;
-}
-
 .footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 5px 20px;
 }
 
 .footer-links a {
-  font-size: 0.7rem;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
 }
 
 .footer-logo a img {
   width: 5rem;
 }
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.social-icons a i {
+  font-size: 1.0rem;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover i {
+  opacity: 0.8;
+}
+
+
+
 
 }

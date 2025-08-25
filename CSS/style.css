@@ -170,7 +170,6 @@ section #encontre:hover {
 #adocao_pets .card header .icon-paw i {
   width: 33.58px;
   height: 28.52px;
-  color: #fe49c1;
 }
 
 #adocao_pets .card header span {
@@ -358,6 +357,25 @@ section #encontre:hover {
  left: 50%;
 }
 
+#carrousel-card a{
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  top:60%;
+  left:76%;
+  transform: translateX(-75%);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#carrousel-card a:hover{
+  text-decoration:underline;
+}
+
 #carrousel-card h2{
   font-weight: bolder;
   color: white;
@@ -483,9 +501,24 @@ section #encontre:hover {
 
 .parceiro{
   width: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  position: relative;
+  transition: transform .3s ease-in-out;
+
+}
+
+.parceiro p{
+  color: black;
+}
+
+.parceiro:hover{
+  transform: translateY(-12px);
+  transition: .25s ease-in;
+
 }
 
 #duvidas{
@@ -712,3 +745,4 @@ footer{
   margin-top: 150px;
 
 }
+
