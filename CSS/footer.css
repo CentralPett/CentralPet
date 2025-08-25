@@ -1,4 +1,4 @@
-footer{
+footer {
   position: relative;
 }
 
@@ -38,4 +38,20 @@ footer{
 
 .footer-logo a img {
   width: 10rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-icons a i {
+  font-size: 1.8rem;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover i {
+  opacity: 0.8;
 }
