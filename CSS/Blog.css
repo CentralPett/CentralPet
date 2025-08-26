@@ -1,40 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-main {
+main{
   width: 100%;
   margin: auto;
   height: auto;
   display: flex;
   flex-direction: column;
+  
 }
 
-.hamburguer {
-  display: none;
-  border: none;
-  background-color: none;
-  border-top: 3px solid #000;
-  cursor: pointer;
+.hamburguer{
+    display: none;
+    border: none;
+    background-color: none;
+    border-top: 3px solid #000;
+    cursor: pointer;
 }
 
-.hamburguer::before,
-.hamburguer::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #000;
-  margin-top: 5px;
-}
+    .hamburguer::before,
+    .hamburguer::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin-top: 5px;
+    }
 
-#carrosel {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  scroll-behavior: smooth;
+#carrosel{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 #carrosel .card {
@@ -51,83 +52,57 @@ main {
 }
 
 #carrosel .card .text {
-  padding-top: 95px;
-  margin-right: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    padding-top: 95px;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
 }
 
-<<<<<<< HEAD
-#carrosel .card img {
-  width: 50%;
-  height: 655px;
-=======
 #carrosel .card img{
     width: 50%;
     height: 655px;
     margin-left: 60px;
->>>>>>> 4b9bbf6 (AJUSTADO BLOG)
 }
 
-#carrosel .card h1 {
-  font-size: 40px;
-  font-weight: bold;
-  height: 106px;
-  width: 725px;
+#carrosel .card h1{
+    font-size: 40px;
+    font-weight: bold;
+    height: 106px;
+    width: 725px;
 }
 
-#carrosel .card p {
-  font-size: 20px;
-  font-weight: medium;
-  height: 72px;
-  width: 596px;
-  margin-top: 30px;
+#carrosel .card p{
+    font-size: 20px;
+    font-weight: medium;
+    height: 72px;
+    width: 596px;
+    margin-top: 30px;
 }
 
-#carrosel .card .pet {
-  color: #3746a4;
-  font-size: 20px;
-  height: 23px;
-  width: 725px;
-  margin-top: 30px;
+#carrosel .card .pet{
+    
+    color: #3746A4;
+    font-size: 20px;
+    height: 23px;
+    width: 725px;
+    margin-top: 30px;
+
 }
 
-#carrosel .card .leia {
-  width: 202.5px;
-  height: 58.88px;
-  background-color: #f67f00;
-  margin-top: 30px;
-  color: white;
-  font-weight: bold;
-  font-size: 28.72px;
-  border-radius: 2.87px;
+#carrosel .card .leia{
+    width: 202.5px;
+    height: 58.88px;
+    background-color: #f67f00;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 28.72px;
+    border-radius: 2.87px;
+
 }
 
-<<<<<<< HEAD
-#left {
-  background-color: #3746a4;
-  color: white;
-  border-radius: 80.29px;
-  width: 78px;
-  height: 76.47px;
-  position: absolute;
-  left: 15px;
-  top: 320px;
-  cursor: pointer;
-}
-
-#right {
-  background-color: #3746a4;
-  color: white;
-  border-radius: 80.29px;
-  width: 78px;
-  height: 76.47px;
-  position: absolute;
-  left: 90%;
-  top: 320px;
-  cursor: pointer;
-=======
 
 #left{
     background-color: #3746A4;
@@ -153,59 +128,62 @@ main {
 top: 60%;
     cursor: pointer;
          z-index: 15;
->>>>>>> 4b9bbf6 (AJUSTADO BLOG)
 }
 
-#noticia {
-  width: 80%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+#noticia{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
-.card_noticia {
-  margin-top: 30px;
-  width: 514px;
-  height: 420px;
-  flex: 0 0 calc(33.333% - 20px);
+.card_noticia{
+    margin-top: 30px;
+    width: 514px;
+    height: 420px;
+    flex: 0 0 calc(33.333% - 20px);
+    
 }
 
-.card_noticia img {
-  width: 514px;
-  height: 288px;
-  box-shadow: 2px 2px 2px 2px rgb(222, 220, 220);
+.card_noticia img{
+    width: 514px;
+    height: 288px;
+    box-shadow: 2px 2px 2px 2px rgb(222, 220, 220);
 }
 
-.card_noticia .pet {
-  color: #3746a4;
-  font: 16px;
-  margin-left: 25%;
+.card_noticia .pet{
+    color: #3746A4;
+    font: 16px;
+    margin-left: 25%;
+
 }
 
-.card_noticia h3 {
-  font-size: 20px;
-  font-weight: medium;
-  height: 48px;
-  width: 514px;
+.card_noticia h3{
+    font-size: 20px;
+    font-weight: medium;
+    height: 48px;
+    width: 514px;
 }
 
-.card_noticia button {
-  width: 141px;
-  height: 41px;
-  background-color: #3746a4;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
+.card_noticia button{
+    width: 141px;
+    height: 41px;
+    background-color: #3746A4;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
 }
+
 
 .site-footer {
-  margin-top: 20px;
+margin-top: 20px;
   background-color: #0d6efd;
   color: white;
   padding: 40px 0;
@@ -243,174 +221,197 @@ top: 60%;
   width: 10rem;
 }
 
-@media (max-width: 1366px) {
-  #carrosel {
-    position: relative;
-  }
 
-  #carrosel .card img {
+
+
+@media(max-width: 1366px){
+
+
+    #carrosel{
+        position: relative;
+    }
+
+#carrosel .card img{
     width: 782px;
     height: 455px;
     margin-right: 18px;
-  }
+}
 
-  #carrosel .card h1 {
+#carrosel .card h1{
     font-size: 30px;
     width: 625px;
-  }
+}
 
-  #carrosel .card p {
+#carrosel .card p{
     font-size: 16px;
     width: 496px;
-  }
+}
 
-  #carrosel .card .pet {
+#carrosel .card .pet{
+    
     font-size: 16px;
-  }
 
-  #carrosel .card .leia {
+}
+
+#carrosel .card .leia{
     width: 182.5px;
-  }
+    
+}
 
-  #left {
+
+#left{
     width: 78px;
     height: 76.47px;
     left: 15px;
-    top: 320px;
-    position: absolute;
-    z-index: 0;
-  }
+     top: 320px;
+     position: absolute;
+     z-index: 0;
+}
 
-  #right {
+#right{
+
     width: 78px;
     height: 76.47px;
     left: 90%;
     top: 320px;
     position: absolute;
     z-index: 10;
-  }
-
-  #carrosel .card {
-    margin-right: 1%;
-  }
-
-  #noticia {
-    width: 100%;
-    gap: 10px;
-  }
-
-  .card_noticia {
-    width: 414px;
-    height: 320px;
-  }
-
-  .card_noticia img {
-    width: 414px;
-    height: 188px;
-  }
-
-  .card_noticia .pet {
-    font: 12px;
-  }
-
-  .card_noticia h3 {
-    font-size: 16px;
-  }
+  
 }
 
-@media (max-width: 720px) {
-  #carrosel {
-    position: relative;
-  }
+#carrosel .card {
+    margin-right: 1%;
+}
 
-  #carrosel .card .text {
+#noticia{
+    width: 100%;  
+    gap: 10px;
+}
+
+.card_noticia{
+    width: 414px;
+    height: 320px;  
+}
+
+.card_noticia img{
+    width: 414px;
+    height: 188px;
+}
+
+.card_noticia .pet{
+    font: 12px;
+}
+
+.card_noticia h3{
+    font-size: 16px;
+}
+
+}
+
+@media(max-width: 720px) {
+
+#carrosel{
+        position: relative;
+    }
+
+
+#carrosel .card .text {
     padding-top: 10px;
-  }
+    }
 
-  .card_noticia h3 {
+.card_noticia h3{
     width: 360px;
-  }
+}
 
-  #carrosel .card img {
+#carrosel .card img{
     width: 492px;
     height: 344px;
     margin-right: 32%;
-  }
+}
 
-  #carrosel .card h1 {
+#carrosel .card h1{
     font-size: 20px;
     width: 300px;
-    margin-left: 10%;
-  }
+    margin-left:  10%;
+}
 
-  #carrosel .card p {
+#carrosel .card p{
     font-size: 14px;
     width: 400px;
     margin-left: 10%;
     margin-top: 10px;
-  }
+}
 
-  #carrosel .card .pet {
+#carrosel .card .pet{
+    
     font-size: 14px;
-  }
 
-  #carrosel .card .leia {
+}
+
+#carrosel .card .leia{
     width: 142.5px;
     margin-top: 30px;
     margin-left: 60px;
-  }
-
-  #carrosel .card {
-    flex-direction: column;
-  }
-
-  #right {
-    left: 80%;
-  }
-
-  .footer-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px 20px;
-  }
-
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 500;
-    transition: opacity 0.3s ease;
-  }
-
-  .footer-logo a img {
-    width: 5rem;
-  }
-
-  .social-icons {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-  }
-
-  .social-icons a i {
-    font-size: 1rem;
-    color: white;
-    transition: opacity 0.3s ease;
-  }
-
-  .social-icons a:hover i {
-    opacity: 0.8;
-  }
-
-  /* Mover botão Vlibras para a esquerda */
-  [vw-access-button] {
-    right: auto !important;
-    left: 40px !important;
-  }
-
-  /* Ajusta o wrapper do plugin */
-  [vw-plugin-wrapper] {
-    right: auto !important;
-    left: 40px !important;
-  }
 }
+
+#carrosel .card{
+
+    flex-direction: column;
+
+}
+
+#right{
+    left: 80%;
+}
+
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo a img {
+  width: 5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.social-icons a i {
+  font-size: 1.0rem;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover i {
+  opacity: 0.8;
+}
+
+/* Mover botão Vlibras para a esquerda */
+[vw-access-button] {
+  right: auto !important;
+  left: 40px !important;
+}
+
+/* Ajusta o wrapper do plugin */
+[vw-plugin-wrapper] {
+  right: auto !important;
+  left: 40px !important;
+}
+
+}
+
+
+
