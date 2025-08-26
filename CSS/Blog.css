@@ -38,14 +38,16 @@ main {
 }
 
 #carrosel .card {
-  flex: 0 0 auto;
-  margin-top: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 5%;
-  z-index: 9;
+
+    flex: 0 0 auto;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    gap: 30px;
+    z-index: 9;
 }
 
 #carrosel .card .text {
@@ -56,9 +58,16 @@ main {
   align-items: flex-start;
 }
 
+<<<<<<< HEAD
 #carrosel .card img {
   width: 50%;
   height: 655px;
+=======
+#carrosel .card img{
+    width: 50%;
+    height: 655px;
+    margin-left: 60px;
+>>>>>>> 4b9bbf6 (AJUSTADO BLOG)
 }
 
 #carrosel .card h1 {
@@ -95,6 +104,7 @@ main {
   border-radius: 2.87px;
 }
 
+<<<<<<< HEAD
 #left {
   background-color: #3746a4;
   color: white;
@@ -117,6 +127,33 @@ main {
   left: 90%;
   top: 320px;
   cursor: pointer;
+=======
+
+#left{
+    background-color: #3746A4;
+    color: white;
+    border-radius: 80.29px;
+    width: 78px;
+    height: 76.47px;
+    position: absolute;
+    left: 15px;
+     top: 60%;
+     cursor: pointer;
+     z-index: 15;
+}
+
+#right{
+    background-color: #3746A4;
+    color: white;
+    border-radius: 80.29px;
+    width: 78px;
+    height: 76.47px;
+    position: absolute;
+    left: 90%;
+top: 60%;
+    cursor: pointer;
+         z-index: 15;
+>>>>>>> 4b9bbf6 (AJUSTADO BLOG)
 }
 
 #noticia {
