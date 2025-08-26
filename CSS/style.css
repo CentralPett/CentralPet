@@ -69,38 +69,34 @@ section #encontre:hover {
   text-align: center;
 }
 
-#subtitulo3{
-  margin: 125px  auto 80px auto;
+#subtitulo3 {
+  margin: 125px auto 80px auto;
   width: 900px;
   height: 67px;
-  background: #FE9516;
+  background: #fe9516;
   border-radius: 5px;
-  border: 5px solid #DB780F;
+  border: 5px solid #db780f;
   padding: 7px;
   font-weight: bold;
   color: white;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  
-
 }
 
-#subtitulo3{
-  margin: 125px  auto 80px auto;
+#subtitulo3 {
+  margin: 125px auto 80px auto;
   width: 900px;
   height: 67px;
-  background: #FE9516;
+  background: #fe9516;
   border-radius: 5px;
-  border: 5px solid #DB780F;
+  border: 5px solid #db780f;
   padding: 7px;
   font-weight: bold;
   color: white;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  
-
 }
 
 #subtitulo2 {
@@ -290,12 +286,9 @@ section #encontre:hover {
   border-radius: 5px;
 }
 
-
-
-
 #carrousel-card {
   width: 100%;
-  height: 900px;  
+  height: 900px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -318,13 +311,13 @@ section #encontre:hover {
   position: relative;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 #carrousel-card #right,
 #carrousel-card #left {
   position: absolute;
-  top: 50%;           /* centraliza verticalmente */
+  top: 50%; /* centraliza verticalmente */
   transform: translateY(-50%);
   width: 102px;
   height: 100px;
@@ -334,30 +327,30 @@ section #encontre:hover {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 10;        /* para ficar acima dos cards */
+  z-index: 10; /* para ficar acima dos cards */
 }
 
 #carrousel-card #right {
-  right: 40px;         /* distância da borda direita */
+  right: 40px; /* distância da borda direita */
 }
 
 #carrousel-card #left {
-  left: 50px;          /* distância da borda esquerda */
+  left: 50px; /* distância da borda esquerda */
 }
 
 #carrousel-card h2,
-#carrousel-card h1{
- z-index: 2;
- position: absolute;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- top: 35%;
- left: 50%;
+#carrousel-card h1 {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 35%;
+  left: 50%;
 }
 
-#carrousel-card a{
+#carrousel-card a {
   z-index: 2;
   position: absolute;
   display: flex;
@@ -365,18 +358,18 @@ section #encontre:hover {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  top:60%;
-  left:76%;
+  top: 60%;
+  left: 76%;
   transform: translateX(-75%);
   color: #ffffff;
   text-decoration: none;
 }
 
-#carrousel-card a:hover{
-  text-decoration:underline;
+#carrousel-card a:hover {
+  text-decoration: underline;
 }
 
-#carrousel-card h2{
+#carrousel-card h2 {
   font-weight: bolder;
   color: white;
   font-size: 48px;
@@ -385,7 +378,7 @@ section #encontre:hover {
   text-align: center;
 }
 
-#carrousel-card h1{
+#carrousel-card h1 {
   margin-top: 20px;
   font-weight: bolder;
   color: white;
@@ -396,8 +389,7 @@ section #encontre:hover {
   top: 45%;
 }
 
-
-#confiar-section{
+#confiar-section {
   background-image: url(../IMG/fundoConfiarSection.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -409,67 +401,60 @@ section #encontre:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
 }
 
-#confiar-section .card{
+#confiar-section .card {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-direction: column;
   margin-top: 150px;
-  box-shadow: 0px 0px 25px 0px rgba(92, 92, 92, .25);
+  box-shadow: 0px 0px 25px 0px rgba(92, 92, 92, 0.25);
   flex: 0 0 calc(33.33% - 20px);
 
   width: 550px;
   height: 400px;
   margin: 20px;
   padding: 32px 32px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-#confiar-section .card img{
+#confiar-section .card img {
   width: 150px;
   height: 150px;
 }
 
-#confiar-section .card:hover{
-  transition: .25s ease-in;
+#confiar-section .card:hover {
+  transition: 0.25s ease-in;
   border-color: #f77f00;
   border-width: 2px;
   padding-top: 0px;
- 
 }
 
-#card-tittle{
+#card-tittle {
   text-align: center;
   font-size: 2em;
   font-weight: 800;
 }
 
-#card-desc{
+#card-desc {
   text-align: center;
   font-size: 1.5em;
 }
 
-
-#parceiros{
-
+#parceiros {
   margin-top: 80px;
   width: 100%;
-  height: 300px;  
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 2;
-  
-
 }
 
-#parceiros h1{
-
+#parceiros h1 {
   color: white;
   border: 5px solid rgb(134, 172, 221, 0.5);
   background-color: rgb(78, 162, 251, 0.5);
@@ -479,13 +464,11 @@ section #encontre:hover {
   height: 79px;
   text-align: center;
   padding-top: 10px;
-
 }
 
-#parceiros #colaboradoes{
-
+#parceiros #colaboradoes {
   position: relative;
-    z-index: 2;      
+  z-index: 2;
   font-size: 36px;
   font-weight: 700;
   color: white;
@@ -496,11 +479,10 @@ section #encontre:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-    background-color: rgb(78, 162, 251, 0.5);
-
+  background-color: rgb(78, 162, 251, 0.5);
 }
 
-.parceiro{
+.parceiro {
   width: 80%;
   height: 100%;
   display: flex;
@@ -508,40 +490,34 @@ section #encontre:hover {
   align-items: center;
   justify-content: space-around;
   position: relative;
-  transition: transform .3s ease-in-out;
-
+  transition: transform 0.3s ease-in-out;
 }
 
-.parceiro p{
+.parceiro p {
   color: black;
 }
 
-.parceiro:hover{
+.parceiro:hover {
   transform: translateY(-12px);
-  transition: .25s ease-in;
-
+  transition: 0.25s ease-in;
 }
 
-#duvidas{
-
+#duvidas {
   overflow-x: visible;
   margin-top: 300px;
   width: 100%;
-  height: auto;  
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  
-
 }
 
-#duvidas h1{
- 
- color: white;
-  border: 5px solid #DD8686;
-  background-color: #EF584A;
+#duvidas h1 {
+  color: white;
+  border: 5px solid #dd8686;
+  background-color: #ef584a;
   opacity: 60%;
   font-size: 40px;
   font-weight: medium;
@@ -549,23 +525,19 @@ section #encontre:hover {
   height: 79px;
   text-align: center;
   padding-top: 10px;
-
 }
 
-#duvidas img{
-
+#duvidas img {
   position: absolute;
   z-index: 4;
   top: 20%;
   left: 70%;
   width: 523px;
   height: 784px;
-
 }
 
- #circle-1{
-
-  background-color: #F4FB24;
+#circle-1 {
+  background-color: #f4fb24;
   border-radius: 50%;
   width: 782px;
   height: 795px;
@@ -573,9 +545,9 @@ section #encontre:hover {
   bottom: 40%;
   right: 80%;
   z-index: 0;
-
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -586,7 +558,7 @@ html, body {
 }
 
 #circle-2 {
-  background-color: #FF8181;
+  background-color: #ff8181;
   width: 500px;
   height: 1000px;
   border-top-left-radius: 500px;
@@ -594,21 +566,17 @@ html, body {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   position: absolute;
-  top: 400px;   
-  right:  0px;
+  top: 400px;
+  right: 0px;
   z-index: 0;
 }
 
-
-#frequente{
-
+#frequente {
   margin-top: 150px;
   z-index: 3;
 }
 
-label{
-
-  
+label {
   margin-top: 30px;
   margin-right: 0px;
   padding-top: 10px;
@@ -622,56 +590,48 @@ label{
   font-weight: lighter;
   width: 1239px;
   height: 70px;
-
 }
 
-
-label i{
-
+label i {
   margin-left: 45%;
-
 }
 
-#fale-conosco{
-
-  
+#fale-conosco {
   overflow-x: visible;
   margin-top: 300px;
   width: 100%;
-  height: auto;  
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
 
-#fale-conosco #fundo{
-   margin-top: 150px;
-   background-color: #D69E9E;
-   width: 1275px;
-   height: 746px;
-   border-radius: 60px;
+#fale-conosco #fundo {
+  margin-top: 150px;
+  background-color: #d69e9e;
+  width: 1275px;
+  height: 746px;
+  border-radius: 60px;
 }
 
-#fale-conosco #frase{
-   position: absolute;
-   background-color: transparent;
-   border: 13px solid #80F490;
-  left: 15%;  
-   width: 1205px;
-   height: 705px;
-   border-radius: 60px;
+#fale-conosco #frase {
+  position: absolute;
+  background-color: transparent;
+  border: 13px solid #80f490;
+  left: 15%;
+  width: 1205px;
+  height: 705px;
+  border-radius: 60px;
 }
 
-#fale-conosco h1{
-
+#fale-conosco h1 {
   font-size: 40;
   color: white;
   font-weight: medium;
-  background-color: #4AEF60;
-  border: 5px solid #86DDB6;
+  background-color: #4aef60;
+  border: 5px solid #86ddb6;
   text-align: center;
   position: absolute;
   width: 394px;
@@ -682,18 +642,15 @@ label i{
   left: 35%;
 }
 
-#fale-conosco img{
-
+#fale-conosco img {
   width: 953px;
   height: 635px;
   position: absolute;
   top: 40%;
   left: 6%;
-
 }
 
-#caixa{
-
+#caixa {
   position: absolute;
   top: 40%;
   left: 55%;
@@ -701,34 +658,31 @@ label i{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-
 }
 
-#nome{
+#nome {
   width: 623px;
   height: 44px;
   font-size: 28px;
 }
 
-#email{
-    width: 623px;
+#email {
+  width: 623px;
   height: 44px;
   font-size: 28px;
 }
 
-#messagen{
+#messagen {
   width: 623px;
   height: 392px;
-  font-size: 28px;  
+  font-size: 28px;
 }
 
-#fale-conosco button{
-
+#fale-conosco button {
   width: 179px;
   height: 55px;
   position: absolute;
-  background-color: #F77F00;
+  background-color: #f77f00;
   color: #fff;
   font-weight: bolder;
   border-radius: 5px;
@@ -737,13 +691,8 @@ label i{
   top: 105%;
   z-index: 5;
   margin-bottom: 30px;
-
 }
 
-
-footer{
-
+footer {
   margin-top: 150px;
-
 }
-
