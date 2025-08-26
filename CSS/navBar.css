@@ -10,6 +10,7 @@
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5);
   position: fixed;
   width: 95%;
+  top: 0;
   left: 0;
   right: 0;
   transform: none;

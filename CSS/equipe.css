@@ -19,7 +19,7 @@ main {
   align-items: center;
   justify-content: space-around;
   background: linear-gradient(to top, #da8525ff 0.1px, #eb9a3eff 95%);
-  padding: 4px 0px;
+  margin-top: 12px;
 }
 
 #quemSomosTittleBox h1 {
