@@ -34,7 +34,9 @@ body {
 
 /* Centraliza o painel do VLibras quando ele é aberto */
 div[vw-plugin-wrapper] {
-  top: 50% !important;
+  top: 5vh !important; /* Posição a partir do topo (5% da altura da tela) */
+  right: 5px !important; /* Distância da borda direita da tela */
+  left: auto !important;
   bottom: auto !important;
-  transform: translateY(-50%) !important;
+  transform: none !important; /* Remove qualquer transform conflitante */
 }
