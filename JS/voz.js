@@ -16,7 +16,6 @@
         box-shadow: 0 8px 24px rgba(0,0,0,.12);
         cursor: pointer;
         font-size: 1.1em;
-        position: relative;
       }
       .tts-fab:focus {
         outline: 2px solid #000;

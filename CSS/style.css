@@ -696,3 +696,48 @@ label i {
 footer {
   margin-top: 150px;
 }
+
+/* ================================================ */
+/* CORREÇÃO FINAL DE POSICIONAMENTO GERAL           */
+/* Substitua as regras antigas por este bloco       */
+/* ================================================ */
+
+/* 1. Garante que a página ocupe a altura toda, corrigindo a posição dos ícones */
+html,
+body {
+  height: 100%;
+}
+
+/* 2. Re-estabelece a posição correta do container dos ícones no centro */
+.acessibilidade-container {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 3. Empurra o painel do VLibras para baixo (método mais seguro) */
+div[vw-plugin-wrapper] {
+  top: 5vh !important; /* Empurra 5% da altura da tela para baixo */
+  transform: none !important; /* Remove o transform que estava causando o conflito */
+  bottom: auto !important;
+  left: auto !important; /* Garante que não puxe para a esquerda */
+  right: 5px !important; /* Alinha à direita da tela */
+}
+
+/* Mantém a animação de pulo que já funcionava */
+.acessibilidade-container > [vw],
+.acessibilidade-container > .tts-fab {
+  transition: transform 0.2s ease-in-out;
+}
+
+.acessibilidade-container > [vw]:hover,
+.acessibilidade-container > .tts-fab:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
