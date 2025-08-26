@@ -60,22 +60,22 @@ main {
   margin-bottom: 64px 0px;
 }
 
-  #quemSomosCardBox {
-    margin: auto;
-    max-width: 1200px;
-    min-width: 500px;
-    height: auto;
-    margin-top: 25px;
-    margin-bottom: 200px;
-    padding: 64px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    border-radius: 5px;
-  }
+#quemSomosCardBox {
+  margin: auto;
+  max-width: 1200px;
+  min-width: 500px;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 200px;
+  padding: 64px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  border-radius: 5px;
+}
 
 #quemSomosCardBox .card {
   margin: 0;

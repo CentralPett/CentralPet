@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/navBar.css" type="text/css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="./CSS/faixaTitulo.css">
+    <link rel="stylesheet" href="./CSS/acessibilidade.css">
     <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
      <link
       rel="stylesheet"
@@ -190,18 +191,20 @@
       </div>
     </footer>
   <!--Funcionalidade de acessibilidade Vlibras-->
-    <div vw class="enabled">
-          <div vw-access-button class="active"></div>
-          <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-          </div>
+    <div class="acessibilidade-container">
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
         </div>
-
+      </div>
+    </div>
+    <script src="./JS/voz.js" id="voice-tts"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
       new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
-    <script src="./js/main.js" defer></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
      <script src="JS/Blog.js"></script>
     <!-- Script para modificar a barra de navegação quando rolar para baixo-->
     <script>

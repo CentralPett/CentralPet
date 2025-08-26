@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/fonts.css" type="text/css" />
     <link rel="stylesheet" href="./CSS/footer.css" type="text/css" />
     <link rel="stylesheet" href="./CSS/faixaTitulo.css" type="text/css" />
-    <link rel="stylesheet" href="CSS/voice-tts.css" />
+    <link rel="stylesheet" href="CSS/acessibilidade.css" />
     <link
       rel="stylesheet"
       href="./CSS/equipe_responsividade.css"
@@ -242,32 +242,6 @@
       </div>
     </footer>
 
-    <div class="acessibilidade-container">
-      <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      </div>
-    </div>
-    <script src="JS/voz.js" id="voice-tts"></script>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget("https://vlibras.gov.br/app");
-    </script>
-    <script src="./js/main.js" defer></script>
-    <!-- Script para modificar a barra de navegação quando rolar para baixo-->
-
-    <script>
-      const navbar = document.getElementById("barra-navegacao");
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
-    </script>
     <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

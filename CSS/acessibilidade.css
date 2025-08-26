@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+
+/* Posiciona o container geral dos ícones */
+.acessibilidade-container {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+
+  /* Organiza os ícones um abaixo do outro com espaço */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Força os widgets a obedecerem ao layout do container */
+.acessibilidade-container > [vw],
+.acessibilidade-container > .tts-fab {
+  position: static !important;
+}
+
+/* Animação de pulo para o botão do VLibras (o de voz já tem a sua) */
+.acessibilidade-container [vw-access-button] {
+  transition: transform 0.2s ease-in-out;
+}
+.acessibilidade-container [vw-access-button]:hover {
+  transform: translateY(-5px);
+}
+
+/* Centraliza o painel do VLibras quando ele é aberto */
+div[vw-plugin-wrapper] {
+  top: 50% !important;
+  bottom: auto !important;
+  transform: translateY(-50%) !important;
+}
