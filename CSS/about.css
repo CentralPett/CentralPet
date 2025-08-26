@@ -8,15 +8,10 @@ body {
   height: 100vh;  
   width: 100%;
   flex-direction: column;
-  background-image: url(../IMG/Frame\ 349\ \(2\).svg);
-  background-size: 1350px;
-  
-}
-.paw-print {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  opacity: 0.8;
+  background-image: url(../IMG/fundoPatasAzuisAbout.png);
+  background-repeat:repeat-y;
+  background-size: cover;
+
 }
 
 /* Main */
@@ -29,7 +24,8 @@ main {
 
 main h1{
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
+  font-weight: 700;
 }
 
 .question-center {
@@ -54,15 +50,17 @@ main ul {
   font-weight: 480;
 }
 
+main li{
+  font-size: 1.5em;
+  text-align:left;
+}
+
 .img-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.img-section .text {
-  flex: 1;
-}
 
 .img-section .image {
   display: flex;
@@ -76,35 +74,32 @@ main ul {
   height: auto;
 }
 
-.img-section .image.double {
-  gap: 20px;
-}
-
 .question-badge {
-display: inline-block;
-background: linear-gradient(90deg, #3746A4, #151A3E);
+
+background: #5161cc;
 color: white;
 font-weight: 400;
-font-size: 20px;
-padding: 0.5rem 1.5rem;
-border-radius: 9999px;
-box-shadow: 0 4px 12px rgb(40 62 143 / 0.5);
+font-size: 2em;
+padding: 20px 0px;
+border-radius: 150px;
+box-shadow: 0 0px 25px rgba(0, 0, 0, 0.5);
 max-width: 100%;
-width: 520px;
+width: auto;
 height: auto;
+margin: 0px auto 32px auto;
+text-align: center;
+transition: .25s ease-in-out;
 }
 
 
 /* Alinhamento geral das sections */
 section {
-  display: flex;
-  margin: 20px 0;
   width: 100%;
 }
 
 /* Seção da esquerda: badge + texto vão para a esquerda */
 #esquerda { 
-  justify-content: flex-start;
+  justify-content: center;
   text-align: left;
 }
 
@@ -115,51 +110,41 @@ section {
 
 /* Seção da direita: badge + texto vão para a direita */
 #direita {
-  justify-content: flex-end;
+  width: 100%;
+
+  justify-content: center;
   text-align: right;
 }
 
 #direita .text {
   text-align: right;
-  align-items: flex-end;
-}
-
-
-
-.text img {
-  position: relative; /* Posição absoluta */
-       bottom: -116px; 
-       left: 55%; 
-       transform: translateX(-50%); 
-       width: 190px; /
-
-}
-
-#so3 {
-  display: flex;
-  bottom: 10px;
-}
-
-#subir {
-  display: flex;
-  position: relative;
-  justify-content: baseline;
-  flex-direction: column;
-  align-items: center;
-  bottom: 100px;
-}
-
-#descer {
-  display: flex;
-  position: relative;
-  justify-content: baseline;
-  flex-direction: column;
-  align-items: center;
-  bottom: -45px;
-}
-
-ul {
-  line-height: 1.8;
   
 }
+
+#fofs{
+  width: 50%;
+  margin: 0 auto 64px auto;
+  display: flex;
+  justify-content: center;
+  transition: transform .3s ease-in-out;
+  
+}
+
+#fofs:hover{
+  transform: translateY(-16px);
+  transition:  .25s ease-in;
+
+}
+
+.text:hover .question-badge{
+
+  box-shadow: 0px 10px 20px rgba(247, 127, 0, .8);
+  transition: .25s ease-in;
+
+}
+
+
+
+
+
 
