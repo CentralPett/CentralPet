@@ -12,53 +12,6 @@ body {
   background-size: 1350px;
   
 }
-
-/* Hero */
-#isso {
-  background: linear-gradient(90deg, #3746A4, #151A3E);
-  color: white;
-  text-align: center;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 80px;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#isso h1{
-
-  font-size: 2em;
-  font-weight: 700;
-  z-index: 1000;
-}
-
-
-#isso::before,
-#isso::after {
-  content: url("../IMG/Frame\ 190.svg");
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) scale(0.7);
-  opacity: .5;
-}
-
-#isso::before {
-  left: -50px;
-}
-
-#isso::after {
-  right: -58px;
-}
-
-#isso h1 {
-  font-size: 2em;
-  font-weight: 600;
-}
-
 .paw-print {
   width: 40px;
   height: 40px;
@@ -70,8 +23,13 @@ body {
 main {
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px 20px;
 
+}
+
+main h1{
+  text-align: center;
+  margin-bottom: 64px;
 }
 
 .question-center {

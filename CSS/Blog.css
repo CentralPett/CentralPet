@@ -410,18 +410,4 @@ margin-top: 20px;
 }
 
 
-#blogTittleBox{
-    margin-top: 120px;
-    margin-bottom: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    color: white;
-    height: 150px;
-    background: linear-gradient(to top, rgb(100, 26, 185) 0.1px, rgb(137, 62, 235) 95%);
-}
 
-#blogTittleBox h1{
-    font-weight: 700;
-}
