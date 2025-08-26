@@ -1,7 +1,6 @@
 #parceiros-sec-exclusiva {
   background-color: #ffffff;
   font-family: Arial, sans-serif;
-
 }
 
 .parceiros-container-exclusiva {
@@ -80,7 +79,6 @@ body.modal-open .parceiro-card-exclusiva:hover {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
 #headerParceiroTittle {
   height: 155px;
   width: 100%;
@@ -144,10 +142,3 @@ body.modal-open .parceiro-card-exclusiva:hover {
   transform: translateY(-5px);
   cursor: pointer;
 }
-=======
-
-
-
-
-
->>>>>>> dad6caa701e0bd007f8eac950188c7b3a1b22cad

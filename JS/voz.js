@@ -52,7 +52,7 @@
         background: #fafafa;
         cursor: pointer;
         font-size: 1em;
-        box-shadow: 0px 0px px #000;
+        box-shadow: 0px 0px 5px #000;
         flex-grow: 1;
       }
       .tts-btn:focus {
