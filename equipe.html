@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/equipe.css" type="text/css"/>
-    <link rel="stylesheet" href="./CSS/navBar.css" type="text/css"/>
-    <link rel="stylesheet" href="./CSS/fonts.css" type="text/css"/>
-    <link rel="stylesheet" href="./CSS/footer.css" type="text/css"/>
+    <link rel="stylesheet" href="./CSS/equipe.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/navBar.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/footer.css" type="text/css" />
     <link rel="stylesheet" href="./CSS/faixaTitulo.css" type="text/css">
-    <link rel="stylesheet" href="./CSS/equipe_responsividade.css" type="text/css">
+    <link rel="stylesheet" href="CSS/voice-tts.css" />
+    <link
+      rel="stylesheet"
+      href="./CSS/equipe_responsividade.css"
+      type="text/css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css" />
 
     <link rel="icon" href="./IMG/favicon.ico" type="image/x-icon" />
     <title>CentralPet - Equipe</title>
@@ -100,7 +104,11 @@
       </section>
       <section id="quemSomosCardBox">
         <div class="card">
-          <img id="fotoPerfil" src="./IMG/equipe/fotoEquipeAlberth.jpg" alt=""/>
+          <img
+            id="fotoPerfil"
+            src="./IMG/equipe/fotoEquipeAlberth.jpg"
+            alt=""
+          />
           <p>Alberth Shingler Mendes Nery<br />alberthsm.nery@gmail.com</p>
 
           <div id="icones">
@@ -113,7 +121,11 @@
           </div>
         </div>
         <div class="card">
-          <img id="fotoPerfil" src="./IMG/equipe/fotoEquipeVitorMota.png" alt="" />
+          <img
+            id="fotoPerfil"
+            src="./IMG/equipe/fotoEquipeVitorMota.png"
+            alt=""
+          />
           <p>Vitor Mota Novais de Jesus<br />vitormotanovais@gmail.com</p>
 
           <div id="icones">
@@ -126,7 +138,11 @@
           </div>
         </div>
         <div class="card">
-          <img id="fotoPerfil" src="./IMG/equipe/fotoEquipeMatheusDias.jpg" alt="" />
+          <img
+            id="fotoPerfil"
+            src="./IMG/equipe/fotoEquipeMatheusDias.jpg"
+            alt=""
+          />
           <p>Matheus Silva Dias<br />contato.mthdias@gmail.com</p>
 
           <div id="icones">
@@ -184,8 +200,7 @@
       </section>
     </main>
 
-  
-<footer class="site-footer">
+    <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-logo">
           <a href="#">
@@ -210,15 +225,16 @@
         </nav>
       </div>
     </footer>
-  <!--Funcionalidade de acessibilidade Vlibras-->
 
-    <div vw class="enabled">
-          <div vw-access-button class="active"></div>
-          <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-          </div>
+    <div class="acessibilidade-container">
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
         </div>
-
+      </div>
+    </div>
+    <script src="JS/voz.js" id="voice-tts"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
       new window.VLibras.Widget("https://vlibras.gov.br/app");

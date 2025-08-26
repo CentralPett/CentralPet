@@ -1,7 +1,6 @@
 #parceiros-sec-exclusiva {
   background-color: #ffffff;
   font-family: Arial, sans-serif;
-
 }
 
 .parceiros-container-exclusiva {
@@ -34,13 +33,10 @@
   cursor: pointer;
 }
 .parceiro-card-exclusiva:hover {
-
   box-shadow: 0px 0px 25px rgba(161, 5, 5, 0.5);
   text-align: center;
   transition: 0.25s ease-in;
-
 }
-
 
 .parceiro-logo-exclusiva {
   width: 70px;
@@ -58,7 +54,6 @@
   color: #ff8c00;
   font-size: 1.5em;
 }
-
 
 .modal-parceiro {
   border-radius: 12px;
@@ -81,11 +76,69 @@
 /* Sem efeito de hover enquanto o modal está aberto */
 body.modal-open .parceiro-card-exclusiva:hover {
   transform: none;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+#headerParceiroTittle {
+  height: 155px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
 
+  background: linear-gradient(to top, #be2d20 0.1px, #a3362c 95%);
+  color: white;
+  margin-bottom: 100px;
+}
 
+#headerParceiroTittle h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
 
+#headerParceiroTittle img {
+  width: 30%;
+  height: 100%;
+}
 
+/* ================================================ */
+/* ESTILOS FINAIS PARA OS ÍCONES DE ACESSIBILIDADE */
+/* Coloque isso no seu arquivo CSS principal */
+/* ================================================ */
 
+.acessibilidade-container {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Regra que ajusta os widgets para obedecerem ao container */
+.acessibilidade-container > [vw],
+.acessibilidade-container > .tts-fab {
+  /* Remove o posicionamento original dos widgets */
+  position: static !important;
+  margin: 0 !important;
+  padding: 5px !important;
+  height: auto !important;
+
+  /* Prepara os ícones para uma animação suave */
+  transition: transform 0.2s ease-in-out;
+
+  /* Mantém o ícone centralizado, mesmo durante a animação */
+  transform: translateY(0);
+}
+
+/* Define o que acontece quando o mouse passa por cima */
+.acessibilidade-container > [vw]:hover,
+.acessibilidade-container > .tts-fab:hover {
+  /* Move o ícone 5 pixels para cima */
+  transform: translateY(-5px);
+  cursor: pointer;
+}
