@@ -82,9 +82,9 @@ Nossa equipe reúne profissionais dedicados a promover a adoção consciente e d
 
 | Nome | Email | GitHub | LinkedIn |
 |------|-------|--------|----------|
-| Alberth Shingler Mendes Nery | alberthsm.nery@gmail.com | [GitHub](https://github.com/asmnery) | [LinkedIn](https://www.linkedin.com/in/asmnery/) |
-| Vitor Mota Novais de Jesus | vitormotanovais@gmail.com | [GitHub](https://github.com/VitorMotaNJ) | [LinkedIn](https://www.linkedin.com/in/vitor-mota-330908227/) |
-| Matheus Silva Dias | contato.mthdias@gmail.com | [GitHub](https://github.com/MatheusDias10) | [LinkedIn](https://www.linkedin.com/in/matheus-dias-71982b333/) |
-| Jhuan Pablo dos Santos | jhuanpablo03@gmail.com | [GitHub](https://github.com/Jhuan03) | [LinkedIn](https://www.linkedin.com/in/jhuan03) |
-| Marcos Augusto da Silva Vieira Franco | marcosilv090@gmail.com | [GitHub](https://github.com/AkiraNohara696) | [LinkedIn](https://www.linkedin.com/in/marcos-augusto-591019342/) |
-| Victor Hugo dos Santos Almeida | victorhugosantos2610@gmail.com | [GitHub](https://github.com/Victor-programmer) | [LinkedIn](https://www.linkedin.com/in/desenvolvedor-victor-almeida/) |
+| Alberth Shingler Mendes Nery | alberthsm.nery@gmail.com | [![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)](https://github.com/asmnery) | [![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/asmnery/) |
+| Vitor Mota Novais de Jesus | vitormotanovais@gmail.com | [![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)](https://github.com/VitorMotaNJ) | [![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/vitor-mota-330908227/) |
+| Matheus Silva Dias | contato.mthdias@gmail.com | [![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)](https://github.com/MatheusDias10) | [![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/matheus-dias-71982b333/) |
+| Jhuan Pablo dos Santos | jhuanpablo03@gmail.com | [![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)](https://github.com/Jhuan03) | [![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/jhuan03) |
+| Marcos Augusto da Silva Vieira Franco | marcosilv090@gmail.com | [![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)](https://github.com/AkiraNohara696) | [![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/marcos-augusto-591019342/) |
+| Victor Hugo dos Santos Almeida | victorhugosantos2610@gmail.com | [![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)](https://github.com/Victor-programmer) | [![LinkedIn](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)](https://www.linkedin.com/in/desenvolvedor-victor-almeida/) |
