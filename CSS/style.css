@@ -567,7 +567,6 @@ body {
   z-index: 0;
 }
 
-
 #frequente {
   width: 90%;
   max-width: 1200px;
@@ -624,10 +623,9 @@ body {
   border: 1px solid #ccc;
 }
 
-#caixa label {
-  font-size: 24px;
-  font-weight: bold;
+#caixa {
   margin-bottom: 8px;
+  margin-left: 30px;
 }
 
 label {
@@ -648,6 +646,10 @@ label {
 
 label i {
   margin-left: 45%;
+}
+
+#messagen {
+  height: 400px;
 }
 
 #fale-conosco {
@@ -714,22 +716,8 @@ label i {
   align-items: center;
 }
 
-#nome {
-  width: 623px;
-  height: 44px;
-  font-size: 28px;
-}
-
-#email {
-  width: 623px;
-  height: 44px;
-  font-size: 28px;
-}
-
-#messagen {
-  width: 623px;
-  height: 392px;
-  font-size: 28px;
+.input-form {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #fale-conosco button {

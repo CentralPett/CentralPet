@@ -1,65 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Administrativo</title>
     <link rel="stylesheet" href="CSS/login_adm.css" type="text/css" />
     <link rel="stylesheet" href="CSS/fonts.css" type="text/css" />
-    
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/acessibilidade.css" />
+  </head>
+  <body>
     <main class="login">
-        <section class="login_esquerdo">
-
-            <div class="card">
-                <div class="espaco">
-                    <div class="botao_voltar">
-                        <a href="./index.html">
-                            <img class="seta" src="./IMG/seta_botao_voltar.svg">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <h1>Área administrativa</h1>
-                </div>
-                    <h4>Acesse com seu email e senha.</h4>
-                
-                <form class="formulario_card" action="./dashboard.html" method="get" novalidate>
-                    <div class="formulario_grupo">
-                        <label for="email">E-mail</label>
-                        <input 
-                        id="email" 
-                        name="email" 
-                        type="email" 
-                        autocomplete="email" 
-                        required
-                    >
-                    </div>
-
-                     <div class="formulario_grupo">
-                        <label for="senha">Senha</label>
-                        <input 
-                        id="senha" 
-                        name="senha" 
-                        type="password" 
-                        autocomplete="current-password" 
-                        required
-                    >
-                    </div>
-
-                    <div class="formulario_acoes">
-                        <button type="submit" class="botao_entrar">Acessar</button>
-                        </div>
-                    </form>
+      <section class="login_esquerdo">
+        <div class="card">
+          <div class="espaco">
+            <div class="botao_voltar">
+              <a href="./index.html">
+                <img class="seta" src="./IMG/seta_botao_voltar.svg" />
+              </a>
             </div>
-        </section>
-        <section class="login_direito">
-            <div class="conjunto_frases">
-                <img src="./IMG/frase_login_adm.svg">
+          </div>
+
+          <div class="container">
+            <h1>Área administrativa</h1>
+          </div>
+          <h4>Acesse com seu email e senha.</h4>
+
+          <form
+            class="formulario_card"
+            action="./dashboard.html"
+            method="get"
+            novalidate
+          >
+            <div class="formulario_grupo">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
             </div>
-        </section>
+
+            <div class="formulario_grupo">
+              <label for="senha">Senha</label>
+              <input
+                id="senha"
+                name="senha"
+                type="password"
+                autocomplete="current-password"
+                required
+              />
+            </div>
+
+            <div class="formulario_acoes">
+              <button type="submit" class="botao_entrar">Acessar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="login_direito">
+        <div class="conjunto_frases">
+          <img src="./IMG/frase_login_adm.svg" />
+        </div>
+      </section>
     </main>
-</body>
+    <div class="acessibilidade-container">
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/voz.js" id="voice-tts"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
 </html>
