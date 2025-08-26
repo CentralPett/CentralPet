@@ -1,4 +1,4 @@
-// VERSÃO FINAL E BLINDADA CONTRA ESTILOS EXTERNOS
+// VERSÃO DEFINITIVA COM BLINDAGEM CIRÚRGICA PARA O LABEL
 
 (() => {
   if (!("speechSynthesis" in window)) {
@@ -6,7 +6,7 @@
     return;
   }
 
-  // ====== ESTILO FINAL COM REGRAS DE BLINDAGEM ======
+  // ====== ESTILO FINAL COM A CORREÇÃO PARA O LABEL ======
   const css = `
       .tts-fab {
         border: 1px solid #b3aeae;
@@ -16,47 +16,43 @@
         box-shadow: 0 8px 24px rgba(0,0,0,.12);
         cursor: pointer;
         font-size: 1.1em;
+        transition: transform 0.2s ease-in-out;
       }
-      .tts-fab:focus {
-        outline: 2px solid #000;
-        outline-offset: 2px;
+      .tts-fab:hover {
+        transform: translateY(-5px);
       }
       .tts-panel {
         position: absolute;
-        bottom: calc(100% + 10px);
-        right: 0;
+        top: 0;
+        right: calc(100% + 15px);
         z-index: 99999;
         min-width: 180px;
         background: #fff;
         border: 1px solid #ddd;
         border-radius: .75rem;
         box-shadow: 0 12px 28px rgba(0,0,0,.15);
-        padding: .4rem;
+        padding: .5rem;
         display: none;
+        font-family: sans-serif;
       }
       .tts-row {
         display: flex;
         flex-wrap: wrap;
-        gap: .3rem;
+        gap: .5rem;
         align-items: center;
-        margin-bottom: .4rem;
-      }
-      .tts-row:last-child {
-        margin-bottom: 0;
+        margin-bottom: .5rem;
       }
       .tts-btn {
-        padding: .2rem .4rem;
-        border: 1px solid #ddd;
+        padding: .45rem .55rem;
+        border: 1px solid #ccc;
         border-radius: .5rem;
-        background: #fafafa;
+        background: #f7f7f7;
         cursor: pointer;
-        font-size: 1em;
-        box-shadow: 0px 0px 5px #000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        font-size: .9em;
         flex-grow: 1;
-      }
-      .tts-btn:focus {
-        outline: 2px solid #000;
-        outline-offset: 2px;
+        color: #000;
+        text-align: center;
       }
       .tts-status {
         min-height: 1.2em;
@@ -64,48 +60,34 @@
         font-size: .8em;
         width: 100%;
         text-align: center;
+        margin-top: .2rem;
       }
       #ttsRate {
-        max-width: 90px;
-        margin: 0 auto;
-      }
-      .tts-row label {
-        font-size: .8em;
+        -webkit-appearance: auto;
+        appearance: auto;
         width: 100%;
-        text-align: center;
-        margin-bottom: -5px;
       }
 
-      /* ================================================ */
-      /* ===== REGRAS DE BLINDAGEM (A CORREÇÃO) ===== */
-      /* ================================================ */
+      /* ======================================================= */
+      /* ===== BLINDAGEM FINAL PARA O LABEL DE VELOCIDADE ====== */
+      /* ======================================================= */
+      .tts-panel label[for="ttsRate"] {
+        all: unset !important; /* Reseta TUDO que vem do style.css */
 
-      /* Anula o estilo geral de 'label' que estava vazando */
-      .tts-panel label {
-        all: unset; /* Reseta TODOS os estilos herdados */
-        display: block; /* Devolve o display necessário */
-        font-size: .8em;
-        width: 100%;
-        text-align: center;
-        margin-bottom: -5px;
-        /* Adicione aqui qualquer outra propriedade que o label precise */
-      }
-      
-      /* Garante que os divs internos (tts-row) não peguem estilos de card */
-      .tts-panel .tts-row {
-        all: unset; /* Reseta TODOS os estilos herdados */
-        display: flex; /* Devolve o display flex necessário */
-        flex-wrap: wrap;
-        gap: .3rem;
-        align-items: center;
-        margin-bottom: .4rem;
+        /* Agora, reconstruímos o estilo que queremos para ele */
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        font-size: .9em !important;
+        margin-bottom: 5px !important;
+        color: #333 !important;
       }
     `;
   const style = document.createElement("style");
   style.textContent = css;
   document.head.appendChild(style);
 
-  // O restante do arquivo JavaScript continua exatamente o mesmo...
+  // ====== UI SEM O STYLE EM LINHA, POIS O CSS ACIMA RESOLVE TUDO ======
   const fab = document.createElement("button");
   fab.className = "tts-fab";
   fab.type = "button";
@@ -142,9 +124,10 @@
     document.body.appendChild(panel);
   }
 
+  // ====== LÓGICA DA VELOCIDADE AO VIVO (JÁ ESTÁ CORRETA) ======
   const $ = (sel) => panel.querySelector(sel);
   const status = (msg) => ($("#ttsStatus").textContent = msg || "");
-  const state = { rate: 1, voice: null, voices: [] };
+  const state = { rate: 1, voice: null, voices: [], currentText: "" };
   function refreshVoices() {
     state.voices = speechSynthesis.getVoices() || [];
     state.voice =
@@ -165,15 +148,21 @@
       status("Selecione um texto ou use “Ler página”.");
       return;
     }
-    stop();
+    state.currentText = text;
+    speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text.trim());
     u.rate = state.rate;
     if (state.voice) u.voice = state.voice;
     u.lang = (state.voice && state.voice.lang) || "pt-BR";
     u.onstart = () => status("Lendo…");
-    u.onend = () => status("Concluído.");
-    u.onerror = () =>
-      status("Erro ao reproduzir. Verifique permissões de áudio.");
+    u.onend = () => {
+      status("Concluído.");
+      state.currentText = "";
+    };
+    u.onerror = () => {
+      status("Erro ao reproduzir.");
+      state.currentText = "";
+    };
     speechSynthesis.speak(u);
   }
   function pause() {
@@ -189,6 +178,7 @@
     }
   }
   function stop() {
+    state.currentText = "";
     speechSynthesis.cancel();
   }
   panel.addEventListener("click", (e) => {
@@ -208,6 +198,9 @@
   });
   $("#ttsRate").addEventListener("input", (e) => {
     state.rate = Number(e.target.value || 1);
+    if (speechSynthesis.speaking && state.currentText) {
+      speak(state.currentText);
+    }
   });
   fab.addEventListener("click", () => {
     panel.style.display = panel.style.display === "block" ? "none" : "block";
