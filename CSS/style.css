@@ -52,10 +52,8 @@ section #encontre:hover {
 }
 
 #subtitulo {
-  position: absolute;
   top: 930px;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 36px auto 0px auto;
   width: 800px;
   height: 67px;
   background: #fe9516;
@@ -100,10 +98,8 @@ section #encontre:hover {
 }
 
 #subtitulo2 {
-  position: absolute;
+  margin: 64px auto 0px auto;
   top: 1800px;
-  left: 50%;
-  transform: translate(-50%);
   width: 800px;
   height: 67px;
   background: #fe9516;
