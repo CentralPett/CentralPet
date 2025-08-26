@@ -217,7 +217,7 @@ section #encontre:hover {
 
 .card button:hover {
   color: white;
-  background-color: #c9c9c9ff;
+  background-color: #f77f00;
   cursor: pointer;
 }
 
@@ -567,9 +567,67 @@ body {
   z-index: 0;
 }
 
+
+#frequente {
+  width: 90%;
+  max-width: 1200px;
+  margin-right: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 3;
+}
+
+#frequente details {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px rgb(165, 163, 163);
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#frequente summary {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#frequente p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Estilo para o ícone girar ao abrir */
+#frequente details[open] summary i {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
 #frequente {
   margin-top: 150px;
   z-index: 3;
+}
+
+#caixa input,
+#caixa textarea {
+  width: 623px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#caixa label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 label {

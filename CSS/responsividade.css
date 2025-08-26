@@ -408,6 +408,14 @@ flex: 0 0 100%;
   z-index: 3;
 }
 
+#frequente {
+  width: 90%;
+  max-width: 360px;
+  margin-left: 30%;
+  gap: 20px;
+  z-index: 3;
+}
+
 label{
   font-size: 14px;
   width: 320px;
