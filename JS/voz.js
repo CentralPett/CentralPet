@@ -1,4 +1,4 @@
-// VERSÃO DEFINITIVA COM BLINDAGEM CIRÚRGICA PARA O LABEL
+// VERSÃO DEFINITIVA COM A BLINDAGEM NO LABEL DA VELOCIDADE
 
 (() => {
   if (!("speechSynthesis" in window)) {
@@ -6,17 +6,19 @@
     return;
   }
 
-  // ====== ESTILO FINAL COM A CORREÇÃO PARA O LABEL ======
+  // O CSS interno não precisa de mudanças, pois a correção será em linha.
   const css = `
       .tts-fab {
-        border: 1px solid #b3aeae;
-        background: #fff;
-        border-radius: 999px;
-        padding: .55rem .7rem;
-        box-shadow: 0 8px 24px rgba(0,0,0,.12);
+        border: 1px solid #3389F3;
+        background: #3389F3;
+        border-radius: 5px;
+        padding: .9rem;
         cursor: pointer;
         font-size: 1.1em;
         transition: transform 0.2s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .tts-fab:hover {
         transform: translateY(-5px);
@@ -48,7 +50,7 @@
         border-radius: .5rem;
         background: #f7f7f7;
         cursor: pointer;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 5px 1px #8f8f8f96;
         font-size: .9em;
         flex-grow: 1;
         color: #000;
@@ -62,40 +64,43 @@
         text-align: center;
         margin-top: .2rem;
       }
+      .tts-row label {
+        /* Esta regra agora será sobrescrita pela blindagem em linha */
+        width:100%; 
+        text-align:center; 
+        font-size:.9em; 
+        margin-bottom:5px;
+        color: #333;
+      }
       #ttsRate {
         -webkit-appearance: auto;
         appearance: auto;
         width: 100%;
       }
-
-      /* ======================================================= */
-      /* ===== BLINDAGEM FINAL PARA O LABEL DE VELOCIDADE ====== */
-      /* ======================================================= */
-      .tts-panel label[for="ttsRate"] {
-        all: unset !important; /* Reseta TUDO que vem do style.css */
-
-        /* Agora, reconstruímos o estilo que queremos para ele */
-        display: block !important;
-        width: 100% !important;
-        text-align: center !important;
-        font-size: .9em !important;
-        margin-bottom: 5px !important;
-        color: #333 !important;
+      .tts-fab img {
+        width: 25px;
+        height: 25px;
+        display: block;
       }
     `;
   const style = document.createElement("style");
   style.textContent = css;
   document.head.appendChild(style);
 
-  // ====== UI SEM O STYLE EM LINHA, POIS O CSS ACIMA RESOLVE TUDO ======
+  // ====== UI ======
   const fab = document.createElement("button");
   fab.className = "tts-fab";
   fab.type = "button";
   fab.title = "Leitura em voz alta";
-  fab.textContent = "🔊";
+
+  const imgIcone = document.createElement("img");
+  imgIcone.src = "./IMG/iconeVolume.svg";
+  imgIcone.alt = "Ativar leitura em voz alta";
+  fab.appendChild(imgIcone);
 
   const panel = document.createElement("div");
   panel.className = "tts-panel";
+  // ===== A CORREÇÃO CIRÚRGICA ESTÁ AQUI NO "STYLE" DO LABEL =====
   panel.innerHTML = `
       <div class="tts-row">
           <button type="button" class="tts-btn" data-act="readSelection">Ler seleção</button>
@@ -107,12 +112,13 @@
           <button type="button" class="tts-btn" data-act="stop">Parar</button>
       </div>
       <div class="tts-row">
-          <label for="ttsRate">Velocidade</label>
+          <label for="ttsRate" style="all: unset !important; display: block !important; width: 100% !important; text-align: center !important; font-size: .9em !important; margin-bottom: 5px !important; color: #333 !important;">Velocidade</label>
           <input id="ttsRate" type="range" min="0.5" max="1.6" step="0.1" value="1">
       </div>
       <div class="tts-status" id="ttsStatus" role="status" aria-live="polite"></div>
       `;
 
+  // O restante do código JS continua o mesmo...
   const containerAcessibilidade = document.querySelector(
     ".acessibilidade-container"
   );
@@ -124,7 +130,6 @@
     document.body.appendChild(panel);
   }
 
-  // ====== LÓGICA DA VELOCIDADE AO VIVO (JÁ ESTÁ CORRETA) ======
   const $ = (sel) => panel.querySelector(sel);
   const status = (msg) => ($("#ttsStatus").textContent = msg || "");
   const state = { rate: 1, voice: null, voices: [], currentText: "" };
@@ -206,8 +211,9 @@
     panel.style.display = panel.style.display === "block" ? "none" : "block";
   });
   document.addEventListener("click", (e) => {
-    if (!panel.contains(e.target) && e.target !== fab)
+    if (!panel.contains(e.target) && !fab.contains(e.target)) {
       panel.style.display = "none";
+    }
   });
   document.addEventListener("keydown", (e) => {
     if (!(e.ctrlKey && e.altKey)) return;
