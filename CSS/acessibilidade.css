@@ -40,3 +40,18 @@ div[vw-plugin-wrapper] {
   bottom: auto !important;
   transform: none !important; /* Remove qualquer transform conflitante */
 }
+
+@media(max-width: 1080px){
+
+  /* Posiciona o container geral dos ícones */
+.acessibilidade-container {
+  left: 0%;
+}
+
+.acessibilidade-container {
+
+  width: 100px;
+  left: 90%;
+}
+
+}

@@ -138,6 +138,11 @@
   .custom-toggler {
     display: block;
   }
+
+  #barra-navegacao {
+  width: 95%;
+  max-width: 1080px;
+}
   
 }
 @media (max-width: 486px){
@@ -242,4 +247,10 @@ button.navbar-toggler.custom-toggler:focus {
   background-color: #F77F00;
 
   color: white;
+}
+
+@media(max-width: 1080px){
+
+  
+
 }
