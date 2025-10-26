@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/fonts.css" type="text/css">
+    <link rel="stylesheet" href="CSS/Blog.css" type="text/css">
+    <link rel="stylesheet" href="CSS/navBar.css" type="text/css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/faixaTitulo.css">
+    <link rel="stylesheet" href="./CSS/acessibilidade.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="./IMG/favicon.ico" type="image/x-icon">
+    <title>CentralPet - Blog</title>
+</head>
+<body>
+
+    <main>
+        <nav id="barra-navegacao" class="d-flex align-items-center">
+
+        <!-- Botão hamburguer (só aparece no mobile) -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="./index.html" id="logo">
+            <img src="./IMG/logoCentralPet.svg" alt="">
+        </a>
+
+        <!-- Menu desktop -->
+        <div class="d-none d-lg-flex align-items-center gap-5" id="menu-desktop">
+            <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+            <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+            <a id="option" href="./Blog.html">BLOG</a>
+            <a id="option" href="./equipe.html">EQUIPE</a>
+
+            <a href="./adocao-page.html" class="botao">
+            <div id="adotar-agora">ADOTAR AGORA</div>
+            </a>
+            <a href="./login.html" class="botao">
+            <div id="entrar">ENTRAR</div>
+            </a>
+        </div>
+        </nav>
+
+        <!-- Menu lateral (mobile) -->
+        <div class="offcanvas offcanvas-start fundo-menu-lateral" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="menuMobileLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column gap-3">
+                <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+                <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+                <a id="option" href="./Blog.html">BLOG</a>
+                <a id="option" href="./equipe.html">EQUIPE</a>
+                <a href="./adocao-page.html" class="botao">
+                <div id="adotar-agora">ADOTAR AGORA</div>
+                </a>
+                <a href="" class="botao">
+                <div id="entrar">ENTRAR</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="faixaTittleBox" style="background: linear-gradient(to top, rgb(100, 26, 185) 0.1px, rgb(137, 62, 235) 95%);">
+        <img src="./IMG/patasBlogEsquerda.svg" alt="" />
+        <h1>BLOG</h1>
+        <img src="./IMG/patasBlogDireita.svg" alt="" />
+    </section>
+             <button id="left"><i class="fa-solid fa-arrow-left fa-3x"></i></button> 
+        <button id="right"><i class="fa-solid fa-arrow-right fa-3x"></i></button>   
+
+    <section id="carrosel">
+
+  
+
+
+        <div class="card">
+    
+        <img src="IMG/Marcas-de-racao-Petlove.jpg" alt="primeira">
+      
+        <div class="text"> 
+        <h1>Marcas de ração: conheça as melhores opções para cães e gatos</h1>
+        <p>Está em busca da melhor alimentação para o seu pet? Confira algumas 
+            das melhores marcas de ração para cachorro e gato que você encontra na Petlove!</p>
+        <p class="pet">petlove - 26/02/2025</p>
+        <a href="https://www.petlove.com.br/dicas/marcas-de-racao"><button class="leia">Leia Mais</button></a>
+        </div>
+        </div>
+
+            <div class="card">
+    
+        <img src="IMG/cachorro-abandonado-o-que-fazer.png" alt="primeira">
+      
+        <div class="text"> 
+        <h1>Cachorro abandonado: o que fazer ao encontrar um?</h1>
+        <p>Está em busca da melhor alimentação para o seu pet? Confira algumas das melhores marcas de ração para cachorro e gato que você encontra na Petlove!</p>
+        <p class="pet">Adote Petz - 04/08/2021</p>
+        <a href="https://www.adotepetz.com.br/blog/cachorro-abandonado-o-que-fazer-ao-encontrar-um/"><button class="leia">Leia Mais</button></a>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="noticia">
+
+        <div class="card_noticia">
+            <img src="IMG/cuidados-na-escolha-da-creche.png" alt="banner">
+            <div class="text">
+            <p class="pet">VejaSaúde - 22/08/2023 </p>
+            <h3>7 cuidados para antes e depois de adotar um <br> cachorro</h3><br>
+            <a href="https://saude.abril.com.br/vida-animal/7-cuidados-para-antes-e-depois-de-adotar-um-cachorro?utm_source=chatgpt.com"><button>Leia Mais</button></a>
+            </div>
+
+        </div>
+                <div class="card_noticia">
+            <img src="IMG/quantas-vacinas-o-cachorro.png" alt="banner">
+            <div class="text">
+            <p class="pet">Petlove - 26/02/2025 </p>
+            <h3>Quantas vacinas o cachorro tem que tomar​? Entenda a importância de cada uma!<br>
+            <a href="https://www.petlove.com.br/dicas/quantas-vacinas-cachorro-tem-que-tomar?utm_term=694400023648&utm_content=&gad_source=1&gad_campaignid=19660215118&gbraid=0AAAAADmGMvEaOVtNwyWd2pRqkeSlNAqXA&gclid=CjwKCAjwk7DFBhBAEiwAeYbJsZ--tCZSvl4eWNgLX5B4bjqnQGfeQmQ2jT95re0LY2v0oTkmcQI_qhoCWd8QAvD_BwE"><button>Leia Mais</button></a>
+            </div>
+
+        </div>
+                <div class="card_noticia">
+            <img src="IMG/enriquecimento-ambiental-para-gatos.png" alt="banner">
+            <div class="text">
+            <p class="pet">Adote Petz - 15/06/2022 </p>
+            <h3>Enriquecimento ambiental para gatos: saiba otimizar o ambiente para seu pet!<br>
+            <a href="https://www.adotepetz.com.br/blog/enriquecimento-ambiental-para-gatos-saiba-otimizar-o-ambiente-para-seu-pet/"><button>Leia Mais</button></a>
+            </div>
+
+        </div>
+
+                   <div class="card_noticia">
+            <img src="IMG/cuidados-na-escolha-da-creche.png" alt="banner">
+            <div class="text">
+            <p class="pet">Ampara Animal - 17/12/2024 </p>
+            <h3>Cuidados na escolha da creche para seu pet<br>
+            <a href="https://institutoamparanimal.org.br/cuidados-na-escolha-da-creche-para-seu-pet/"><button>Leia Mais</button></a>
+            </div>
+
+        </div>
+
+                   <div class="card_noticia">
+            <img src="IMG/dicas-de-adaptacao.png" alt="banner">
+            <div class="text">
+            <p class="pet">Ampara Animal - 6/11/2024 </p>
+            <h3>Dicas de adaptação pós-adoção de um pet<br>
+            <a href="https://institutoamparanimal.org.br/dicas-de-adaptacao-pos-adocao/"><button>Leia Mais</button></a>
+            </div>
+
+        </div>
+
+                   <div class="card_noticia">
+            <img src="IMG/adaptacao-de-gatos.png" alt="banner">
+            <div class="text">
+            <p class="pet">Adote Petz - 28/09/2021 </p>
+            <h3>Adaptação de gatos: como introduzir um segundo gato à casa<br>
+            <a href="https://www.adotepetz.com.br/blog/adaptacao-de-gatos-como-introduzir-um-segundo-gato-a-casa/"><button>Leia Mais</button></a>
+            </div>
+
+        </div>
+
+    </section>
+    
+    </main>
+
+        <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="IMG/Frame 194.png" alt="" />
+          </a>
+        </div>
+        <nav class="footer-links">
+          <a href="#">ONGs/Protetores</a>
+          <a href="#">Histórias de Adoção</a>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/sitecentralpet" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61579769613990" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <a href="#">Quero Doar</a>
+        </nav>
+      </div>
+    </footer>
+  <!--Funcionalidade de acessibilidade Vlibras-->
+    <div class="acessibilidade-container">
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./JS/voz.js" id="voice-tts"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+     <script src="JS/Blog.js"></script>
+    <!-- Script para modificar a barra de navegação quando rolar para baixo-->
+    <script>
+        const navbar = document.getElementById("barra-navegacao");
+        window.addEventListener("scroll", () =>{
+            if (window.scrollY > 50){
+                navbar.classList.add("scrolled")
+            }else{
+                navbar.classList.remove("scrolled")
+            }
+        })
+    </script>
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

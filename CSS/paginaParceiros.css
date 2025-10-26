@@ -1,0 +1,102 @@
+#parceiros-sec-exclusiva {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.parceiros-container-exclusiva {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.parceiros-grid-exclusiva {
+  /* --- CORREÇÃO: Removido 'display: flex' e suas propriedades que conflitavam com 'display: grid' --- */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+  max-width: 1000px;
+  min-width: 500px;
+  margin: auto;
+  justify-items: center;
+}
+
+.parceiro-card-exclusiva {
+  background-color: white;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+  padding: 20px 15px;
+  text-align: center;
+  cursor: pointer;
+  /* --- OTIMIZAÇÃO: A transição foi definida apenas aqui para funcionar suavemente ao entrar e sair do hover --- */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.parceiro-card-exclusiva:hover {
+  box-shadow: 0px 0px 25px rgba(161, 5, 5, 0.5);
+  /* --- OTIMIZAÇÃO: 'text-align' e 'transition' removidos por serem redundantes ou melhor definidos acima --- */
+}
+
+.parceiro-logo-exclusiva {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.parceiro-nome-exclusiva {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.parceiro-nota-exclusiva {
+  color: #ff8c00;
+  font-size: 1.5em;
+}
+
+.modal-parceiro {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal-card {
+  background: #fff;
+  text-align: center;
+}
+
+.modal-info {
+  background: #4da6ff;
+}
+
+.modal-info h5 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Sem efeito de hover enquanto o modal está aberto */
+body.modal-open .parceiro-card-exclusiva:hover {
+  transform: none;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#headerParceiroTittle {
+  height: 155px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* --- OTIMIZAÇÃO: 'flex-direction: row' removido por ser o valor padrão do display flex --- */
+  background: linear-gradient(to top, #be2d20 0.1px, #a3362c 95%);
+  color: white;
+  margin-bottom: 100px;
+}
+
+#headerParceiroTittle h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+#headerParceiroTittle img {
+  width: 30%;
+  height: 100%;
+}

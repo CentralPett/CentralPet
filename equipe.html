@@ -1,33 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/equipe.css">
-    <link rel="stylesheet" href="./CSS/navBar.css">
-    <link rel="stylesheet" href="./CSS/fonts.css">
-    <title>Equipe</title>
-</head>
-<body>
-    <nav id="barra-navegacao">
-        <a href="./index.html" id="logo">
-            <img src="./IMG/logoCentralPet.svg" alt="">
-        </a>
-        <a id="option" href="">ANTES DE ADOTAR</a>
-        <a id="option" href="">SITES PARCEIROS</a>
-        <a id="option" href="">BLOG</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/equipe.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/navBar.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/footer.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/faixaTitulo.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/acessibilidade.css" />
+    <link
+      rel="stylesheet"
+      href="./CSS/equipe_responsividade.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css" />
+
+    <link rel="icon" href="./IMG/favicon.ico" type="image/x-icon" />
+    <title>CentralPet - Equipe</title>
+  </head>
+  <body>
+    <nav id="barra-navegacao" class="d-flex align-items-center">
+      <!-- Botão hamburguer (só aparece no mobile) -->
+      <button
+        class="navbar-toggler custom-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#menuMobile"
+        aria-controls="menuMobile"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Logo -->
+      <a href="./index.html" id="logo">
+        <img src="./IMG/logoCentralPet.svg" alt="" />
+      </a>
+
+      <!-- Menu desktop -->
+      <div class="d-none d-lg-flex align-items-center gap-5" id="menu-desktop">
+        <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+        <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+        <a id="option" href="./Blog.html">BLOG</a>
         <a id="option" href="./equipe.html">EQUIPE</a>
-        <a href="" class="botao">
-            <div id="adotar-agora">
-                ADOTAR AGORA
-            </div>
+
+        <a href="./adocao-page.html" class="botao">
+          <div id="adotar-agora">ADOTAR AGORA</div>
         </a>
-        <a href="" class="botao">
-            <div id="entrar">
-                ENTRAR
-            </div>
+        <a href="./login.html" class="botao">
+          <div id="entrar">ENTRAR</div>
         </a>
+      </div>
     </nav>
-    
-</body>
+
+    <!-- Menu lateral (mobile) -->
+    <div
+      class="offcanvas offcanvas-start fundo-menu-lateral"
+      tabindex="-1"
+      id="menuMobile"
+      aria-labelledby="menuMobileLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="menuMobileLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Fechar"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column gap-3">
+        <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+        <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+        <a id="option" href="./Blog.html">BLOG</a>
+        <a id="option" href="./equipe.html">EQUIPE</a>
+        <a href="./adocao-page.html" class="botao">
+          <div id="adotar-agora">ADOTAR AGORA</div>
+        </a>
+        <a href="./login.html" class="botao">
+          <div id="entrar">ENTRAR</div>
+        </a>
+      </div>
+    </div>
+    <section
+      id="faixaTittleBox"
+      style="
+        background: linear-gradient(to top, #da8525ff 0.1px, #eb9a3eff 95%);
+      "
+    >
+      <img src="./IMG/patasEquipeEsquerda.svg" alt="" />
+      <h1 style="overflow-y: hidden">EQUIPE</h1>
+      <img src="./IMG/patasEquipeDireita.svg" alt="" />
+    </section>
+    <main>
+      <section id="quemSomosBox">
+        <h1>QUEM SOMOS</h1>
+        <h3>
+          Nossa equipe reúne profissionais dedicados em promover a adoção
+          consciente e dar visibilidade a ONGs, protetores e histórias
+          inspiradoras. Entre em contato conosco pelos cartões abaixo e faça
+          parte dessa rede de apoio aos animais.
+        </h3>
+      </section>
+      <section id="quemSomosCardBox">
+        <div class="card">
+          <img
+            id="fotoPerfil"
+            src="./IMG/equipe/fotoEquipeAlberth.jpg"
+            alt="Foto do integrante Alberth"
+          />
+          <p>Alberth Shingler Mendes Nery<br />alberthsm.nery@gmail.com</p>
+
+          <div id="icones">
+            <a href="https://github.com/asmnery"
+              ><img src="./IMG/iconeGithub.svg" alt="Icone do Github"
+            /></a>
+            <a href="https://www.linkedin.com/in/asmnery/"
+              ><img src="./IMG/iconeLinkedin.svg" alt="Icone do Linkedin"
+            /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="fotoPerfil"
+            src="./IMG/equipe/fotoEquipeVitorMota.png"
+            alt="Foto do integrante Vitor"
+          />
+          <p>Vitor Mota Novais de Jesus<br />vitormotanovais@gmail.com</p>
+
+          <div id="icones">
+            <a href="https://github.com/VitorMotaNJ"
+              ><img src="./IMG/iconeGithub.svg" alt="Icone do Github"
+            /></a>
+            <a href="https://www.linkedin.com/in/vitor-mota-330908227/"
+              ><img src="./IMG/iconeLinkedin.svg" alt="Icone do Linkedin"
+            /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="fotoPerfil"
+            src="./IMG/equipe/fotoEquipeMatheusDias.jpg"
+            alt="Foto do integrante Matheus"
+          />
+          <p>Matheus Silva Dias<br />contato.mthdias@gmail.com</p>
+
+          <div id="icones">
+            <a href="https://github.com/MatheusDias10"
+              ><img src="./IMG/iconeGithub.svg" alt="Icone do Github"
+            /></a>
+            <a href="https://www.linkedin.com/in/matheus-dias-71982b333/"
+              ><img src="./IMG/iconeLinkedin.svg" alt="Icone do Linkedin"
+            /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="fotoPerfil"
+            src="./IMG/equipe/fotoEquipeJhuanPablo.jpg"
+            alt="Foto do integrante Jhuan"
+          />
+          <p>Jhuan Pablo dos Santos<br />jhuanpablo03@gmail.com</p>
+
+          <div id="icones">
+            <a href="https://github.com/Jhuan03"
+              ><img src="./IMG/iconeGithub.svg" alt="Icone do Github"
+            /></a>
+            <a href="https://www.linkedin.com/in/jhuan03"
+              ><img src="./IMG/iconeLinkedin.svg" alt="Icone do Linkedin"
+            /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="fotoPerfil"
+            src="./IMG/marcos.jpeg"
+            alt="Foto do integrante Marcos"
+          />
+          <p>
+            Marcos Augusto da Silva Vieira Franco<br />marcosilv090@gmail.com
+          </p>
+
+          <div id="icones">
+            <a href="https://github.com/AkiraNohara696"
+              ><img src="./IMG/iconeGithub.svg" alt="Icone do Github"
+            /></a>
+            <a href="https://www.linkedin.com/in/marcos-augusto-591019342/"
+              ><img src="./IMG/iconeLinkedin.svg" alt="Icone do Linkedin"
+            /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="fotoPerfil"
+            src="./IMG/victor.png"
+            alt="Foto do integrante Victor"
+          />
+          <p>
+            Victor Hugo dos Santos Almeida<br />victorhugosantos2610@gmail.com
+          </p>
+
+          <div id="icones">
+            <a href="https://github.com/Victor-programmer"
+              ><img src="./IMG/iconeGithub.svg" alt="Icone do Github"
+            /></a>
+            <a href="https://www.linkedin.com/in/desenvolvedor-victor-almeida/"
+              ><img src="./IMG/iconeLinkedin.svg" alt="Icone do Linkedin"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="IMG/Frame 194.png" alt="" />
+          </a>
+        </div>
+        <nav class="footer-links">
+          <a href="#">ONGs/Protetores</a>
+          <a href="#">Histórias de Adoção</a>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/sitecentralpet" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61579769613990"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+          <a href="#">Quero Doar</a>
+          <a href="./login_adm.html">Área admnistrativa</a>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="acessibilidade-container">
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/voz.js" id="voice-tts"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <!-- Script para modificar a barra de navegação quando rolar para baixo-->
+
+    <script>
+      const navbar = document.getElementById("barra-navegacao");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

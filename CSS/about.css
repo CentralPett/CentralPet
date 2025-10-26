@@ -1,0 +1,150 @@
+ /* Reset básico */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: white;
+  color: #1f2937; 
+  height: 100vh;  
+  width: 100%;
+  flex-direction: column;
+  background-image: url(../IMG/fundoPatasAzuisAbout.png);
+  background-repeat:repeat-y;
+  background-size: cover;
+
+}
+
+/* Main */
+main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+
+}
+
+main h1{
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+.question-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+
+
+main section {
+  margin-bottom: 60px;
+}
+
+main ul {
+  list-style: disc inside;
+  color: #1f2937;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 480;
+}
+
+main li{
+  font-size: 1.5em;
+  text-align:left;
+}
+
+.img-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.img-section .image {
+  display: flex;
+  justify-content: center;
+}
+
+.img-section .image img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  max-width: 100%;
+  height: auto;
+}
+
+.question-badge {
+
+background: #5161cc;
+color: white;
+font-weight: 400;
+font-size: 2em;
+padding: 20px 0px;
+border-radius: 150px;
+box-shadow: 0 0px 25px rgba(0, 0, 0, 0.5);
+max-width: 100%;
+width: auto;
+height: auto;
+margin: 0px auto 32px auto;
+text-align: center;
+transition: .25s ease-in-out;
+}
+
+
+/* Alinhamento geral das sections */
+section {
+  width: 100%;
+}
+
+/* Seção da esquerda: badge + texto vão para a esquerda */
+#esquerda { 
+  justify-content: center;
+  text-align: left;
+}
+
+#esquerda .text {
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* Seção da direita: badge + texto vão para a direita */
+#direita {
+  width: 100%;
+
+  justify-content: center;
+  text-align: right;
+}
+
+#direita .text {
+  text-align: right;
+  
+}
+
+#fofs{
+  width: 50%;
+  margin: 0 auto 64px auto;
+  display: flex;
+  justify-content: center;
+  transition: transform .3s ease-in-out;
+  
+}
+
+#fofs:hover{
+  transform: translateY(-16px);
+  transition:  .25s ease-in;
+
+}
+
+.text:hover .question-badge{
+
+  box-shadow: 0px 10px 20px rgba(247, 127, 0, .8);
+  transition: .25s ease-in;
+
+}
+
+
+
+
+
+

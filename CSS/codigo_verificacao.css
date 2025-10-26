@@ -16,6 +16,8 @@ body{
     grid-template-columns: 50% 50%;
 }
 
+
+
 .background_esquerdo{
     height: 100%;
     background-image: url("../IMG/fundo_laranja.png");
@@ -33,10 +35,14 @@ body{
 }
 
 .conjunto_frases img{
-    position: absolute;
-    left: 350px;
-    width: 40%;    
+    position: relative;
+
+    width: 400px;
+    float: right;    
     margin: 30px;
+}
+.conjunto_frases{
+    position: relative;
 }
 
 .card{
@@ -52,7 +58,10 @@ body{
     gap: 20px;
     padding: 32px 20px;
     box-shadow: 0px 0px 25px rgba(0,0,0,.5 );
+    border-radius: 5px;
+    margin: auto;
 }
+
 
 .card h1{
     position: relative;
@@ -60,11 +69,16 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: auto;
+    font-size: 1em;
+    font-weight: 700;
+   
 }
 
 
 .card h4{
     text-align: center;
+    font-size: 1em;
 }
 
 .container{
@@ -74,6 +88,7 @@ body{
     justify-content: center;
     gap: 32px;
     width: auto;
+
 }
 
 .card .botao_voltar{
@@ -98,12 +113,33 @@ body{
     
 }
 
+.formulario_card{
+    position: relative;
+    display: grid;
+    gap: 12px;
+    font-size: 20px;
+}
+
+.formulario_grupo{ display: grid; gap: 6px; }
+.formulario_grupo label{ font-weight: 600;}
+
 .formulario_acoes{
     display: flex;
+    justify-content: center;
     justify-content: center;
     align-items: center;
     gap: 12px;
     margin-top: 4px;
+}
+
+.formulario_acoes .link{
+    font-size: 14px;
+    color: #FF9900;
+    text-decoration: none;
+}
+
+.formulario_acoes .link:hover{
+    text-decoration: underline;
 }
 
 .botao_entrar{

@@ -3,28 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Adoção</title>
-
+    <title>CentralPet - Adoção</title>
+    <link rel="icon" href="./IMG/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/adocao-page.css" />
     <link rel="stylesheet" href="CSS/navBar.css" />
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/acessibilidade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
   </head>
 
   <body>
-    <header class="navbar">
-      <nav id="barra-navegacao">
+   <nav id="barra-navegacao" class="d-flex align-items-center">
+
+        <!-- Botão hamburguer (só aparece no mobile) -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
         <a href="./index.html" id="logo">
-          <img src="./IMG/logoCentralPet.svg" alt="" />
+            <img src="./IMG/logoCentralPet.svg" alt="">
         </a>
-        <a id="option" href="">ANTES DE ADOTAR</a>
-        <a id="option" href="">SITES PARCEIROS</a>
-        <a id="option" href="">BLOG</a>
-        <a id="option" href="./equipe.html">EQUIPE</a>
-        <a href="" class="botao">
-          <div id="entrar">ENTRAR</div>
-        </a>
-      </nav>
-    </header>
+
+        <!-- Menu desktop -->
+        <div class="d-none d-lg-flex align-items-center gap-5" id="menu-desktop">
+            <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+            <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+            <a id="option" href="./Blog.html">BLOG</a>
+            <a id="option" href="./equipe.html">EQUIPE</a>
+
+
+            <a href="./login.html" class="botao">
+            <div id="entrar">ENTRAR</div>
+            </a>
+        </div>
+        </nav>
+
+        <!-- Menu lateral (mobile) -->
+        <div class="offcanvas offcanvas-start fundo-menu-lateral" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuMobileLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column gap-3">
+            <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+            <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+            <a id="option" href="./Blog.html">BLOG</a>
+            <a id="option" href="./equipe.html">EQUIPE</a>
+
+            <a href="./login.html" class="botao">
+            <div id="entrar">ENTRAR</div>
+            </a>
+        </div>
+        </div>
+
 
     <main>
       <section class="hero">
@@ -107,7 +141,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link">AdotePetz</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Médio</span>
@@ -118,7 +152,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4868193&cnpjPetAdocao=18328118012115'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -138,7 +177,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link">AdotePetz</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Médio</span>
@@ -149,7 +188,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4974157&cnpjPetAdocao=18328118009599'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -157,7 +201,7 @@
               <h3>Amora</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
@@ -169,7 +213,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link">AdotePetz</a>
               <div class="pet-details">
                 <strong>Uberlândia, MG</strong>
                 <span>Médio</span>
@@ -180,7 +224,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4767776&cnpjPetAdocao=18328118010171'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -188,7 +237,7 @@
               <h3>Anila</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
@@ -200,7 +249,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link"> AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link"> AdotePetz</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Médio</span>
@@ -211,7 +260,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4974108&cnpjPetAdocao=18328118005682'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -219,7 +273,7 @@
               <h3>Lina</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
@@ -231,7 +285,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">Adotar</a>
+              <a href="https://adotar.com.br/" class="shelter-link">Adotar</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Médio</span>
@@ -242,7 +296,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://adotar.com.br/sp-sao-paulo/cao/adocao/lina/312194'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -250,7 +309,7 @@
               <h3>Mel</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
@@ -262,7 +321,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">Adotar</a>
+              <a href="https://adotar.com.br/" class="shelter-link">Adotar</a>
               <div class="pet-details">
                 <strong>Brasília, DF</strong>
                 <span>Médio</span>
@@ -273,7 +332,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://adotar.com.br/df-brasilia/cao/adocao/mel/312264'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -281,7 +345,7 @@
               <h3>Pituca</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
@@ -293,7 +357,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">Adotar</a>
+              <a href="https://adotar.com.br/" class="shelter-link">Adotar</a>
               <div class="pet-details">
                 <strong>Brasília, DF</strong>
                 <span>Pequeno</span>
@@ -304,7 +368,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://adotar.com.br/df-brasilia/cao/adocao/pituca/312176'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -324,7 +393,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">Adotar</a>
+              <a href="https://adotar.com.br/" class="shelter-link">Adotar</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Pequeno</span>
@@ -335,30 +404,35 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://adotar.com.br/sp-sao-paulo/cao/adocao/ze-zinho-/310413'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
             <div class="card-header">
-              <h3>Dengosa</h3>
+              <h3>Kyara</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
               </div>
             </div>
             <img
-              src="IMG/pets-grid/a9cb0013-e6bf-4fb0-ba33-5010070d917b.jpeg"
+              src="IMG/pets-grid/kiara (1).png"
               alt="Cachorro para adoção"
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">Adotar</a>
+              <a href="https://adotar.com.br/" class="shelter-link">Adotar</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
-                <span>Grande</span>
+                <span>Médio</span>
                 <strong>2 anos</strong>
                 <img
                   src="IMG/coracao-vazio.png"
@@ -366,7 +440,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://adotar.com.br/sp-sao-paulo/cao/adocao/kyara/312205'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -374,7 +453,7 @@
               <h3>Aurora</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
@@ -386,7 +465,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link">AdotePetz</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Pequeno</span>
@@ -397,7 +476,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4984390&cnpjPetAdocao=18328118003639'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -417,7 +501,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link">AdotePetz</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Médio</span>
@@ -428,7 +512,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4953030&cnpjPetAdocao=18328118000109'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -448,7 +537,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link">AdotePetz</a>
               <div class="pet-details">
                 <strong>Rio Claro, SP</strong>
                 <span>Médio</span>
@@ -459,7 +548,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4895463&cnpjPetAdocao=18328118012620'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -467,7 +561,7 @@
               <h3>Emilia</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
@@ -479,7 +573,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link">AdotePetz</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Médio</span>
@@ -490,7 +584,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4984286&cnpjPetAdocao=18328118000109'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -510,7 +609,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">AdotePetz</a>
+              <a href="https://www.adotepetz.com.br/" class="shelter-link">AdotePetz</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Pequeno</span>
@@ -521,7 +620,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4919361&cnpjPetAdocao=18328118001342'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -529,7 +633,7 @@
               <h3>Stella</h3>
               <div>
                 <img
-                  src="IMG/femea.svg"
+                  src="IMG/femea.png"
                   alt="Ícone de gênero"
                   class="paw-icon"
                 />
@@ -541,7 +645,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">Cobasi</a>
+              <a href="https://www.cobasi.com.br/" class="shelter-link">Cobasi</a>
               <div class="pet-details">
                 <strong>São Paulo, SP</strong>
                 <span>Grande</span>
@@ -552,7 +656,12 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://cobasicuida.com.br/adoption?pet=2343'"
+            >
+              EU QUERO
+            </button>
           </div>
 
           <div class="card">
@@ -572,7 +681,7 @@
               class="image-pet"
             />
             <div class="card-body">
-              <a href="#" class="shelter-link">Cobasi</a>
+              <a href="https://www.cobasi.com.br/" class="shelter-link">Cobasi</a>
               <div class="pet-details">
                 <strong>Sorocaba, SP</strong>
                 <span>Médio</span>
@@ -583,25 +692,70 @@
                 />
               </div>
             </div>
-            <button class="btn-quero">EU QUERO</button>
+            <button
+              class="btn-quero"
+              onclick="window.location.href='https://cobasicuida.com.br/adoption?pet=2340'"
+            >
+              EU QUERO
+            </button>
+          </div>
           </div>
         </section>
       </div>
     </main>
+
+    <!-- footer -->
     <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-logo">
-          <a href="#">
+          <a href="./index.html">
             <img src="IMG/Frame 194.png" alt="" />
           </a>
         </div>
         <nav class="footer-links">
           <a href="#">ONGs/Protetores</a>
           <a href="#">Histórias de Adoção</a>
-          <a href="#">Redes Sociais</a>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/sitecentralpet" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61579769613990"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
           <a href="#">Quero Doar</a>
+          <a href="./login_adm.html">Área admnistrativa</a>
         </nav>
       </div>
     </footer>
+      <!--Funcionalidade de acessibilidade Vlibras-->
+    <div class="acessibilidade-container">
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/voz.js" id="voice-tts"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    
   </body>
+    <!-- script para modificar a barra de navegação quando rolar para baixo-->
+    <script>
+        const navbar = document.getElementById("barra-navegacao");
+        window.addEventListener("scroll", () =>{
+            if (window.scrollY > 50){
+                navbar.classList.add("scrolled")
+            }else{
+                navbar.classList.remove("scrolled")
+            }
+        })
+    </script>
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script> 
 </html>

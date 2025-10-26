@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/style.css" type="text/css" />
-    <link rel="stylesheet" href="./CSS/fonts.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/navBar.css" type="text/css">
+    <link rel="stylesheet" href="CSS/footer.css" type="text/css">
     <link rel="icon" href="./IMG/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/navBar.css">
+    <link rel="stylesheet" href="CSS/acessibilidade.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,30 +18,59 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <title>CentralPet</title>
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/responsividade.css" type="text/css">
+    <title>CentralPet - Início</title>
   </head>
   <body>
     <main>
-      <nav id="barra-navegacao">
-          <a href="./index.html" id="logo">
-              <img src="./IMG/logoCentralPet.svg" alt="">
-          </a>
-          <a id="option" href="">ANTES DE ADOTAR</a>
-          <a id="option" href="">SITES PARCEIROS</a>
-          <a id="option" href="">BLOG</a>
-          <a id="option" href="./equipe.html">EQUIPE</a>
-          
-          <a href="" class="botao">
-              <div id="adotar-agora">
-                  ADOTAR AGORA
-              </div>
-          </a>
-          <a href="" class="botao">
-              <div id="entrar">
-                  ENTRAR
-              </div>
-          </a>
-      </nav>
+        <nav id="barra-navegacao" class="d-flex align-items-center">
+
+        <!-- Botão hamburguer (só aparece no mobile) -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="./index.html" id="logo">
+            <img src="./IMG/logoCentralPet.svg" alt="">
+        </a>
+
+        <!-- Menu desktop -->
+        <div class="d-none d-lg-flex align-items-center gap-5" id="menu-desktop">
+            <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+            <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+            <a id="option" href="./Blog.html">BLOG</a>
+            <a id="option" href="./equipe.html">EQUIPE</a>
+
+            <a href="./adocao-page.html" class="botao">
+            <div id="adotar-agora">ADOTAR AGORA</div>
+            </a>
+            <a href="./login.html" class="botao">
+            <div id="entrar">ENTRAR</div>
+            </a>
+        </div>
+        </nav>
+
+        <!-- Menu lateral (mobile) -->
+        <div class="offcanvas offcanvas-start fundo-menu-lateral" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuMobileLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column gap-3">
+            <a id="option" href="./about.html">ANTES DE ADOTAR</a>
+            <a id="option" href="./parceiros.html">SITES PARCEIROS</a>
+            <a id="option" href="./Blog.html">BLOG</a>
+            <a id="option" href="./equipe.html">EQUIPE</a>
+            <a href="./adocao-page.html" class="botao">
+            <div id="adotar-agora">ADOTAR AGORA</div>
+            </a>
+            <a href="" class="botao">
+            <div id="entrar">ENTRAR</div>
+            </a>
+        </div>
+        </div>
       <section id="inicio">
         <p>
           Unimos amigos dos animais e ONGs confiáveis para
@@ -50,66 +80,67 @@
         </p>
 
         <div id="botao">
-          <button id="encontre">ENCONTRE SEU NOVO AMIGO</button>
+        <a href="adocao-page.html" ><button id="encontre">ENCONTRE SEU NOVO AMIGO</button></a>
         </div>
 
       </section>
-      <h1 id="subtitulo">PETS PARA ADOÇÃO</h1>
+        <h1 id="subtitulo">PETS PARA ADOÇÃO</h1>
       <section id="adocao_pets">
+
         <div class="card">
           <header>
-            <span>Cotoca</span>
+            <span>Stella</span>
             <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #fe49c1;"></i
             ></span>
           </header>
-          <img src="IMG/Satanas.png" alt="animal" />
+          <img src="IMG/pets-grid/stella.png" alt="animal" />
           <section class="card-body">
             <h3>Cobasi</h3>
             <div class="info-row">
-              <div>São Paulo, Sp</div>
-              <div>Pequeno</div>
-              <div>1 Ano</div>
+              <div>São Paulo, SP</div>
+              <div>Grande</div>
+              <div>2 Anos</div>
             </div>
             <p>
-              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
-              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
-              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
-              tem o temperamento dócil e é carinhosa.
+                Cheia de energia e amor para dar! Stella é leal, brincalhona e está pronta para alegrar sua casa. ❤️
             </p>
           </section>
-          <button>Eu Quero</button>
+          <button 
+            class="btn-quero"
+            onclick="window.location.href='https://cobasicuida.com.br/adoption?pet=2340'">Eu Quero
+          </button>
         </div>
 
         <div class="card">
           <header>
-            <span>Cotoca</span>
+            <span>Amora</span>
             <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #fe49c1;"></i
             ></span>
           </header>
-          <img src="IMG/Satanas.png" alt="animal" />
+          <img src="IMG/pets-grid/b5986f2c-a448-4015-bc29-955932bd4a1a.jpeg" alt="animal" />
           <section class="card-body">
-            <h3>Cobasi</h3>
+            <h3>AdotePetz</h3>
             <div class="info-row">
-              <div>São Paulo, Sp</div>
-              <div>Pequeno</div>
-              <div>1 Ano</div>
+              <div>Uberlândia, MG</div>
+              <div>Médio</div>
+              <div>10 Meses</div>
             </div>
             <p>
-              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
-              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
-              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
-              tem o temperamento dócil e é carinhosa.
+              Amora é uma filhote cheia de energia e amor para dar! Adora brincar e se aconchegar no colo. Ideal para quem quer um amigo leal e carinhoso que vai alegrar todos os dias.
             </p>
           </section>
-          <button>Eu Quero</button>
+          <button 
+            class="btn-quero"
+            onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4767776&cnpjPetAdocao=18328118010171'">Eu Quero
+          </button>
         </div>
         <div class="card">
           <header>
             <span>Cotoca</span>
             <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #fe49c1;"></i
             ></span>
           </header>
           <img src="IMG/Satanas.png" alt="animal" />
@@ -127,154 +158,151 @@
               tem o temperamento dócil e é carinhosa.
             </p>
           </section>
-          <button>Eu Quero</button>
+          <button
+            class="btn-quero"
+            onclick="window.location.href='https://cobasicuida.com.br/adoption?pet=2298'">Eu Quero</button>
         </div>
         <div class="card">
           <header>
-            <span>Cotoca</span>
+            <span>Anila</span>
             <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #fe49c1;"></i
             ></span>
           </header>
-          <img src="IMG/Satanas.png" alt="animal" />
+          <img src="IMG/pets-grid/anila.jpeg" alt="animal" />
           <section class="card-body">
-            <h3>Cobasi</h3>
+            <h3>AdotePetz</h3>
             <div class="info-row">
               <div>São Paulo, Sp</div>
-              <div>Pequeno</div>
-              <div>1 Ano</div>
+              <div>Médio</div>
+              <div>4 Meses</div>
             </div>
             <p>
-              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
-              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
-              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
-              tem o temperamento dócil e é carinhosa.
+              Anila é uma pequena adorável, muito afetuosa e curiosa. Gosta de explorar e receber carinho. Perfeita para quem busca um bichinho brincalhão e cheio de fofura.
             </p>
           </section>
-          <button>Eu Quero</button>
+          <button
+            class="btn-quero"
+            onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4974108&cnpjPetAdocao=18328118005682'">Eu Quero</button>
         </div>
         <div class="card">
           <header>
-            <span>Cotoca</span>
+            <span>Zézinho</span>
             <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #5549fe;"></i
             ></span>
           </header>
-          <img src="IMG/Satanas.png" alt="animal" />
+          <img src="IMG/pets-grid/zezinho.webp" alt="animal" />
           <section class="card-body">
             <h3>Cobasi</h3>
             <div class="info-row">
               <div>São Paulo, Sp</div>
               <div>Pequeno</div>
-              <div>1 Ano</div>
+              <div>6 Meses</div>
             </div>
             <p>
-              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
-              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
-              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
-              tem o temperamento dócil e é carinhosa.
+              Zézinho é calmo, carinhoso e leal. Apesar de jovem, ele já sabe conquistar corações com seu jeito doce. Vai se dar bem em qualquer lar que ofereça amor e atenção.
             </p>
           </section>
-          <button>Eu Quero</button>
+          <button
+            class="btn-quero"
+            onclick="window.location.href='https://adotar.com.br/sp-sao-paulo/cao/adocao/ze-zinho-/310413'">Eu Quero</button>
         </div>
         <div class="card">
           <header>
-            <span>Cotoca</span>
+            <span>Billy</span>
             <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #5549fe;"></i
             ></span>
           </header>
-          <img src="IMG/Satanas.png" alt="animal" />
+          <img src="IMG/pets-grid/bdb05005-f607-4f2b-9ec7-f021fb58c987.jpeg" alt="animal" />
           <section class="card-body">
-            <h3>Cobasi</h3>
+            <h3>AdotePetz</h3>
             <div class="info-row">
-              <div>São Paulo, Sp</div>
-              <div>Pequeno</div>
-              <div>1 Ano</div>
+              <div>Rio Claro, SP</div>
+              <div>Médio</div>
+              <div>2 Anos</div>
             </div>
             <p>
-              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
-              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
-              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
-              tem o temperamento dócil e é carinhosa.
+              Billy é um cãozinho tranquilo e companheiro. Ele ama carinho e companhia, e adora passeios curtos. Ideal para famílias que querem um amigo leal e calmo.
             </p>
           </section>
-          <button>Eu Quero</button>
-        </div>
-
-        <div class="card">
-          <header>
-            <span>Cotoca</span>
-            <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
-            ></span>
-          </header>
-          <img src="IMG/Satanas.png" alt="animal" />
-          <section class="card-body">
-            <h3>Cobasi</h3>
-            <div class="info-row">
-              <div>São Paulo, Sp</div>
-              <div>Pequeno</div>
-              <div>1 Ano</div>
-            </div>
-            <p>
-              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
-              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
-              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
-              tem o temperamento dócil e é carinhosa.
-            </p>
-          </section>
-          <button>Eu Quero</button>
+          <button
+            class="btn-quero"
+            onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4895463&cnpjPetAdocao=18328118012620'">Eu Quero</button>
         </div>
 
         <div class="card">
           <header>
-            <span>Cotoca</span>
+            <span>Balu</span>
             <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #5549fe;"></i
             ></span>
           </header>
-          <img src="IMG/Satanas.png" alt="animal" />
+          <img src="IMG/pets-grid/IMG_20250531_124232_9674c04d11.jpg" alt="animal" />
           <section class="card-body">
             <h3>Cobasi</h3>
             <div class="info-row">
-              <div>São Paulo, Sp</div>
-              <div>Pequeno</div>
-              <div>1 Ano</div>
+              <div>Sorocaba, SP</div>
+              <div>Médio</div>
+              <div>4 Anos</div>
             </div>
             <p>
-              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
-              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
-              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
-              tem o temperamento dócil e é carinhosa.
+              Balu é cheio de energia e adora se divertir. Sociável com outros animais e pessoas, ele vai iluminar qualquer casa com sua presença. Um amigo ativo e brincalhão.
             </p>
           </section>
-          <button>Eu Quero</button>
+          <button
+            class="btn-quero"
+            onclick="window.location.href='https://cobasicuida.com.br/adoption?pet=2340'">
+            Eu Quero</button>
         </div>
 
         <div class="card">
           <header>
-            <span>Cotoca</span>
+            <span>Lina</span>
             <span class="icon-paw"
-              ><i class="fa-solid fa-paw fa-1.5x"></i
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #fe49c1;"></i
             ></span>
           </header>
-          <img src="IMG/Satanas.png" alt="animal" />
+          <img src="IMG/pets-grid/lina.webp" alt="animal" />
+          <section class="card-body">
+            <h3>Adotar</h3>
+            <div class="info-row">
+              <div>São Paulo, Sp</div>
+              <div>Médio</div>
+              <div>3 Anos</div>
+            </div>
+            <p>
+              Lina é charmosa e delicada. Gosta de receber carinho e é ótima companhia para momentos de relaxamento. Ideal para quem procura um pet doce e elegante.
+            </p>
+          </section>
+          <button
+            class="btn-quero"
+            onclick="window.location.href='https://adotar.com.br/sp-sao-paulo/cao/adocao/lina/312194'">Eu Quero</button>
+        </div>
+
+        <div class="card">
+          <header>
+            <span>Batatinha</span>
+            <span class="icon-paw"
+              ><i class="fa-solid fa-paw fa-1.5x" style="color: #5549fe;"></i
+            ></span>
+          </header>
+          <img src="IMG/pets-grid/batatinha.jpeg" alt="animal" />
           <section class="card-body">
             <h3>Cobasi</h3>
             <div class="info-row">
               <div>São Paulo, Sp</div>
-              <div>Pequeno</div>
-              <div>1 Ano</div>
+              <div>Médio</div>
+              <div>10 Meses</div>
             </div>
             <p>
-              A Cotoca tem uma patinha amputada, mas não precisa de nenhum
-              cuidado especial. Assim como os outros gatos, essa fêmea de 1 ano
-              de idade, adora subir em lugares altos e é muito curiosa. A Cotoca
-              tem o temperamento dócil e é carinhosa.
+              Batatinha é uma fofura em forma de cachorro! Carinhosa e brincalhona, adora atenção e companhia. Vai se tornar uma amiga inseparável para toda a família.
             </p>
           </section>
-          <button>Eu Quero</button>
+          <button
+            class="btn-quero"
+            onclick="window.location.href='https://www.adotepetz.com.br/quiz?idMoura=4953030&cnpjPetAdocao=18328118000109'">Eu Quero</button>
         </div>
       </section>
       <h1 id="subtitulo2">VOCÊ SABIA?</h1>
@@ -284,15 +312,15 @@
       </div>-->
 
       <section id="voceSabia">
-        <div class="voceSabiaDiv" id="vsc1" ">
+        <div class="voceSabiaDiv" id="vsc1">
             <img style="  border: 5px solid rgb(0, 102, 255); " src="./IMG/gatoAcariciado.png" alt="">
             <p>Quando você <strong>adota</strong> um pet, o ambiente da casa <strong>deve ser preparado antes</strong> mesmo da chegada dele. Animais, especialmente cães e gatos,<strong> percebem cheiros e sons</strong>, e um espaço já familiarizado com objetos seguros </strong>ajuda a reduzir o estresse.<strong></p>
         </div>
 
         <div class="voceSabiaDiv" id="vsc2">
-            <p><strong>Pets adotados</strong> costumam criar<strong> laços profundos</strong> com seus tutores, muitas vezes demonstrando<strong> gratidão</strong> com gestos e <strong>comportamentos únicos</strong>.
+            <p id="sos2"><strong>Pets adotados</strong> costumam criar<strong> laços profundos</strong> com seus tutores, muitas vezes demonstrando<strong> gratidão</strong> com gestos e <strong>comportamentos únicos</strong>.
             </p>
-            <img style="  border: 5px solid rgb(255, 0, 106); "  src="./IMG/pessoa&Gato.png" alt="">
+            <img style="  border: 5px solid rgb(255, 0, 106); " id="sos"  src="./IMG/pessoa&Gato.png" alt="">
         </div>
         <div class="voceSabiaDiv" id="vsc3">
           <img style="  border: 5px solid rgb(238, 255, 0); "  src="./IMG/pessoa&Cachorro.png" alt="">
@@ -301,8 +329,189 @@
         
                 
       </section>
+        <section id="carrousel-card">
+    <button id="left"><i class="fa-solid fa-arrow-left fa-3x"></i></button>
+    <button id="right"><i class="fa-solid fa-arrow-right fa-3x"></i></button>
+
+    <div class="carrosel_geral_container">
+      <div class="carrosel_geral_item">
+        <img src="IMG/Fundo_Card1.png" alt="">
+        <h2 class="carrosel_h2">Animais de estimação no Brasil:</h2>
+        <h1 class="carrosel_h1">160,9+ milhões</h1>
+        <a href="https://veja.abril.com.br/comportamento/brasil-supera-160-milhoes-de-pets-e-nao-sao-so-caes-e-gatos/" target="_blank">Veja - 30/07/2024</a>
+
+      </div>
+
+      <div class="carrosel_geral_item">
+        <img src="IMG/Fundo_Card2.png" alt="">
+        <h2 class="carrosel_h2">do animais que foram adotados em lares brasileiros.</h2>
+        <h1 class="carrosel_h1">80% </h1>
+        <a href="https://www.cnnbrasil.com.br/nacional/sudeste/sp/80-dos-pets-nos-lares-brasileiros-foram-adotados-indica-pesquisa/" target="_blank">CNN Brasil - 06/04/2019</a>
+      </div>
+
+      <div class="carrosel_geral_item">
+        <img src="IMG/Fundo_Card3.png" alt="">
+        <h2 class="carrosel_h2">adoções via doação de conhecidos.</h2>
+        <h1 class="carrosel_h1">37%</h1>
+        <a href="https://petbr.com.br/noticias/adocao-responsavel-cresce-no-brasil-e-fortalece-redes-de-cuidado-animal.html" target="_blank">PetBR - 30/05/2025</a>
+      </div>
+      <div class="carrosel_geral_item">
+        <img src="IMG/Fundo_Card4.png" alt="">
+        <h2 class="carrosel_h2">Animais em situação de abandono no Brasil:</h2>
+        <h1 class="carrosel_h1">30 milhões</h1>
+        <a href="https://www1.brasilemfolhas.com.br/2025/07/brasil-tem-30-milhoes-de-animais-abandonados-alerta-oms/" target="_blank">Brasilemfolhas - 31/07/2025</a>
+      </div>
+      </div>
+
+    </div>
+  </section>
+        <h1 id="subtitulo3">POR QUE VOCÊ DEVERIA CONFIAR EM NÓS?</h1>
+      <section id="confiar-section">
+          <div class="card" style="background-color: rgba(230,255,43,.8);">
+              <img src="./IMG/seloParceiro.png" alt="">
+              <p id="card-tittle">Selo de parceiro<br>verificado.</p>
+              <p id="card-desc">Todos os parceiros passam por um processo de verificação antes de serem listados.</p>
+          </div>
+          <div class="card"  style="background-color: rgba(117,92,199,.8);">
+              <img src="./IMG/seloTransparencia.png" style="position: relative; left: 20px;" alt="">
+              <p id="card-tittle">Transparência <br>Total.</p>
+              <p id="card-desc">Mostramos a reputação e o histórico de cada ONG e loja parceira.</p>
+          </div>
+          <div class="card" style="background-color: rgba(75, 178, 215, .8);">
+              <img src="./IMG/seloCompromisso.png"  alt="">
+              <p id="card-tittle">Compromisso com o <br>Bem-estar.</p>
+              <p id="card-desc">Priorizamos parceiros que seguem boas práticas e cuidam dos animais com amor.</p>
+          </div>
+          <div class="card" style="background-color: rgba(69, 255, 85, .7);transition: .3s ease-in-out;" alt="">
+              <img src="./IMG/seloAvaliacao.png" >
+              <p id="card-tittle">Avaliações<br> Reais.</p>
+              <p id="card-desc">Nossas notas são baseadas na experiência de usuários cadastrados.</p>
+          </div>
+      </section>
+
+      <div id="decorativo">
+        <div id="circle-2"></div>
+      </div>
+
+      <section id="parceiros">
+  
+   <h1>NOSSOS PARCEIROS DE ADOÇÃO</h1>
+        <div id="colaboradoes">
+   
+          <div class="parceiro">
+          <p>Inst. Ampara Animal</p>
+          <a href="https://institutoamparanimal.org.br/" target="_blank"><img src="IMG/Amapa.png" alt=""></a>
+          </div>
+
+          <div class="parceiro">
+          <p>Adote um Focinho</p>
+          <a href="http://www.adoteumfocinho.com.br/" target="_blank"><img src="IMG/Adote um Focinho.png" alt=""></a>
+          </div>
+
+          <div class="parceiro">
+          <p>Catland</p>
+          <a href="https://catland.org.br/" target="_blank"><img src="IMG/Catland.png" alt=""></a>
+          </div>
+
+          <div class="parceiro">
+          <p>Adote um Gatinho</p>
+          <a href="https://adoteumgatinho.org.br/" target="_blank"><img src="IMG/Adote um gatinho.png" alt=""></a>
+          </div>
+
+          <div class="parceiro">
+          <p>AdotePetz</p>
+          <a href="https://www.adotepetz.com.br/" target="_blank"><img src="IMG/Adotepet.png" alt="" style="padding-bottom: 64px; width: auto; height: auto"></a>
+          </div>
+           
+        </div>
+
+      </section>
+
+   <section id="duvidas">
+  <h1>DÚVIDAS FREQUENTES</h1>
+  <div id="circle-1"></div>
+
+  <div id="frequente">
+    <details>
+      <summary>Como funciona o processo de adoção? <i class="fa-solid fa-arrow-down"></i></summary>
+      <p>O processo de adoção envolve preencher um formulário, uma entrevista e, em alguns casos, uma visita domiciliar. Queremos garantir que o pet vá para um lar seguro e amoroso.</p>
+    </details>
+
+    <details>
+      <summary>O processo de adoção demora? <i class="fa-solid fa-arrow-down"></i></summary>
+      <p>O tempo pode variar, mas geralmente leva de 3 a 7 dias úteis. Isso depende da disponibilidade do adotante e da análise dos dados.</p>
+    </details>
+
+    <details>
+      <summary>Qualquer pessoa pode adotar? <i class="fa-solid fa-arrow-down"></i></summary>
+      <p>Sim, desde que seja maior de idade e tenha condições de cuidar adequadamente do animal.</p>
+    </details>
+
+    <details>
+      <summary>Existe alguma taxa para a adoção? <i class="fa-solid fa-arrow-down"></i></summary>
+      <p>Na maioria dos casos não, mas algumas ONGs podem cobrar uma taxa simbólica para ajudar com os custos de vacinação e castração.</p>
+    </details>
+  </div>
+
+  <img src="IMG/reis.png" alt="reis">
+</section>
+
+      <section id="fale-conosco">
+        
+        <div id="fundo"></div>
+        <h1>FALE CONOSCO!</h1>
+        <div id="frase"></div>
+
+        <img src="IMG/gatitos.png" alt="">
+
+        <div id="caixa">
+          <input type="text" class="input-form" placeholder="Nome" name="nome" id="nome"/>
+          <input type="email" class="input-form" placeholder="E-mail" name="email" id="email"/>
+          <textarea class="input-form" placeholder="Mensagem" id="messagen"></textarea>
+        </div>
+         <button id="botao-form">ENVIAR</button>
+      </section>
     </main>
 
+<footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="./index.html">
+            <img src="IMG/Frame 194.png" alt="" />
+          </a>
+        </div>
+        <nav class="footer-links">
+          <a href="#">ONGs/Protetores</a>
+          <a href="#">Histórias de Adoção</a>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/sitecentralpet" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61579769613990"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+          <a href="#">Quero Doar</a>
+          <a href="./login_adm.html">Área admnistrativa</a>
+        </nav>
+      </div>
+    </footer>
+  <!--Funcionalidade de acessibilidade Vlibras-->
+    <div class="acessibilidade-container">
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/voz.js" id="voice-tts"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
     <script src="JS/Principal.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -319,5 +528,17 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <!-- Script para modificar a barra de navegação quando rolar para baixo-->
+    <script>
+        const navbar = document.getElementById("barra-navegacao");
+        window.addEventListener("scroll", () =>{
+            if (window.scrollY > 50){
+                navbar.classList.add("scrolled")
+            }else{
+                navbar.classList.remove("scrolled")
+            }
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

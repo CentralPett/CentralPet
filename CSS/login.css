@@ -33,12 +33,13 @@ body{
 }
 
 .conjunto_frases img{
-    position: absolute;
-    left: 350px;
-    width: 40%;
-    float: right;
+    position: relative;
+
+    width: 400px;
+    float: right;    
     margin: 30px;
 }
+
 
 .card{
     position: relative;
@@ -51,7 +52,9 @@ body{
     justify-content: center;
     padding: 32px 20px;
     box-shadow: 0px 0px 25px rgba(0,0,0,.5 );
+    border-radius: 5px;
 }
+
 
 .card h1{
     position: relative;
@@ -102,6 +105,8 @@ body{
 .formulario_grupo{ display: grid; gap: 6px; }
 .formulario_grupo label{ font-weight: 600;}
 
+
+
 .formulario_acoes{
     display: flex;
     justify-content: center;
@@ -117,7 +122,7 @@ body{
     text-decoration: none;
 }
 
-.formulario_acoes .link:hover{
+.formulario_acoes .link{
     text-decoration: underline;
 }
 
@@ -138,14 +143,15 @@ body{
     border-color: #FF9900;
     box-sizing: border-box;
     cursor: pointer;
+    transition: .3s ease-in-out;
+
 }
 
 .botao_entrar:hover{
-  background: #FF9900;
-  color: #fff;
-  border-color: #FF9900;
-  transform: scale(1.04);
-  box-shadow: 0 6px 30px rgba(255, 209, 43, 0.3);
+    filter: brightness(0.95);
+    background-color: #FF9900;
+    color: #fff;
+    transition: .25s ease-in;
 }
 
 .formulario_grupo input{
